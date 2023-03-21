@@ -53,7 +53,7 @@ Puede organizar los datos inactivos en niveles desde un sistema ONTAP en las ins
 * Microsoft Azure Blob
 * Google Cloud Storage
 * StorageGRID de NetApp
-* Almacenamiento de objetos compatible con S3
+* Almacenamiento de objetos compatible con S3 (por ejemplo, Minio)
 
 
 Las licencias de la organización en niveles del cloud también se pueden compartir con sus clústeres que están organizando los datos en niveles en el almacenamiento de objetos en cloud de IBM. La configuración de FabricPool debe configurarse mediante System Manager o la CLI de ONTAP, pero https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["La licencia de este tipo de configuración se completa mediante Cloud Tiering."]
@@ -86,6 +86,8 @@ Pague por Cloud Tiering mediante una suscripción de pago por uso, una suscripci
 Al organizar los datos en niveles en StorageGRID, no hay ningún coste. No se requiere ni una licencia BYOL ni registro de PAYGO.
 
 https://bluexp.netapp.com/pricing#tiering["Ver detalles de precios"^].
+
+Como Cloud Tiering mantiene las eficiencias del almacenamiento del volumen de origen, paga los costes del almacenamiento de objetos del proveedor de cloud para los datos organizados en niveles después de las eficiencias del ONTAP (para la menor cantidad de datos una vez aplicada la deduplicación y la compresión).
 
 
 
