@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
 keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
-summary: Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura la organización en niveles desde su primer clúster. Cuando finalice la prueba gratuita, tendrá que pagar por Cloud Tiering mediante una suscripción anual o de pago por uso del mercado de su proveedor de cloud, una licencia BYOL de NetApp o una combinación de ambas. 
+summary: Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura la organización en niveles desde su primer clúster. Cuando finalice la prueba gratuita, tendrá que pagar por Cloud Tiering mediante un pago por uso o una suscripción anual al mercado de su proveedor de cloud, una licencia de BYOL de NetApp o una combinación de ambos. 
 ---
 = Configure las licencias para Cloud Tiering
 :hardbreaks:
@@ -18,8 +18,8 @@ Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura l
 
 Antes de leer más:
 
-* Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering desde sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *Licensing*. No tendrá que volver a suscribirse.
-* La licencia de almacenamiento por niveles en cloud BYOL es una licencia flotante que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. Esto es distinto del pasado en el que se ha adquirido una licencia de _FabricPool_ para cada clúster.
+* Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering para sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *On-prem Dashboard*. No tendrá que volver a suscribirse.
+* La licencia de almacenamiento por niveles en cloud BYOL es una licencia flotante que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. Esto es diferente (y mucho más sencillo) que en el pasado en el que se adquirió una licencia _FabricPool_ para cada clúster.
 * Los datos se ofrecen en niveles en StorageGRID sin ningún coste, por lo que no es necesario ni una licencia BYOL ni un registro PAYGO. Estos datos organizados en niveles no cuentan con la capacidad adquirida en su licencia.
 
 
@@ -39,8 +39,8 @@ Suscríbase a Cloud Tiering desde AWS Marketplace para configurar una suscripci�
 
 [[subscribe-aws]]
 .Pasos
-. En BlueXP, haga clic en *movilidad > organización en niveles > licencias*.
-. Haga clic en *Suscribirse* en AWS Marketplace y a continuación, haga clic en *continuar*.
+. En BlueXP, haga clic en *movilidad > organización en niveles > Consola en las instalaciones*.
+. En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Amazon Web Services y, a continuación, haga clic en *continuar*.
 . Suscríbase en el https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
 El siguiente vídeo muestra el proceso:
@@ -57,8 +57,8 @@ Suscríbase a Cloud Tiering desde Azure Marketplace para configurar una suscripc
 
 [[subscribe-azure]]
 .Pasos
-. En BlueXP, haga clic en *movilidad > organización en niveles > licencias*.
-. Haga clic en *Suscribirse* en Azure Marketplace y a continuación, haga clic en *continuar*.
+. En BlueXP, haga clic en *movilidad > organización en niveles > Consola en las instalaciones*.
+. En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Microsoft Azure y, a continuación, haga clic en *continuar*.
 . Suscríbase en el https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
 El siguiente vídeo muestra el proceso:
@@ -75,8 +75,8 @@ Suscríbase a Cloud Tiering desde GCP Marketplace para establecer una suscripci�
 
 [[subscribe-gcp]]
 .Pasos
-. En BlueXP, haga clic en *movilidad > organización en niveles > licencias*.
-. Haga clic en *Suscribirse* en GCP Marketplace y a continuación, haga clic en *continuar*.
+. En BlueXP, haga clic en *movilidad > organización en niveles > Consola en las instalaciones*.
+. En la sección _Marketplace Subscriptions_, haga clic en *Suscribirse* en Google Cloud y, a continuación, haga clic en *continuar*.
 . Suscríbase en el https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
 El siguiente vídeo muestra el proceso:
@@ -117,7 +117,7 @@ La página de Digital Wallet de BlueXP se utiliza para gestionar las licencias B
 
 === Nuevas licencias BYOL para Cloud Tiering a partir del 21 de agosto de 2021
 
-La nueva licencia *Cloud Tiering* se introdujo en agosto de 2021 para configuraciones de organización en niveles compatibles con BlueXP mediante el servicio Cloud Tiering. Actualmente, BlueXP admite la organización en niveles en el siguiente almacenamiento en cloud: Amazon S3, almacenamiento blob de Azure, Google Cloud Storage, almacenamiento de objetos compatible con S3 y StorageGRID.
+La nueva licencia *Cloud Tiering* se introdujo en agosto de 2021 para configuraciones de organización en niveles compatibles con BlueXP mediante el servicio Cloud Tiering. Actualmente, BlueXP admite la organización en niveles en el siguiente almacenamiento en cloud: Amazon S3, almacenamiento Azure Blob, Google Cloud Storage, StorageGRID de NetApp y almacenamiento de objetos compatible con S3.
 
 La licencia *FabricPool* que puede haber utilizado en el pasado para organizar los datos de ONTAP en las instalaciones en el cloud se conserva sólo para implementaciones de ONTAP en sitios que no tienen acceso a Internet (también conocidos como "sitios oscuros") y para configuraciones de organización en niveles en IBM Cloud Object Storage. Si utiliza este tipo de configuración, instalará una licencia de FabricPool en cada clúster mediante System Manager o la CLI de ONTAP.
 
@@ -177,7 +177,7 @@ Puede encontrar su ID de cuenta de BlueXP seleccionando el menú desplegable *cu
 Después de adquirir una licencia de Cloud Tiering para su cuenta de BlueXP, debe agregar la licencia a BlueXP para utilizar el servicio Cloud Tiering.
 
 .Pasos
-. Haga clic en *todos los servicios > cartera digital > licencias de servicios de datos*.
+. Haga clic en *Gobierno > cartera digital > licencias de servicios de datos*.
 . Haga clic en *Agregar licencia*.
 . En el cuadro de diálogo _Add License_, introduzca la información de la licencia y haga clic en *Add License*:
 +
@@ -271,7 +271,7 @@ No configure la organización en niveles en este momento.
 . link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Adquiera una licencia de Cloud Tiering"] para la capacidad que se necesita para el nuevo clúster o los clústeres.
 . En BlueXP, link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Añada la licencia a la cartera digital"].
 . En organización en niveles del cloud, link:task-managing-tiering.html#discovering-additional-clusters-from-cloud-tiering["detectar los clústeres nuevos"].
-. En Cluster Dashboard de, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el clúster y seleccione *desplegar licencia*.
+. En la página Clusters, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el clúster y seleccione *desplegar licencia*.
 +
 image:screenshot_tiering_deploy_license.png["Una captura de pantalla que muestra cómo implementar una licencia por niveles en un clúster de ONTAP."]
 

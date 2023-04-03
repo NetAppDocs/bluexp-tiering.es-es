@@ -43,7 +43,6 @@
   <block id="ae1e3d568dc256d91e65f1141d98faa1" category="admonition">No es necesario configurar el almacenamiento de objetos porque ya se ha configurado al configurar inicialmente la organización en niveles para el clúster. ONTAP organiza en niveles los datos inactivos de cualquier volumen adicional en el mismo almacén de objetos.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Pasos</block>
   <block id="d7945c5e359d6ac7ea9f91926a2538da" category="list-text">En el menú de navegación de la izquierda, seleccione *movilidad &gt; Organización en niveles*.</block>
-  <block id="53b6ec02126a4029ea743a4f2910bafa" category="list-text">En *Clusters Dashboard*, haga clic en *Basic Tiering Setup* para el clúster.</block>
   <block id="edc1bce516f0e4e5cb6bf57de68ce286" category="inline-image-macro">Una captura de pantalla que muestra cómo seleccionar el botón Tiering Volumes para un clúster.</block>
   <block id="7d5d486077d112d9f802c64eea1ab893" category="paragraph"><block ref="7d5d486077d112d9f802c64eea1ab893" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97c6279c799edb5b91946106e4bd7ead" category="list-text">En la página _Tier Volumes_, seleccione los volúmenes para los que desea configurar la organización en niveles e inicie la página Tiering Policy:</block>
@@ -63,7 +62,6 @@
   <block id="b43a266db2aca1fd9d7c018f414038a1" category="paragraph">Los volúmenes seleccionados comienzan a organizar los datos en niveles en el cloud.</block>
   <block id="bbdb28e0c385a29cad4cd3acd0870ca5" category="section-title">Cambio de la política de organización en niveles de un volumen</block>
   <block id="5a40c33f4c0bb7db2e33038404ef04b9" category="paragraph">Cambiar la política de organización en niveles de un volumen cambia la forma en que ONTAP organiza los datos inactivos en almacenamiento de objetos. El cambio comienza desde el momento en que se cambia la política. Solo cambia el comportamiento de organización en niveles posterior del volumen: No mueve los datos al nivel de cloud de forma retroactiva.</block>
-  <block id="f6cfe20592aaee333eb4effea00a83b6" category="list-text">En *Clusters Dashboard*, haga clic en *Tier Volumes* para el clúster.</block>
   <block id="3deb91ba336d29a173415247e2cfbc36" category="list-text">Haga clic en la fila de un volumen, seleccione una política de organización en niveles, ajuste opcionalmente los días de refrigeración y haga clic en *aplicar*.</block>
   <block id="607881f35d8174edd89161743c157a25" category="inline-xref">Al migrar datos del nivel de cloud al nivel de rendimiento</block>
   <block id="00bf3510099b9516331efb4e8653be8b" category="paragraph">*Nota:* Si ve opciones para "recuperar datos por niveles", consulte <block ref="f6263c29373cd4e4175b5bafa956b310" category="inline-xref-macro-rx"></block> para obtener más detalles.</block>
@@ -94,10 +92,8 @@
   <block id="d61d482d15787696f979cad384202560" category="list-text">Generación de informes de datos inactivos</block>
   <block id="8ef0dc4e23e271ee189dabf44ca0d2b7" category="list-text">La generación de informes de datos inactivos (IDR) utiliza un periodo de enfriamiento de 31 días para determinar qué datos se consideran inactivos. La cantidad de datos inactivos organizados en niveles depende de las políticas de organización en niveles establecidas en volúmenes. Esta cantidad puede ser diferente de la cantidad de datos fríos detectados por IDR utilizando un período de enfriamiento de 31 días.</block>
   <block id="afc2a246280d9465bcf55cf67326ed45" category="admonition">Es mejor mantener activado IDR porque ayuda a identificar sus oportunidades de ahorro y datos inactivos. El IDR debe seguir activado si se habilitó la organización en niveles de datos en un agregado.</block>
-  <block id="9db0a2a7df2f469f7377ef9995abad54" category="list-text">En *Panel de clústeres*, haga clic en *Configuración avanzada* para el clúster seleccionado.</block>
   <block id="7f68d3e217be20821af2e99c59a95cae" category="inline-image-macro">Captura de pantalla que muestra el botón Advanced Setup para un clúster.</block>
   <block id="e098fabd5ac5fda426e3f4e5268635d7" category="paragraph"><block ref="e098fabd5ac5fda426e3f4e5268635d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9bfca8fb5771e5278530e3aec5c99564" category="list-text">En la página Configuración avanzada, haga clic en el icono de menú del agregado y seleccione *Modificar agregado*.</block>
   <block id="d6a719a9a003494c0346adab9809d5f2" category="inline-image-macro">Captura de pantalla que muestra la opción Modificar agregado de un agregado.</block>
   <block id="a0cb518c6e52bb73ee65ce79d6912e32" category="paragraph"><block ref="a0cb518c6e52bb73ee65ce79d6912e32" category="inline-image-macro-rx" type="image"></block></block>
   <block id="37d627356844b359763aa1dbb8695283" category="list-text">En el cuadro de diálogo que se muestra, modifique el umbral de ocupación y elija si habilitar o deshabilitar la generación de informes de datos inactivos.</block>
@@ -106,7 +102,6 @@
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">Haga clic en *aplicar*.</block>
   <block id="25a328b1273c1ed4cb496b3da5c30171" category="section-title">Revisión de la información de organización en niveles de un clúster</block>
   <block id="32f514343a82d38f7b84b4ef33185e35" category="paragraph">Puede que desee ver cuántos datos hay en el nivel de cloud y cuántos datos hay en los discos. O bien, puede que desee ver la cantidad de datos activos y inactivos en los discos del clúster. La organización en niveles de cloud proporciona esta información para cada clúster.</block>
-  <block id="af1942cfab65b0eda25631cd4c8329bf" category="list-text">En *Clusters Dashboard*, haga clic en el icono de menú de un clúster y seleccione *Cluster info*.</block>
   <block id="f493df8ab5710f59a3ed9742a507da2b" category="list-text">Revise los detalles sobre el clúster.</block>
   <block id="4d947fe0b5c4693f487f4fd1a4295c99" category="paragraph">Veamos un ejemplo:</block>
   <block id="5fb2a07fa295e13c5ae33b74f1915075" category="inline-image-macro">"Una captura de pantalla que muestra el informe del clúster, donde se detalla la capacidad total utilizada, la capacidad utilizada del clúster, la información del clúster y la información sobre el almacenamiento de objetos".</block>
@@ -123,22 +118,13 @@
   <block id="073279dcfecd605313d456f15c7a1b78" category="list-text">Compruebe que el clúster de ONTAP esté operativo y que tenga una conexión entrante y saliente con el proveedor de almacenamiento de objetos.</block>
   <block id="dbb60a2477e4a79b7b61c01b39a67a22" category="list-text">Compruebe que BlueXP tiene conexiones salientes al servicio Cloud Tiering, al almacén de objetos y a los clústeres de ONTAP que detecta.</block>
   <block id="66009842ccd3b5b27255c54219dcb209" category="section-title">Se han detectado clústeres adicionales de Cloud Tiering</block>
-  <block id="f1ee4da4d06b79566714d877d17746a6" category="paragraph">Puede añadir los clústeres de ONTAP en las instalaciones que no se hayan detectado a BlueXP desde Tiering _Cluster Dashboard_ para que pueda habilitar la organización en niveles para el clúster.</block>
-  <block id="247d31f04619e7f1f03d685e8e2b2816" category="paragraph">Tenga en cuenta que los botones también aparecen en la página Tiering _on-Prem Overview_ para que pueda detectar clústeres adicionales.</block>
-  <block id="9f4ac40c5be04fc728d437f7b6d0e536" category="list-text">En Cloud Tiering, haga clic en la pestaña *Clusters Dashboard*.</block>
-  <block id="b57da0b2e8132c4d5a84d9f088fe75f2" category="list-text">Para ver cualquier clúster no descubierto, haga clic en *Mostrar clústeres no detectados*.</block>
   <block id="68344976fe86b89a3fba62990a12e25a" category="inline-image-macro">Una captura de pantalla que muestra el botón Mostrar clústeres sin detectar en el panel de organización en niveles.</block>
   <block id="ba7ed4fd521be5b57e051242d4d614a3" category="paragraph"><block ref="ba7ed4fd521be5b57e051242d4d614a3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="77c2f2a395526537d532a604d4148171" category="paragraph">Si sus credenciales de NSS se guardan en BlueXP, los clústeres de su cuenta se mostrarán en la lista.</block>
   <block id="05d09a490352dd1a62f556737b4e126c" category="paragraph">Si sus credenciales de NSS no están guardadas en BlueXP, se le solicitará que añada sus credenciales antes de ver los clústeres sin detectar.</block>
-  <block id="ead41bd8c5b56fc59ca4fb2fef9d0b5b" category="list-text">Desplácese hacia abajo por la página para ubicar los clústeres.</block>
   <block id="8a29c3a17e5abf29dce483e1e0e0c869" category="inline-image-macro">Una captura de pantalla que muestra cómo descubrir un clúster existente para añadir a BlueXP y Tiering Dashboard.</block>
   <block id="5382926e2e616f4c5f70b30bbc0a12d3" category="paragraph"><block ref="5382926e2e616f4c5f70b30bbc0a12d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d5c1e697c8b22502370d8a4d89241230" category="list-text">Haga clic en *Discover Cluster* para el clúster que desea administrar a través de BlueXP e implemente la organización en niveles de datos.</block>
-  <block id="13b9e6e3af52ca38ce11c3fd268b0306" category="list-text">En la página _Choose a Location_ *On-local ONTAP* está preseleccionado, por lo que sólo tiene que hacer clic en *continuar*.</block>
-  <block id="663909252cbf804332d40198bd07c3e1" category="list-text">En la página _ONTAP Cluster Details_, introduzca la contraseña de la cuenta de usuario admin y haga clic en *Add*.</block>
   <block id="062f0087b4466a679466c422dc664f93" category="paragraph">Tenga en cuenta que la dirección IP de gestión del clúster se rellena en función de la información de la cuenta de NSS.</block>
-  <block id="dd7d25d7e52a6b920a44c09b9d6001c2" category="list-text">En la página _Details &amp; Credentials_ el nombre del clúster se añade como el Nombre del entorno de trabajo, por lo que solo tiene que hacer clic en *Go*.</block>
   <block id="46922e6b0c07daba7c3d3a262105baa4" category="paragraph">BlueXP detecta el clúster y lo agrega a un entorno de trabajo en el lienzo utilizando el nombre del clúster como nombre del entorno de trabajo.</block>
   <block id="65f5911f922c92104ab33c2cd05d4a45" category="paragraph">En el panel derecho puede habilitar el servicio de organización en niveles u otros servicios para este clúster.</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.</block>
@@ -361,7 +347,6 @@
   <block id="f726aa46a58bd5c9a7004e61db828305" category="doc">Gestión del almacenamiento de objetos utilizado para la organización en niveles de datos</block>
   <block id="a9e06a6a9bb74f973d60c123bdaee97e" category="section-title">Ver almacenes de objetos configurados para un clúster de</block>
   <block id="673a98b059fd9fc3e7f4f5593eead74f" category="paragraph">Puede que desee ver todos los almacenes de objetos que se han configurado para el clúster y a qué agregados están adjuntos. La organización en niveles de cloud proporciona esta información para cada clúster.</block>
-  <block id="244f511b6aa78e3769d757df179046e9" category="list-text">En *Clusters Dashboard*, haga clic en el icono de menú de un clúster y seleccione *Object Store Info*.</block>
   <block id="bd15f32248e0ea21c4361f1a3e4f0f52" category="list-text">Revise los detalles de los almacenes de objetos.</block>
   <block id="4f4c4da15333fa3fcf08d1af94c834e9" category="paragraph">Este ejemplo muestra un almacén de objetos Amazon S3 y Azure Blob conectados a diferentes agregados en un clúster.</block>
   <block id="6e806ac83f13dbac246cf70ff9474376" category="inline-image-macro">Una captura de pantalla que muestra la información del almacenamiento de objetos, donde se detalla la capacidad total utilizada, el agregado asociado al almacén de objetos, el nombre del almacén de objetos y más información.</block>
@@ -396,7 +381,6 @@
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">Obtenga más información acerca de los requisitos de MetroCluster en la documentación de ONTAP</block>
   <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">Al usar una configuración de MetroCluster, se recomienda utilizar almacenes de objetos en el cloud público que se encuentran en diferentes zonas de disponibilidad.<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>.</block>
   <block id="6b483bd3d7c70c49e8ad823d9d4bbf64" category="paragraph">Tenga en cuenta que al usar StorageGRID como almacén de objetos en una configuración de MetroCluster, ambos sistemas ONTAP pueden realizar la clasificación por niveles de FabricPool en un único sistema StorageGRID. Cada sistema ONTAP debe organizar los datos en niveles en bloques diferentes.</block>
-  <block id="23382689bb5023b2975968f57d098105" category="list-text">En la página Advanced Setup (Configuración avanzada), arrastre el almacén de objetos que desee utilizar a la ubicación del almacén de objetos de réplica.</block>
   <block id="cfdb62329a930b2b3b98eb375e5d6d67" category="inline-image-macro">Una captura de pantalla que muestra cómo arrastrar un segundo almacén de objetos a un agregado para crear un duplicado de organización en niveles.</block>
   <block id="f8c6499529de613e9e81f51b940a3b19" category="paragraph"><block ref="f8c6499529de613e9e81f51b940a3b19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1b038258ee1bc3da9cd34060708650eb" category="list-text">En el cuadro de diálogo Adjuntar almacén de objetos, haga clic en *Adjuntar* y el segundo almacén de objetos está asociado al agregado.</block>
@@ -405,13 +389,11 @@
   <block id="64430472f9b760efd0fff8a56c3dfe2d" category="paragraph">El estado de Mirror aparecerá como "Sync in Progress" mientras los 2 almacenes de objetos se están sincronizando. El estado cambiará a "sincronizado" cuando finalice la sincronización.</block>
   <block id="fd0703c96fc59c2fc9e81a8bb3b80f95" category="section-title">Intercambiar el almacén de objetos primario y de reflejo</block>
   <block id="184c9c9e72046fd5626f2bafc662975d" category="paragraph">Puede cambiar el almacén de objetos primario y de reflejo de un agregado. El reflejo del almacén de objetos se convierte en el primario y el primario original se convierte en el reflejo.</block>
-  <block id="ebfa7c7e62c629e534a590d9c5bd48ac" category="list-text">En la página Configuración avanzada, haga clic en el icono de menú del agregado y seleccione *intercambiar destinos*.</block>
   <block id="d457321a8411fb5d95c9c393eefbf2d4" category="inline-image-macro">Captura de pantalla que muestra la opción de destino de intercambio para un agregado.</block>
   <block id="10c5a319854025c7e7ac42dff3b41fe6" category="paragraph"><block ref="10c5a319854025c7e7ac42dff3b41fe6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="361fe7b307c10539051d5b3dd457ac55" category="list-text">Apruebe la acción en el cuadro de diálogo y se intercambiarán los almacenes de objetos principal y de réplica.</block>
   <block id="03853b071c5a398f92f626b681bde928" category="section-title">Eliminación de un almacén de objetos de reflejo de un agregado</block>
   <block id="b80dfa8635588311c7e70ae0593a8de5" category="paragraph">Es posible quitar un reflejo de FabricPool si ya no se necesita replicar en un almacén de objetos adicional.</block>
-  <block id="85c797dc141e0eb32826e3caf502008c" category="list-text">En la página Advanced Setup, haga clic en el icono de menú del agregado y seleccione *Unmirror Object Store*.</block>
   <block id="cbf2fbc65a5867c683bd7467af7632ee" category="inline-image-macro">Captura de pantalla que muestra la opción Unmirror Object Store para un agregado.</block>
   <block id="f5865f631fc268c7116eb4f0ac0c2a87" category="paragraph"><block ref="f5865f631fc268c7116eb4f0ac0c2a87" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90a0f73c4b59ec2f9c0c4f90da8df3cc" category="paragraph">El almacén de objetos reflejados se elimina del agregado, y los datos por niveles ya no se replican.</block>
@@ -744,18 +726,10 @@
   <block id="d211aa9c9b0d32735c22312d6ced0bfb" category="paragraph">Ha configurado correctamente la organización en niveles de datos de los volúmenes del clúster en StorageGRID.</block>
   <block id="373efc67a3356a3a76e08792361de915" category="summary">La organización en niveles del cloud proporciona una visión global de la organización en niveles de los datos desde cada uno de los clústeres locales. Esta descripción general proporciona una visión clara de su entorno y le permite tomar las acciones adecuadas.</block>
   <block id="8fa2690e71ce0c54acb839630146cadd" category="doc">Obtenga información general sobre la organización en niveles de los datos en los clústeres</block>
-  <block id="4d529b2a518859d54f6f21833197c05d" category="paragraph">Sólo tiene que hacer clic en *Tiering &gt; On-Prem Overview*. El almacenamiento en niveles de cloud proporciona los siguientes detalles sobre su entorno.</block>
-  <block id="09410de8c94e9f68daa9372cf505d92c" category="inline-image-macro">Captura de pantalla de la página de información general en las instalaciones.</block>
-  <block id="1acad320817dead1b4a28a1e3c74348e" category="paragraph"><block ref="1acad320817dead1b4a28a1e3c74348e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e5814d733d11a3760eeb41c5a83a80f" category="list-text">Clústeres activos</block>
   <block id="ca7efa87a2dfa1e448ef01cfdaa54489" category="list-text">El número de clústeres que actualmente dan organización en niveles los datos en el cloud, los clústeres que no condicionada por niveles los datos en el cloud y el número de clústeres que no admiten la organización en niveles de los datos.</block>
-  <block id="b70528883a2d1dce278c3b16e0f8c608" category="list-text">Descripción general de los datos</block>
   <block id="5198ebed4bb19dd4a54ec09aefa9b18a" category="list-text">La cantidad de datos que se escalaron en el cloud y la cantidad de datos activos e inactivos del clúster.</block>
-  <block id="e62d375b65b0b0b9302910add5b2a6a8" category="list-text">Ahorro total</block>
-  <block id="d52c7ea8dc8cdf88c124364840a3cc8e" category="list-text">La cantidad de dinero que ha ahorrado al organizar en niveles los datos en el cloud, así como la cantidad de dinero que podría ahorrar organizando en niveles más datos en el cloud.</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">Normativas</block>
   <block id="4be1b347cffb3177e749a7dea6f54978" category="list-text">El número de veces que cada política de organización en niveles se ha aplicado a un volumen.</block>
-  <block id="ccc1516741f5a9218383ec432abb8237" category="list-text">Suscripciones a Marketplace</block>
   <block id="28c123c8cd56ba4e4b9a732aa779fbc1" category="list-text">El número de clústeres asociados con cada tipo de suscripción a Marketplace y una indicación acerca del estado de su suscripción.</block>
   <block id="6b5920220b135ba1ff95cfb5b149f138" category="summary">El servicio Cloud Tiering de NetApp amplía su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres ONTAP en las instalaciones al almacenamiento de objetos. Esto libera un valioso espacio en el clúster para más cargas de trabajo sin tener que realizar cambios en la capa de la aplicación. La organización en niveles del cloud puede reducir los costes en su centro de datos y le permite cambiar de un modelo de gastos de capital a uno operativo.</block>
   <block id="36afa058c74d288178950c27927bdb38" category="doc">Más información acerca de Cloud Tiering</block>
@@ -863,10 +837,8 @@
   <block id="37d501cda5d294291fc5d75cd244ac7c" category="paragraph">Ejecute una prueba de rendimiento en el cloud para medir la latencia de la red y el rendimiento de un clúster de ONTAP a un almacén de objetos antes y después de configurar la organización en niveles de los datos. La prueba también identifica los errores que se han producido.</block>
   <block id="05550ef95410219ee8109be8d00e9f62" category="paragraph">A continuación se muestran ejemplos de resultados de rendimiento:</block>
   <block id="f171b53c2ca59613ced7d9a5a942a255" category="inline-image-macro">Una captura de pantalla de los resultados de rendimiento del clúster para una prueba de rendimiento del cloud.</block>
-  <block id="0076173f0ac8d073b8ab32c9a088997b" category="paragraph"><block ref="0076173f0ac8d073b8ab32c9a088997b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8d7c169a466dfccc11fd70e4d5d9307c" category="paragraph">Se recomienda ejecutar esta comprobación cuando el clúster utilice un 50 % de CPU.</block>
   <block id="80fd0114f074882cbd99907336bcbff9" category="list-title">Pasos para un clúster que no se ha configurado para la organización en niveles</block>
-  <block id="c1d7cf1a6e1782b986990f5c14c566d8" category="list-text">En *Panel de clústeres*, haga clic en el icono de menú de un clúster y seleccione *Prueba de rendimiento de la nube*.</block>
   <block id="07ae28f7f79fff3c0b0b0cf1056fc2c1" category="list-text">Revise los detalles y haga clic en *continuar*.</block>
   <block id="bfdee4fb60271a04ea7de7300cf2719f" category="list-text">Siga las indicaciones para proporcionar la información necesaria.</block>
   <block id="82377b23824c7bd3e4d61004b79007e2" category="paragraph">La información que debe proporcionar es la misma que si estuviera configurando la organización en niveles en el clúster.</block>
@@ -1089,12 +1061,9 @@
   <block id="f972833c06016ff05585be675c6f77e0" category="list-text">En la página _Success_, haga clic en *Continue* para configurar sus volúmenes ahora.</block>
   <block id="467dc67da765672ea12bbd2efe6c892d" category="list-text">En la página _Tier Volumes_, seleccione los volúmenes para los que desea configurar la organización en niveles y haga clic en *continuar*:</block>
   <block id="ef451a94db19d37a27a0b08cd56be525" category="paragraph">Ha configurado correctamente la organización en niveles de datos desde los volúmenes del clúster en el almacenamiento de objetos compatible con S3.</block>
-  <block id="c729029c71a16ede9005a43bf89a6174" category="summary">Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura la organización en niveles desde su primer clúster. Cuando finalice la prueba gratuita, tendrá que pagar por Cloud Tiering mediante una suscripción anual o de pago por uso del mercado de su proveedor de cloud, una licencia BYOL de NetApp o una combinación de ambas.</block>
   <block id="4b75686c0a14158ec6b99e93fbf1828b" category="doc">Configure las licencias para Cloud Tiering</block>
   <block id="997ad1f279c3ec4615df50788475bd1b" category="paragraph">Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura la organización en niveles desde su primer clúster. Cuando finalice la prueba gratuita, tendrá que pagar por Cloud Tiering mediante un pago por uso o una suscripción anual al mercado de su proveedor de cloud, una licencia de BYOL de NetApp o una combinación de ambos.</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">Antes de leer más:</block>
-  <block id="c50ed19c37a3a0b4ff682e979d40e06a" category="list-text">Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering desde sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *Licensing*. No tendrá que volver a suscribirse.</block>
-  <block id="1612cb846aef0cf7c32d67e2e37dac9f" category="list-text">La licencia de almacenamiento por niveles en cloud BYOL es una licencia flotante que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. Esto es distinto del pasado en el que se ha adquirido una licencia de _FabricPool_ para cada clúster.</block>
   <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">Los datos se ofrecen en niveles en StorageGRID sin ningún coste, por lo que no es necesario ni una licencia BYOL ni un registro PAYGO. Estos datos organizados en niveles no cuentan con la capacidad adquirida en su licencia.</block>
   <block id="d42e6c6c0bd600babc489630de73058f" category="inline-link-macro">Obtenga más información sobre cómo funciona la licencia para Cloud Tiering</block>
   <block id="6cba13359069adfeb75d96e433421999" category="paragraph"><block ref="4e584f79910f9a3a7129b23d958f91fd" category="inline-link-macro-rx"></block>.</block>
@@ -1102,17 +1071,13 @@
   <block id="bf842c9a2352dda7ee452c6389dda8b8" category="paragraph">Las suscripciones de pago por uso que se generan en el mercado de su proveedor de cloud le permiten utilizar sistemas Cloud Volumes ONTAP y muchos servicios de datos en el cloud, como Cloud Tiering.</block>
   <block id="a70c9916d691b1eb3e72bf59caa27ce2" category="section-title">Suscribirse desde AWS Marketplace</block>
   <block id="df5f272e4f3bf41f36db01caae48f251" category="paragraph">Suscríbase a Cloud Tiering desde AWS Marketplace para configurar una suscripción de pago por uso para organizar los datos en niveles desde clústeres de ONTAP a AWS S3.</block>
-  <block id="01af7160175380d80805730009c1a541" category="list-text">En BlueXP, haga clic en *movilidad &gt; organización en niveles &gt; licencias*.</block>
-  <block id="22ebad5f828c1874ce79ac764661bead" category="list-text">Haga clic en *Suscribirse* en AWS Marketplace y a continuación, haga clic en *continuar*.</block>
   <block id="f1b10f6f612755bd0b4bd43376cb6834" category="list-text">Suscríbase en el<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block>, Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.</block>
   <block id="03909f0465e674709c33e446a2657166" category="paragraph">El siguiente vídeo muestra el proceso:</block>
   <block id="8feab303f9a851219461fc3a5bccb103" category="section-title">Suscribirse desde Azure Marketplace</block>
   <block id="852bc4eb9abdefdd230a032e3bb1c3f3" category="paragraph">Suscríbase a Cloud Tiering desde Azure Marketplace para configurar una suscripción de pago por uso para organizar los datos en niveles desde clústeres de ONTAP al almacenamiento de Azure Blob.</block>
-  <block id="3a1616493ce57887d77b3b14ad9e2110" category="list-text">Haga clic en *Suscribirse* en Azure Marketplace y a continuación, haga clic en *continuar*.</block>
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">Suscríbase en el<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>, Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.</block>
   <block id="d96cb6abed792dbbfc1aebbc934cb55d" category="section-title">Suscribirse desde el mercado de GCP</block>
   <block id="0d51ae895f10dab0e96402b5dca83cae" category="paragraph">Suscríbase a Cloud Tiering desde GCP Marketplace para establecer una suscripción de pago por uso para organizar los datos en niveles desde clústeres de ONTAP hasta el almacenamiento Google Cloud.</block>
-  <block id="c86cd292411d2b20ff6afbb02e35888f" category="list-text">Haga clic en *Suscribirse* en GCP Marketplace y a continuación, haga clic en *continuar*.</block>
   <block id="e4db414e6112e54da73cbeaaacf47826" category="list-text">Suscríbase en el<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block>, Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.</block>
   <block id="66145e361f72b54aa011f59d543dfb08" category="section-title">Utilizar un contrato anual</block>
   <block id="f13eb2181d08fc7abed9205d37d0c184" category="paragraph">Pague por el almacenamiento en niveles en el cloud anualmente al comprar un contrato anual.</block>
@@ -1129,7 +1094,6 @@
   <block id="72899f4178ab51a60b88e578be4f92f1" category="paragraph">Opcionalmente, si tiene una licencia basada en nodo sin asignar para Cloud Volumes ONTAP que no usará, puede convertirla en una licencia de Cloud Tiering con la misma equivalencia en dólares y la misma fecha de caducidad.<block ref="c110e5a4a66d7429a8ced7dc2264a8f5" category="inline-link-rx"></block>.</block>
   <block id="67723246c92a96be8e4186d119291c28" category="paragraph">La página de Digital Wallet de BlueXP se utiliza para gestionar las licencias BYOL de Cloud Tiering. Puede añadir licencias nuevas y actualizar las licencias existentes.</block>
   <block id="52cae96a75c3f07b159891ff3d6a95c0" category="section-title">Nuevas licencias BYOL para Cloud Tiering a partir del 21 de agosto de 2021</block>
-  <block id="d6bdd6528f876c8f9fd69af8dc6bc0a7" category="paragraph">La nueva licencia *Cloud Tiering* se introdujo en agosto de 2021 para configuraciones de organización en niveles compatibles con BlueXP mediante el servicio Cloud Tiering. Actualmente, BlueXP admite la organización en niveles en el siguiente almacenamiento en cloud: Amazon S3, almacenamiento blob de Azure, Google Cloud Storage, almacenamiento de objetos compatible con S3 y StorageGRID.</block>
   <block id="beecf2fd8c511928c5d65a11860f7c21" category="paragraph">La licencia *FabricPool* que puede haber utilizado en el pasado para organizar los datos de ONTAP en las instalaciones en el cloud se conserva sólo para implementaciones de ONTAP en sitios que no tienen acceso a Internet (también conocidos como "sitios oscuros") y para configuraciones de organización en niveles en IBM Cloud Object Storage. Si utiliza este tipo de configuración, instalará una licencia de FabricPool en cada clúster mediante System Manager o la CLI de ONTAP.</block>
   <block id="b5a6f9ddeef29501280ea54ee2e1a6a9" category="admonition">Tenga en cuenta que organizar en niveles en StorageGRID no requiere una licencia de FabricPool o Cloud Tiering.</block>
   <block id="63b75697f87dc9e5a0f1c93ebf6056b5" category="paragraph">Si utiliza actualmente la licencia de FabricPool, no se verá afectado hasta que la licencia de FabricPool alcance su fecha de vencimiento o la capacidad máxima. Póngase en contacto con NetApp cuando necesite actualizar su licencia o con versiones anteriores para asegurarse de que no se interrumpa su capacidad para organizar los datos en niveles en el cloud.</block>
@@ -1161,7 +1125,6 @@
   <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">Puede encontrar su ID de cuenta de BlueXP seleccionando el menú desplegable *cuenta* de la parte superior de BlueXP y, a continuación, haciendo clic en *Administrar cuenta* junto a su cuenta. Su ID de cuenta se encuentra en la ficha Descripción general.</block>
   <block id="39578a52b476e59b429794b57bcf40bf" category="section-title">Añada licencias BYOL de Cloud Tiering a su cuenta</block>
   <block id="15ce40623343d05c0444afd02e2c35bb" category="paragraph">Después de adquirir una licencia de Cloud Tiering para su cuenta de BlueXP, debe agregar la licencia a BlueXP para utilizar el servicio Cloud Tiering.</block>
-  <block id="14e73879f741aacd67e792f34954460d" category="list-text">Haga clic en *todos los servicios &gt; cartera digital &gt; licencias de servicios de datos*.</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">Haga clic en *Agregar licencia*.</block>
   <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">En el cuadro de diálogo _Add License_, introduzca la información de la licencia y haga clic en *Add License*:</block>
   <block id="80b8da08efcb9500667b0fc290bbe1f6" category="list-text">Si tiene el número de serie de la licencia de organización en niveles y conoce su cuenta de NSS, seleccione la opción *introducir número de serie* e introduzca esa información.</block>
@@ -1212,7 +1175,6 @@
   <block id="2e6fc7efa287b2fe3ed8bb7cf5c6500f" category="list-text">En BlueXP, <block ref="fe2e5134b9c10f1de1aa1ca1472fd7e2" category="inline-link-macro-rx"></block>.</block>
   <block id="2ef78cf4a1d7bf5f762483337e16bb3b" category="inline-link-macro">detectar los clústeres nuevos</block>
   <block id="8ba93d5fbdf24a09ecf1780c63d1122d" category="list-text">En organización en niveles del cloud, <block ref="7e9f01463f0c1bdc0791002bcf190788" category="inline-link-macro-rx"></block>.</block>
-  <block id="2577e5e77f7a58d0996e4f2dd6bcb05e" category="list-text">En Cluster Dashboard de, haga clic en <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> Para el clúster y seleccione *desplegar licencia*.</block>
   <block id="b84ead730259e42d0aaa3247f1351b36" category="inline-image-macro">Una captura de pantalla que muestra cómo implementar una licencia por niveles en un clúster de ONTAP.</block>
   <block id="54cfdff2d2e56824adbc46c622ea54b0" category="paragraph"><block ref="54cfdff2d2e56824adbc46c622ea54b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6cde62acc90805ee457b7dc44915c98" category="list-text">En el cuadro de diálogo _Deploy License_, haga clic en *Deploy*.</block>
@@ -1352,7 +1314,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icono con tres puntos que aparece en la última columna de la tabla</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">Gestione un caso existente haciendo clic en <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> y seleccione una de las opciones disponibles:</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Ver caso*: Ver todos los detalles sobre un caso específico.</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Cerrar caso*: Proporcione detalles sobre por qué cierra el caso y haga clic en *Cerrar caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Captura de pantalla que muestra las acciones que puede realizar después de seleccionar el menú de la última columna de la tabla.</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -1368,4 +1329,46 @@
   <block id="0748730b16e2af0499abfb4f8fbcd91a" category="section-title">¿Puedo usar otros servicios de almacenamiento de objetos compatibles con S3, como Minio, con Cloud Tiering?</block>
   <block id="5f25ca5749124089f38921fb40d73668" category="paragraph">Como Cloud Tiering mantiene las eficiencias del almacenamiento del volumen de origen, paga los costes del almacenamiento de objetos del proveedor de cloud para los datos organizados en niveles después de las eficiencias del ONTAP (para la menor cantidad de datos una vez aplicada la deduplicación y la compresión).</block>
   <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">En este momento, se ha calificado el almacenamiento de objetos de Minio.</block>
+  <block id="5f1025b90c4f0c635572eda715d87a10" category="paragraph">Sólo tiene que hacer clic en *Tiering &gt; On-Prem Dashboard*. El almacenamiento en niveles de cloud proporciona los siguientes detalles sobre su entorno.</block>
+  <block id="75ae3190ee97d211e630e0c0f1b5ddeb" category="inline-image-macro">Captura de pantalla de la página del panel local.</block>
+  <block id="59b117edc0d3d63aaf2729e082c38261" category="paragraph"><block ref="59b117edc0d3d63aaf2729e082c38261" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a7553c4b7ed244f088a49d323385c57" category="list-text">Se detectaron clústeres</block>
+  <block id="82de8cfbf4bbb2c6acea13e93599b85d" category="list-text">Descripción general de datos</block>
+  <block id="8ee0131ead01994f7bd95933f4e9a923" category="list-text">Información general sobre organización en niveles</block>
+  <block id="4e03a2d38322e40af6a6e79c953fef0e" category="list-text">El volumen de datos que se están organizar en niveles en la actualidad y la cantidad de datos que puede organizar en niveles.</block>
+  <block id="f9600e20b044515122327f9895faca66" category="list-text">Suscripciones a Marketplace</block>
+  <block id="36c8c017c31e43cab58a5f2513c46696" category="list-text">En la página *Clusters*, haga clic en *Configuración básica de organización en niveles* para el clúster.</block>
+  <block id="310e5a0853c673dc4faabacaee25d4fc" category="list-text">En la página *Clusters*, haga clic en *Configuración avanzada* para el clúster seleccionado.</block>
+  <block id="4b25601db98fc4ec4887d38db18f833e" category="list-text">En la página Configuración avanzada, haga clic en el icono de menú del agregado y seleccione *Modificar agregado*.</block>
+  <block id="14cbdefab43f51a65021d80ce80980c0" category="list-text">En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Cluster info*.</block>
+  <block id="bff5f986b8f0d22acffc0010e8d56dde" category="paragraph">Puede añadir sus clústeres de ONTAP en las instalaciones sin detectar a BlueXP desde la página Tiering _Cluster_ para que pueda habilitar la organización en niveles para el clúster.</block>
+  <block id="36b6d559a801013af8e2d0cd8f190efe" category="paragraph">Tenga en cuenta que los botones también aparecen en la página Tiering _on-Prem Dashboard_ para que pueda detectar clústeres adicionales.</block>
+  <block id="9b1a75be486d93c4df9e13eef4128dc2" category="list-text">En Cloud Tiering, haga clic en la pestaña *Clusters*.</block>
+  <block id="f202e1cf2a8a770d553e2f87c2b11801" category="list-text">Para ver cualquier clúster no descubierto, haga clic en *Mostrar clústeres no detectados*.</block>
+  <block id="e643ccb2870b9bbfdbc24bc87d300f4d" category="list-text">Haga clic en *Agregar clúster* para el clúster que desea administrar a través de BlueXP e implemente la organización en niveles de datos.</block>
+  <block id="25a16ca1880cc1d4f1ff63f91034c468" category="list-text">En la página _Cluster Details_, introduzca la contraseña de la cuenta de usuario administrador y haga clic en *Discover*.</block>
+  <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">En la página _Details &amp; Credentials_ el nombre del clúster se añade como el Nombre del entorno de trabajo, por lo que solo tiene que hacer clic en *Go*.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 de abril de 2023</block>
+  <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Se ha eliminado la pestaña de licencias</block>
+  <block id="d4a0c23b533adffe42d63c23035edd5c" category="paragraph">La pestaña Licensing se ha eliminado de la interfaz de organización en niveles del cloud. Se accede a todas las licencias de suscripciones de pago por uso (PAYGO) desde la consola local de Cloud Tiering. También hay un enlace de esa página a la cartera digital para que pueda ver y gestionar cualquier Cloud Tiering con sus propias licencias (BYOL).</block>
+  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido</block>
+  <block id="10d9a166ad36cdda1e0585914ac18d5f" category="paragraph">La pestaña "Clusters Dashboard" se ha cambiado de nombre a "Clusters" y la pestaña "On-Prem Overview" se ha cambiado de nombre a "On-Prem Dashboard". Estas páginas han añadido información que le ayudará a evaluar si puede optimizar el espacio de almacenamiento con una configuración adicional de organización en niveles.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.</block>
+  <block id="f8011f6560ae9c67fe47dfaf64d311be" category="paragraph"><block ref="f8011f6560ae9c67fe47dfaf64d311be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3e35b4d71fa62eacb0a5bb388fcaaefc" category="list-text">En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Prueba de rendimiento en la nube*.</block>
+  <block id="7bd2b7eee5b0e3ccc0cee448e5f16af6" category="list-text">En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Información del almacén de objetos*.</block>
+  <block id="d6bf3a1568674e80c2c2ee91b89321aa" category="list-text">En la página Configuración avanzada, arrastre el almacén de objetos que desee utilizar a la ubicación del almacén de objetos de réplica.</block>
+  <block id="cd11e47501303547dfe86752a503190f" category="list-text">En la página Configuración avanzada, haga clic en el icono de menú del agregado y seleccione *intercambiar destinos*.</block>
+  <block id="3147fedbcc0be3024be497b0c4a9a86e" category="list-text">En la página Advanced Settings (Configuración avanzada), haga clic en el icono de menú del agregado y seleccione *Unmirror Object Store*.</block>
+  <block id="512d20b1222e443735ce4d4233102c8b" category="list-text">Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering para sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *On-prem Dashboard*. No tendrá que volver a suscribirse.</block>
+  <block id="199835e9739f64711df8c553667c0873" category="list-text">La licencia de almacenamiento por niveles en cloud BYOL es una licencia flotante que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. Esto es diferente (y mucho más sencillo) que en el pasado en el que se adquirió una licencia _FabricPool_ para cada clúster.</block>
+  <block id="c6cfe277ff95e8b00e4a3526eb00d9de" category="list-text">En BlueXP, haga clic en *movilidad &gt; organización en niveles &gt; Consola en las instalaciones*.</block>
+  <block id="b1fac0d88d99bf87572b3a3dbde5021c" category="list-text">En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Amazon Web Services y, a continuación, haga clic en *continuar*.</block>
+  <block id="25fa54aa1e74279c5dd0574c255c9395" category="list-text">En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Microsoft Azure y, a continuación, haga clic en *continuar*.</block>
+  <block id="1aeaa2e92434fc1c27cf37cfd23e8592" category="list-text">En la sección _Marketplace Subscriptions_, haga clic en *Suscribirse* en Google Cloud y, a continuación, haga clic en *continuar*.</block>
+  <block id="35bfd546b4a554afcc648a0c8807406b" category="paragraph">La nueva licencia *Cloud Tiering* se introdujo en agosto de 2021 para configuraciones de organización en niveles compatibles con BlueXP mediante el servicio Cloud Tiering. Actualmente, BlueXP admite la organización en niveles en el siguiente almacenamiento en cloud: Amazon S3, almacenamiento Azure Blob, Google Cloud Storage, StorageGRID de NetApp y almacenamiento de objetos compatible con S3.</block>
+  <block id="5ed5be6c0303be48aaede9dd17a25f11" category="list-text">Haga clic en *Gobierno &gt; cartera digital &gt; licencias de servicios de datos*.</block>
+  <block id="f16cf9a738fef68b5c516203192da03b" category="list-text">En la página Clusters, haga clic en <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> Para el clúster y seleccione *desplegar licencia*.</block>
 </blocks>

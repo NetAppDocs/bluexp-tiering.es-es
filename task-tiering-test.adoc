@@ -18,14 +18,14 @@ Ejecute una prueba de rendimiento en el cloud para medir la latencia de la red y
 
 A continuación se muestran ejemplos de resultados de rendimiento:
 
-image:screenshot_cloud_performance_test.gif["Una captura de pantalla de los resultados de rendimiento del clúster para una prueba de rendimiento del cloud."]
+image:screenshot_cloud_performance_test.png["Una captura de pantalla de los resultados de rendimiento del clúster para una prueba de rendimiento del cloud."]
 
 .Antes de empezar
 Se recomienda ejecutar esta comprobación cuando el clúster utilice un 50 % de CPU.
 
 .Pasos para un clúster que no se ha configurado para la organización en niveles
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
-. En *Panel de clústeres*, haga clic en el icono de menú de un clúster y seleccione *Prueba de rendimiento de la nube*.
+. En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Prueba de rendimiento en la nube*.
 . Revise los detalles y haga clic en *continuar*.
 . Siga las indicaciones para proporcionar la información necesaria.
 +
@@ -36,7 +36,7 @@ La información que debe proporcionar es la misma que si estuviera configurando 
 
 .Pasos para un clúster que se ha configurado para la organización en niveles
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
-. En *Panel de clústeres*, haga clic en el icono de menú de un clúster y seleccione *Prueba de rendimiento de la nube*.
+. En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Prueba de rendimiento en la nube*.
 . Seleccione un nodo de la lista desplegable.
 . Vea los resultados o vuelva a comprobar el rendimiento.
 

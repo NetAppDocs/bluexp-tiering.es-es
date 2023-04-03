@@ -18,6 +18,22 @@ Descubra las novedades de Cloud Tiering.
 
 
 
+== 3 de abril de 2023
+
+
+
+=== Se ha eliminado la pestaña de licencias
+
+La pestaña Licensing se ha eliminado de la interfaz de organización en niveles del cloud. Se accede a todas las licencias de suscripciones de pago por uso (PAYGO) desde la consola local de Cloud Tiering. También hay un enlace de esa página a la cartera digital para que pueda ver y gestionar cualquier Cloud Tiering con sus propias licencias (BYOL).
+
+
+
+=== Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido
+
+La pestaña "Clusters Dashboard" se ha cambiado de nombre a "Clusters" y la pestaña "On-Prem Overview" se ha cambiado de nombre a "On-Prem Dashboard". Estas páginas han añadido información que le ayudará a evaluar si puede optimizar el espacio de almacenamiento con una configuración adicional de organización en niveles.
+
+
+
 == 5 de marzo de 2023
 
 

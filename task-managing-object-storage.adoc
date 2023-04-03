@@ -23,7 +23,7 @@ Después de configurar los clústeres de ONTAP en las instalaciones para organiz
 Puede que desee ver todos los almacenes de objetos que se han configurado para el clúster y a qué agregados están adjuntos. La organización en niveles de cloud proporciona esta información para cada clúster.
 
 .Pasos
-. En *Clusters Dashboard*, haga clic en el icono de menú de un clúster y seleccione *Object Store Info*.
+. En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Información del almacén de objetos*.
 . Revise los detalles de los almacenes de objetos.
 +
 Este ejemplo muestra un almacén de objetos Amazon S3 y Azure Blob conectados a diferentes agregados en un clúster.
@@ -40,7 +40,7 @@ image:screenshot_tiering_object_store_view.png["Una captura de pantalla que mues
 Puede añadir un nuevo almacén de objetos que estará disponible para los agregados del clúster. Después de crearla, puede adjuntar a un agregado.
 
 .Pasos
-. En *Clusters Dashboard*, haga clic en el icono de menú de un clúster y seleccione *Object Store Info*.
+. En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Información del almacén de objetos*.
 . En la página Información del almacén de objetos, haga clic en *Crear nuevo almacén de objetos*.
 +
 image:screenshot_tiering_object_store_create_button.png["Captura de pantalla que muestra el botón Crear nuevo almacén de objetos para crear un nuevo almacén de objetos."]
@@ -96,11 +96,11 @@ Al usar una configuración de MetroCluster, se recomienda utilizar almacenes de 
 Tenga en cuenta que al usar StorageGRID como almacén de objetos en una configuración de MetroCluster, ambos sistemas ONTAP pueden realizar la clasificación por niveles de FabricPool en un único sistema StorageGRID. Cada sistema ONTAP debe organizar los datos en niveles en bloques diferentes.
 
 .Pasos
-. En *Panel de clústeres*, haga clic en *Configuración avanzada* para el clúster seleccionado.
+. En la página *Clusters*, haga clic en *Configuración avanzada* para el clúster seleccionado.
 +
 image:screenshot_tiering_advanced_setup_button.png["Captura de pantalla que muestra el botón Advanced Setup para un clúster."]
 
-. En la página Advanced Setup (Configuración avanzada), arrastre el almacén de objetos que desee utilizar a la ubicación del almacén de objetos de réplica.
+. En la página Configuración avanzada, arrastre el almacén de objetos que desee utilizar a la ubicación del almacén de objetos de réplica.
 +
 image:screenshot_tiering_mirror_config.png["Una captura de pantalla que muestra cómo arrastrar un segundo almacén de objetos a un agregado para crear un duplicado de organización en niveles."]
 
@@ -119,7 +119,7 @@ El estado de Mirror aparecerá como "Sync in Progress" mientras los 2 almacenes 
 Puede cambiar el almacén de objetos primario y de reflejo de un agregado. El reflejo del almacén de objetos se convierte en el primario y el primario original se convierte en el reflejo.
 
 .Pasos
-. En *Panel de clústeres*, haga clic en *Configuración avanzada* para el clúster seleccionado.
+. En la página *Clusters*, haga clic en *Configuración avanzada* para el clúster seleccionado.
 +
 image:screenshot_tiering_advanced_setup_button.png["Captura de pantalla que muestra el botón Advanced Setup para un clúster."]
 
@@ -137,11 +137,11 @@ image:screenshot_tiering_mirror_swap.png["Captura de pantalla que muestra la opc
 Es posible quitar un reflejo de FabricPool si ya no se necesita replicar en un almacén de objetos adicional.
 
 .Pasos
-. En *Panel de clústeres*, haga clic en *Configuración avanzada* para el clúster seleccionado.
+. En la página *Clusters*, haga clic en *Configuración avanzada* para el clúster seleccionado.
 +
 image:screenshot_tiering_advanced_setup_button.png["Captura de pantalla que muestra el botón Advanced Setup para un clúster."]
 
-. En la página Advanced Setup, haga clic en el icono de menú del agregado y seleccione *Unmirror Object Store*.
+. En la página Advanced Settings (Configuración avanzada), haga clic en el icono de menú del agregado y seleccione *Unmirror Object Store*.
 +
 image:screenshot_tiering_mirror_delete.png["Captura de pantalla que muestra la opción Unmirror Object Store para un agregado."]
 

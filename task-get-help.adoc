@@ -67,6 +67,10 @@ Para obtener más información sobre estas prioridades, pase el ratón sobre el 
 
 *** *Descripción del problema*: Proporcione una descripción detallada del problema, incluidos los mensajes de error aplicables o los pasos de solución de problemas que haya realizado.
 *** *Direcciones de correo electrónico adicionales*: Introduzca direcciones de correo electrónico adicionales si desea que alguien más conozca este problema.
+*** *Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.
++
+Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.
+
 
 
 
@@ -143,7 +147,10 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . Gestione un caso existente haciendo clic en image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["Icono con tres puntos que aparece en la última columna de la tabla"] y seleccione una de las opciones disponibles:
 +
 ** *Ver caso*: Ver todos los detalles sobre un caso específico.
-** *Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema.
+** *Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.
++
+Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.
+
 ** *Cerrar caso*: Proporcione detalles sobre por qué cierra el caso y haga clic en *Cerrar caso*.
 
 
