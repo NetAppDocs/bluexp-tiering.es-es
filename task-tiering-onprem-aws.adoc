@@ -100,9 +100,8 @@ El conector BlueXP es el software principal para la funcionalidad BlueXP. Se req
 Si ya tiene un conector puesto en marcha en AWS VPC o en sus instalaciones, todo estará configurado. De lo contrario, necesitará crear un conector en cualquiera de esas ubicaciones para organizar los datos de ONTAP en niveles en el almacenamiento AWS S3. No puede utilizar un conector puesto en marcha en otro proveedor de cloud.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Introducción a conectores"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Instalación de un conector en AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Instalación de un conector en sus instalaciones"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Implementar un conector en AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Instalar un conector en un host Linux"^]
 
 
 

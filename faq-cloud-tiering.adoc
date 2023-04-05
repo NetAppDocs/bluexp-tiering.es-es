@@ -118,6 +118,8 @@ Cuando organización en niveles de datos fríos en un cloud público:
 * Para la suscripción anual (BYOL) basada en periodos: A partir de 0.033 $ por GB/mes.
 
 
+https://bluexp.netapp.com/pricing["Consulte los detalles de precios"].
+
 Cuando se organiza la organización en niveles de los datos fríos en un sistema StorageGRID de NetApp (cloud privado), sin coste alguno.
 
 
@@ -130,7 +132,9 @@ Sí. Cloud Tiering le permite usar una licencia BYOL, una suscripción PAYGO o u
 
 === ¿Qué sucede si he alcanzado el límite de capacidad de su licencia?
 
-Si alcanza un límite de capacidad BYOL, la organización en niveles de nuevos datos fríos se detiene mientras todos los datos organizados en niveles anteriormente siguen siendo accesibles. Si tiene una suscripción a PAYGO Marketplace del _BlueXP - Deploy & Manage Cloud Data Services_, los nuevos datos inactivos seguirán estando organizados en niveles en el almacenamiento de objetos y pagará por cada uso.
+Si alcanza el límite de capacidad BYOL, la organización en niveles de los nuevos datos fríos se detiene. Todos los datos previamente organizados en niveles siguen siendo accesibles; lo que significa que se pueden recuperar y utilizar estos datos. Cuando se recuperan, estos datos se mueven de nuevo al nivel de rendimiento del cloud.
+
+Sin embargo, si tiene una suscripción al mercado de PAYGO a _BlueXP - Deploy & Manage Cloud Data Services_, los nuevos datos inactivos seguirán estando organizados en niveles en el almacenamiento de objetos y pagará por cada uso.
 
 
 
@@ -196,7 +200,7 @@ Sí. El nivel de cloud puede configurarse para organizar los volúmenes alojados
 
 === ¿y Cloud Volumes ONTAP?
 
-Si tiene sistemas Cloud Volumes ONTAP, los encontrará en el Cloud Tiering Cluster Dashboard para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. No se puede configurar la organización en niveles de datos en Cloud Volumes ONTAP desde la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Ha configurado una organización en niveles para Cloud Volumes ONTAP desde el entorno de trabajo de BlueXP"^].
+Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Cloud Tiering Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. No se puede configurar la organización en niveles de datos en Cloud Volumes ONTAP desde la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Ha configurado una organización en niveles para Cloud Volumes ONTAP desde el entorno de trabajo de BlueXP"^].
 
 
 

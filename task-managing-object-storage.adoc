@@ -100,7 +100,7 @@ Tenga en cuenta que al usar StorageGRID como almacén de objetos en una configur
 +
 image:screenshot_tiering_advanced_setup_button.png["Captura de pantalla que muestra el botón Advanced Setup para un clúster."]
 
-. En la página Configuración avanzada, arrastre el almacén de objetos que desee utilizar a la ubicación del almacén de objetos de réplica.
+. En la página Advanced Setup (Configuración avanzada), arrastre el almacén de objetos que desee utilizar a la ubicación del almacén de objetos de réplica.
 +
 image:screenshot_tiering_mirror_config.png["Una captura de pantalla que muestra cómo arrastrar un segundo almacén de objetos a un agregado para crear un duplicado de organización en niveles."]
 
@@ -141,7 +141,7 @@ Es posible quitar un reflejo de FabricPool si ya no se necesita replicar en un a
 +
 image:screenshot_tiering_advanced_setup_button.png["Captura de pantalla que muestra el botón Advanced Setup para un clúster."]
 
-. En la página Advanced Settings (Configuración avanzada), haga clic en el icono de menú del agregado y seleccione *Unmirror Object Store*.
+. En la página Advanced Setup, haga clic en el icono de menú del agregado y seleccione *Unmirror Object Store*.
 +
 image:screenshot_tiering_mirror_delete.png["Captura de pantalla que muestra la opción Unmirror Object Store para un agregado."]
 

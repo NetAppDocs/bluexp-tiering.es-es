@@ -139,7 +139,7 @@ Estas claves de acceso deben estar asociadas a un usuario que tenga los siguient
 Se requiere un conector para organizar los datos en niveles en el cloud. Al organizar los datos en niveles en un almacenamiento de objetos compatible con S3, debe haber un conector disponible en las instalaciones. Tendrá que instalar un conector nuevo o asegurarse de que el conector seleccionado actualmente reside en las instalaciones.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Implementación de un conector en un host Linux"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Instalar un conector en un host Linux"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
 
 

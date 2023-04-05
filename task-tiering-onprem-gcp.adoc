@@ -118,7 +118,6 @@ Se requiere un conector para organizar los datos en niveles en el cloud. Al orga
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Despliegue de un conector en GCP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
 
 
 

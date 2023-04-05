@@ -18,7 +18,7 @@ Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura l
 
 Antes de leer más:
 
-* Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering para sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *On-prem Dashboard*. No tendrá que volver a suscribirse.
+* Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering para sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *On-prem Dashboard*. No tendrá que volver a suscribirse. Verá una suscripción activa en Digital Wallet.
 * La licencia de almacenamiento por niveles en cloud BYOL es una licencia flotante que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. Esto es diferente (y mucho más sencillo) que en el pasado en el que se adquirió una licencia _FabricPool_ para cada clúster.
 * Los datos se ofrecen en niveles en StorageGRID sin ningún coste, por lo que no es necesario ni una licencia BYOL ni un registro PAYGO. Estos datos organizados en niveles no cuentan con la capacidad adquirida en su licencia.
 

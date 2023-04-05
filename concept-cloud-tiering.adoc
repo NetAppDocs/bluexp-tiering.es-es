@@ -35,7 +35,7 @@ La organización en niveles del cloud ofrece automatización, supervisión, info
 * Un único panel elimina la necesidad de disponer de forma independiente Gestione FabricPool en varios clústeres
 * Los informes muestran la cantidad de datos activos e inactivos en cada clúster
 * El estado de una organización en niveles le ayuda a identificar y corregir problemas a medida que ocurren
-* Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la consola de clústeres para que obtenga una visión completa de la organización en niveles de los datos en su infraestructura de cloud híbrido
+* Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido
 
 
 Para obtener más información sobre el valor que ofrece Cloud Tiering, https://cloud.netapp.com/cloud-tiering["Visite la página de Cloud Tiering en el sitio web de BlueXP"^].
@@ -93,9 +93,9 @@ Como Cloud Tiering mantiene las eficiencias del almacenamiento del volumen de or
 
 === prueba gratuita de 30 días
 
-Si no tiene una licencia de Cloud Tiering, se inicia una prueba gratuita de 30 días de Cloud Tiering cuando se configura la organización en niveles en su primer clúster. Después de que finalice la prueba gratuita de 30 días, deberá pagar por Cloud Tiering mediante una suscripción de pago por uso, una suscripción anual, una licencia BYOL o una combinación de estos.
+Si no tiene una licencia de Cloud Tiering, se inicia una prueba gratuita de 30 días de Cloud Tiering cuando se configura la organización en niveles en su primer clúster. Cuando finalice la prueba gratuita de 30 días, tendrá que pagar por Cloud Tiering mediante una suscripción de pago por uso, una suscripción anual, una licencia de BYOL o una combinación de estos.
 
-Si su prueba gratuita finaliza y no se ha suscrito o agregado una licencia, ONTAP ya no organiza los datos inactivos en niveles para el almacenamiento de objetos, pero los datos existentes aún están disponibles para su acceso.
+Si su prueba gratuita finaliza y no se ha suscrito o agregado una licencia, ONTAP ya no organiza los datos inactivos en niveles para el almacenamiento de objetos. Todos los datos previamente organizados en niveles siguen siendo accesibles; lo que significa que se pueden recuperar y utilizar estos datos. Cuando se recuperan, estos datos se mueven de nuevo al nivel de rendimiento del cloud.
 
 
 

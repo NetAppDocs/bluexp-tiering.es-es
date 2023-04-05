@@ -27,7 +27,7 @@ TIP: No es necesario configurar el almacenamiento de objetos porque ya se ha con
 
 .Pasos
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
-. En la página *Clusters*, haga clic en *Configuración básica de organización en niveles* para el clúster.
+. En la página *Clusters*, haga clic en *Tier Volumes* para el clúster.
 +
 image:screenshot_tiering_tier_volumes_button.png["Una captura de pantalla que muestra cómo seleccionar el botón Tiering Volumes para un clúster."]
 
@@ -61,7 +61,7 @@ Cambiar la política de organización en niveles de un volumen cambia la forma e
 
 .Pasos
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
-. En la página *Clusters*, haga clic en *Configuración básica de organización en niveles* para el clúster.
+. En la página *Clusters*, haga clic en *Tier Volumes* para el clúster.
 . Haga clic en la fila de un volumen, seleccione una política de organización en niveles, ajuste opcionalmente los días de refrigeración y haga clic en *aplicar*.
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["Obtenga más información acerca de las políticas de organización en niveles de volumen y los días de refrigeración"].
@@ -111,7 +111,7 @@ NOTE: Puede que su proveedor de cloud le cargue en función de la cantidad de da
 Asegúrese de tener suficiente espacio en el nivel de rendimiento para todos los datos que se van a mover desde el cloud.
 
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
-. En la página *Clusters*, haga clic en *Configuración básica de organización en niveles* para el clúster.
+. En la página *Clusters*, haga clic en *Tier Volumes* para el clúster.
 . Haga clic en la image:screenshot_edit_icon.gif["edit, el icono que se muestra al final de cada fila de la tabla de volúmenes de organización en niveles"] Para el volumen, elija la opción de recuperación que desee utilizar y haga clic en *aplicar*.
 +
 image:screenshot_tiering_policy_settings_with_retrieve.png["Captura de pantalla que muestra la configuración de la política de organización en niveles configurable."]
@@ -220,7 +220,7 @@ Si sus credenciales de NSS no están guardadas en BlueXP, se le solicitará que 
 +
 image:screenshot_tiering_discover_cluster.png["Una captura de pantalla que muestra cómo descubrir un clúster existente para añadir a BlueXP y Tiering Dashboard."]
 
-. Haga clic en *Agregar clúster* para el clúster que desea administrar a través de BlueXP e implemente la organización en niveles de datos.
+. Haga clic en *Discover Cluster* para el clúster que desea administrar a través de BlueXP e implemente la organización en niveles de datos.
 . En la página _Cluster Details_, introduzca la contraseña de la cuenta de usuario administrador y haga clic en *Discover*.
 +
 Tenga en cuenta que la dirección IP de gestión del clúster se rellena en función de la información de la cuenta de NSS.
