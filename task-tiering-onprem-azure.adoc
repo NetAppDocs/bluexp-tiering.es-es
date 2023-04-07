@@ -137,8 +137,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias. Se puede i
 .Pasos
 . Asegúrese de que la red en la que está instalado el conector habilita las siguientes conexiones:
 +
-** Una conexión de Internet saliente al servicio Cloud Tiering Puerto 443 (HTTPS)
-** Una conexión HTTPS a través del puerto 443 al almacenamiento de Azure Blob
+** Una conexión HTTPS a través del puerto 443 al servicio Cloud Tiering y al almacenamiento de objetos de Azure Blob (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
 ** Una conexión HTTPS a través del puerto 443 para la LIF de gestión del clúster ONTAP
 
 

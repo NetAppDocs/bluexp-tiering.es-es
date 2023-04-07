@@ -110,8 +110,7 @@ Si ya tiene un conector puesto en marcha en AWS VPC o en sus instalaciones, todo
 
 * Asegúrese de que la red en la que está instalado el conector habilita las siguientes conexiones:
 +
-** Una conexión a Internet de salida a través del puerto 443 (HTTPS) al servicio Cloud Tiering
-** Una conexión HTTPS a través del puerto 443 al almacenamiento de objetos S3 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["consulte la lista de extremos"^])
+** Una conexión HTTPS a través del puerto 443 al servicio Cloud Tiering y al almacenamiento de objetos S3 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
 ** Una conexión HTTPS a través del puerto 443 para la LIF de gestión del clúster ONTAP
 
 
