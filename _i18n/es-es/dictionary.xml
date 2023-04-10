@@ -272,7 +272,6 @@
   <block id="98dae1b8caf3c488a405b3624212dfe9" category="list-text">Al organizar los datos en niveles en StorageGRID u otros proveedores de almacenamiento compatibles con S3, el conector debe residir en sus instalaciones.</block>
   <block id="d2eea5ad2ae07890452da2aec5cffc98" category="section-title">¿Puedo desplegar el conector en las instalaciones?</block>
   <block id="b0ccf0f3fa1a27a2fbab1c35ebf8e0f5" category="inline-link">Vea cómo instalar el conector en sus instalaciones</block>
-  <block id="de7433c1562faa5f9b2ee55c74f16fa2" category="paragraph">Sí. El software Connector se puede descargar e instalar manualmente en un host Linux de la red.<block ref="5cffbbed8cdfbd25b645e94434fee757" category="inline-link-rx"></block>.</block>
   <block id="eef7b8a2b79a5ecae955422af0ab3b72" category="section-title">¿Es necesaria una cuenta con un proveedor de servicios de cloud antes de usar Cloud Tiering?</block>
   <block id="71b5e4019a71131db2052326884d8bbe" category="paragraph">Sí. Es necesario tener una cuenta para poder definir el almacenamiento de objetos que desea utilizar. Al configurar el conector en el cloud en un VPC o vnet, también se necesita una cuenta con un proveedor de almacenamiento en cloud.</block>
   <block id="8ca6e099f9e16583824ee8e6a5727c40" category="section-title">¿Cuáles son las implicaciones si el conector falla?</block>
@@ -850,7 +849,6 @@
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">Necesita crear un entorno de trabajo de ONTAP en las instalaciones en BlueXP para poder empezar a organizar en niveles los datos inactivos.</block>
   <block id="6f8de70a130cd2e986950accf1528a82" category="paragraph">Se requiere un conector para organizar los datos en niveles en el cloud. Al organizar los datos en niveles en Google Cloud Storage, debe haber un conector disponible en un VPC de Google Cloud Platform. Tendrá que crear un conector nuevo o asegurarse de que el conector seleccionado actualmente reside en GCP.</block>
   <block id="da67ca84863fc0110febe22c08877274" category="inline-link">Despliegue de un conector en GCP</block>
-  <block id="3b8a5aa33e51c71b8f37ac5972ac20d7" category="list-text"><block ref="3b8a5aa33e51c71b8f37ac5972ac20d7" category="inline-link-rx"></block></block>
   <block id="499449d439c0676b8921b5ff6e0ca806" category="list-text">Asegúrese de que el VPC donde está instalado el conector habilita las siguientes conexiones:</block>
   <block id="bad85e9654b782928f6763c3008e8dd4" category="list-text">Opcional: Habilite Google Access privado en la subred en la que planea implementar el conector.</block>
   <block id="b092138563f7b68473c3bf2a6a23a434" category="inline-link">Acceso privado a Google</block>
@@ -894,7 +892,6 @@
   <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
   <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="cell">\https://*.api.bluexp.netapp.com</block>
-  <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">Vea la lista completa de puntos finales de la<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>,<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>, o.<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> de cloud híbrido.</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 de noviembre de 2022</block>
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">Arrastre y suelte para habilitar Cloud Tiering en Azure Blob, Google Cloud Storage y StorageGRID</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.</block>
@@ -1369,4 +1366,7 @@
   <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">Una conexión HTTPS por el puerto 443 al sistema StorageGRID</block>
   <block id="0d2084a4e3ff91eb61a6e20f85d92399" category="list-text">Una conexión HTTPS a través del puerto 443 al servicio Cloud Tiering y al almacenamiento de objetos S3 <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
   <block id="bd0e0977c46457979423f05da93b43de" category="list-text">Una conexión HTTPS a través del puerto 443 al servicio Cloud Tiering y al almacenamiento de objetos de Azure Blob <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
+  <block id="f8fffd3ee443f29d36b65a0e66a5f03a" category="paragraph">Sí. El software Connector se puede descargar e instalar manualmente en un host Linux de la red.<block ref="1b7ddd38e792a03a4b15132910b94d8c" category="inline-link-rx"></block>.</block>
+  <block id="99d3ed1cc58df8ac52e23dd69320374b" category="list-text"><block ref="99d3ed1cc58df8ac52e23dd69320374b" category="inline-link-rx"></block></block>
+  <block id="c395006d6063b66336be768382280c9e" category="paragraph">Vea la lista completa de puntos finales de la<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>,<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>, o.<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> de cloud híbrido.</block>
 </blocks>
