@@ -164,7 +164,7 @@ Sí. Comprobar https://aws.amazon.com/s3/pricing/["Precios de Amazon S3"], https
 
 === ¿Cómo puedo calcular el ahorro que han obtenido mis volúmenes y obtener un informe de datos inactivos antes de habilitar Cloud Tiering?
 
-Para obtener una estimación, basta con añadir un clúster de ONTAP a BlueXP e inspeccionarlo a través de la consola de Cloud Tiering Clusters, que se encuentra en la pestaña Tiering. Cuando se deshabilita la función de generación de informes de datos inactivos (IDR) o aún no se ha activado durante un periodo de tiempo suficiente, Cloud Tiering utiliza una constante del sector del 70 % para calcular el ahorro estimado. Una vez disponibles los datos de IDR, Cloud Tiering actualiza los ahorros para obtener cifras precisas.
+Para obtener una estimación, solo tienes que añadir tu clúster ONTAP a BlueXP e inspeccionarlo a través de la página Clusters de Cloud Tiering. Haga clic en *Calcular posibles ahorros de niveles* para que el clúster inicie el https://bluexp.netapp.com/cloud-tiering-service-tco["Calculadora de TCO de Cloud Tiering"^] para ver cuánto dinero puede ahorrar.
 
 
 
@@ -200,7 +200,7 @@ Sí. El nivel de cloud puede configurarse para organizar los volúmenes alojados
 
 === ¿y Cloud Volumes ONTAP?
 
-Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Cloud Tiering Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. No se puede configurar la organización en niveles de datos en Cloud Volumes ONTAP desde la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Ha configurado una organización en niveles para Cloud Volumes ONTAP desde el entorno de trabajo de BlueXP"^].
+Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Cloud Tiering Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. No se puede configurar la organización en niveles de datos en Cloud Volumes ONTAP desde la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
 
 
 

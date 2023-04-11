@@ -22,6 +22,8 @@ Originalmente compatible con sistemas AFF, FAS y ONTAP Select con agregados ínt
 
 Cloud Tiering puede configurarse para clústeres de un solo nodo, clústeres configurados de alta disponibilidad, clústeres en configuraciones de Tiering Mirror y configuraciones de MetroCluster mediante FabricPool Mirror. Las licencias de organización en niveles en cloud se comparten entre todos los clústeres.
 
+https://bluexp.netapp.com/cloud-tiering-service-tco["Utiliza la calculadora de TCO de Cloud Tiering para ver cuánto dinero puedes ahorrar"^].
+
 
 
 == Funciones
@@ -38,10 +40,10 @@ La organización en niveles del cloud ofrece automatización, supervisión, info
 * Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido
 
 
-Para obtener más información sobre el valor que ofrece Cloud Tiering, https://cloud.netapp.com/cloud-tiering["Visite la página de Cloud Tiering en el sitio web de BlueXP"^].
+Para obtener más información sobre el valor que ofrece Cloud Tiering, https://bluexp.netapp.com/cloud-tiering["Visite la página de Cloud Tiering en el sitio web de BlueXP"^].
 
 
-TIP: Los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Ha configurado una organización en niveles para Cloud Volumes ONTAP desde el entorno de trabajo de BlueXP"^].
+TIP: Los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
 
 
 
