@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-google-support.html 
 keywords: google, gcp, regions, google regions, gcp regions, storage class, standard, nearline, coldline, archive 
-summary: Cloud Tiering admite varias clases de almacenamiento de Google Cloud y la mayoría de regiones. 
+summary: La organización en niveles de BlueXP admite varias clases de almacenamiento de Google Cloud y la mayoría de regiones. 
 ---
 = Clases y regiones de almacenamiento compatibles con Google Cloud
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Cloud Tiering admite varias clases de almacenamiento de Google Cloud y 
 
 
 [role="lead"]
-Cloud Tiering admite varias clases de almacenamiento de Google Cloud y la mayoría de regiones.
+La organización en niveles de BlueXP admite varias clases de almacenamiento de Google Cloud y la mayoría de regiones.
 
 
 
 == Clases de almacenamiento de GCP admitidas
 
-Cuando configura la organización en niveles de datos en GCP, Cloud Tiering utiliza automáticamente la clase de almacenamiento _Standard_ para sus datos inactivos. La organización en niveles del cloud puede aplicar una regla de ciclo de vida para que los datos se transiciones desde la clase de almacenamiento _Standard_ a otras clases de almacenamiento después de un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
+Cuando configuras la organización en niveles de los datos en GCP, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el sentido de que la transición de los datos de la clase de almacenamiento _Standard_ a otras clases de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
 
 * Nearline
 * Coldline
@@ -29,7 +29,7 @@ Cuando configura la organización en niveles de datos en GCP, Cloud Tiering util
 
 Si no selecciona otra clase de almacenamiento, los datos permanecerán en la clase de almacenamiento _Standard_ y no se aplicarán reglas.
 
-Cuando configura una regla del ciclo de vida de Cloud Tiering, no debe configurar ninguna regla del ciclo de vida al configurar el bloque en su cuenta de Google.
+Al configurar una regla de ciclo de vida de organización en niveles de BlueXP, no debes configurar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de Google.
 
 https://cloud.google.com/storage/docs/storage-classes["Obtenga información sobre las clases de Google Cloud Storage"^].
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Obtenga información sobr
 
 == Regiones compatibles de Google Cloud
 
-Cloud Tiering admite las siguientes regiones.
+La organización en niveles de BlueXP admite las siguientes regiones.
 
 
 

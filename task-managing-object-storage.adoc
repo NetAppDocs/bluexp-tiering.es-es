@@ -20,7 +20,7 @@ Después de configurar los clústeres de ONTAP en las instalaciones para organiz
 
 == Ver almacenes de objetos configurados para un clúster de
 
-Puede que desee ver todos los almacenes de objetos que se han configurado para el clúster y a qué agregados están adjuntos. La organización en niveles de cloud proporciona esta información para cada clúster.
+Puede que desee ver todos los almacenes de objetos que se han configurado para el clúster y a qué agregados están adjuntos. La organización en niveles de BlueXP proporciona esta información para cada clúster.
 
 .Pasos
 . En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Información del almacén de objetos*.
@@ -56,7 +56,7 @@ Se iniciará el asistente para almacenes de objetos. El ejemplo siguiente muestr
 +
 Se requiere el prefijo _Fabric-pool_ porque la política IAM del conector permite a la instancia realizar acciones S3 en bloques denominados con ese prefijo exacto. Por ejemplo, se puede asignar un nombre al bloque de S3 _Fabric-pool-AFF1_, donde AFF1 es el nombre del clúster.
 
-.. *Ciclo de vida de clase de almacenamiento*: La organización en niveles en la nube gestiona las transiciones del ciclo de vida de sus datos organizados por niveles. Los datos se inician en la clase _Standard_, pero puede crear una regla para mover los datos a otra clase después de un determinado número de días.
+.. * Ciclo de vida de la clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos escalonados. Los datos se inician en la clase _Standard_, pero puede crear una regla para mover los datos a otra clase después de un determinado número de días.
 +
 Seleccione la clase de almacenamiento S3 a la que desea transferir los datos organizados por niveles y el número de días antes de que se muevan los datos y haga clic en *continuar*. Por ejemplo, la siguiente captura de pantalla muestra que los datos organizados en niveles se mueven de la clase _Standard_ a la clase _Standard-IA_ después de 45 días en el almacenamiento de objetos.
 
@@ -75,7 +75,7 @@ El usuario IAM debe estar en la misma cuenta de AWS que el bloque que ha selecci
 
 .. *Red de clúster*: Seleccione el espacio IP que ONTAP debe utilizar para conectarse al almacenamiento de objetos y haga clic en *continuar*.
 +
-Al seleccionar el espacio IP correcto, se garantiza que Cloud Tiering pueda configurar una conexión entre ONTAP y el almacenamiento de objetos de su proveedor de cloud.
+Al seleccionar el espacio IP correcto se garantiza que la organización en niveles de BlueXP pueda configurar una conexión desde ONTAP al almacenamiento de objetos del proveedor de cloud.
 
 
 
@@ -156,7 +156,7 @@ NOTE: Al quitar el almacén de objetos de réplica de una configuración MetroCl
 
 == Migración de datos organizados por niveles a un proveedor de cloud diferente
 
-La organización en niveles de cloud le permite migrar fácilmente sus datos por niveles a otro proveedor de cloud. Por ejemplo, si desea pasar de Amazon S3 a Azure Blob, puede seguir los pasos enumerados anteriormente en este orden:
+La organización en niveles de BlueXP te permite migrar con facilidad los datos organizados en niveles a otro proveedor de cloud. Por ejemplo, si desea pasar de Amazon S3 a Azure Blob, puede seguir los pasos enumerados anteriormente en este orden:
 
 . Añada un almacén de objetos de Azure Blob.
 . Asocie este nuevo almacén de objetos como reflejo del agregado existente.

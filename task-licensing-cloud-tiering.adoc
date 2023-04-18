@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
 keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
-summary: Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura la organización en niveles desde su primer clúster. Cuando finalice la prueba gratuita, tendrá que pagar por Cloud Tiering mediante un pago por uso o una suscripción anual al mercado de su proveedor de cloud, una licencia de BYOL de NetApp o una combinación de ambos. 
+summary: Una prueba gratuita de 30 días de la organización en niveles de BlueXP comienza cuando configuras la organización en niveles desde el primer clúster. Cuando finalice la prueba gratuita, tendrás que pagar la organización en niveles de BlueXP mediante una suscripción de pago por uso o anual desde el mercado de tu proveedor de cloud, una licencia BYOL de NetApp o una combinación de ambas opciones. 
 ---
-= Configure las licencias para Cloud Tiering
+= Configura las licencias para la organización en niveles de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,28 @@ summary: Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se co
 
 
 [role="lead"]
-Una prueba gratuita de 30 días de Cloud Tiering se inicia cuando se configura la organización en niveles desde su primer clúster. Cuando finalice la prueba gratuita, tendrá que pagar por Cloud Tiering mediante un pago por uso o una suscripción anual al mercado de su proveedor de cloud, una licencia de BYOL de NetApp o una combinación de ambos.
+Una prueba gratuita de 30 días de la organización en niveles de BlueXP comienza cuando configuras la organización en niveles desde el primer clúster. Cuando finalice la prueba gratuita, tendrás que pagar la organización en niveles de BlueXP mediante una suscripción de pago por uso o anual desde el mercado de tu proveedor de cloud, una licencia BYOL de NetApp o una combinación de ambas opciones.
 
 Antes de leer más:
 
-* Si ya está suscrito al mercado de su proveedor de cloud a la suscripción de BlueXP (PAYGO), entonces también está suscrito automáticamente a Cloud Tiering para sistemas ONTAP en las instalaciones. Verá una suscripción activa en la pestaña Cloud Tiering *On-prem Dashboard*. No tendrá que volver a suscribirse. Verá una suscripción activa en Digital Wallet.
-* La licencia de almacenamiento por niveles en cloud BYOL es una licencia flotante que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. Esto es diferente (y mucho más sencillo) que en el pasado en el que se adquirió una licencia _FabricPool_ para cada clúster.
+* Si ya te has suscrito a la suscripción de BlueXP (PAYGO) en el mercado de tu proveedor de nube, también te suscribirás automáticamente a la organización en niveles de BlueXP para sistemas ONTAP on-premises. Verás una suscripción activa en la pestaña *Consola en las instalaciones* de BlueXP Tiering. No tendrá que volver a suscribirse. Verá una suscripción activa en Digital Wallet.
+* La licencia BYOL BlueXP Tiering (anteriormente conocida como licencia de «Cloud Tiering») es una licencia _flotante_ que puedes utilizar en varios clústeres de ONTAP on-premises en tu cuenta de BlueXP. Esto es diferente (y mucho más sencillo) que en el pasado en el que se adquirió una licencia _FabricPool_ para cada clúster.
 * Los datos se ofrecen en niveles en StorageGRID sin ningún coste, por lo que no es necesario ni una licencia BYOL ni un registro PAYGO. Estos datos organizados en niveles no cuentan con la capacidad adquirida en su licencia.
 
 
-link:concept-cloud-tiering.html#pricing-and-licenses["Obtenga más información sobre cómo funciona la licencia para Cloud Tiering"].
+link:concept-cloud-tiering.html#pricing-and-licenses["Descubre cómo funciona la licencia para la organización en niveles de BlueXP"].
 
 
 
-== Utilice una suscripción a Cloud Tiering PAYGO
+== Utiliza una suscripción PAYGO en la organización en niveles de BlueXP
 
-Las suscripciones de pago por uso que se generan en el mercado de su proveedor de cloud le permiten utilizar sistemas Cloud Volumes ONTAP y muchos servicios de datos en el cloud, como Cloud Tiering.
+Las suscripciones de pago por uso desde el mercado de su proveedor de cloud permiten utilizar las licencias para usar los sistemas Cloud Volumes ONTAP y muchos servicios de datos de cloud, como la organización en niveles de BlueXP.
 
 
 
 === Suscribirse desde AWS Marketplace
 
-Suscríbase a Cloud Tiering desde AWS Marketplace para configurar una suscripción de pago por uso para organizar los datos en niveles desde clústeres de ONTAP a AWS S3.
+Suscríbete a la organización en niveles de BlueXP desde AWS Marketplace y configura una suscripción de pago por uso para la organización de los datos en niveles desde los clústeres de ONTAP a AWS S3.
 
 [[subscribe-aws]]
 .Pasos
@@ -53,7 +53,7 @@ video::video_subscribing_aws_tiering.mp4[width=848,height=480]
 
 === Suscribirse desde Azure Marketplace
 
-Suscríbase a Cloud Tiering desde Azure Marketplace para configurar una suscripción de pago por uso para organizar los datos en niveles desde clústeres de ONTAP al almacenamiento de Azure Blob.
+Suscríbete a la organización en niveles de BlueXP desde Azure Marketplace y configura una suscripción de pago por uso para la organización de datos en niveles desde los clústeres de ONTAP al almacenamiento de Azure Blob.
 
 [[subscribe-azure]]
 .Pasos
@@ -71,7 +71,7 @@ video::video_subscribing_azure_tiering.mp4[width=848,height=480]
 
 === Suscribirse desde el mercado de GCP
 
-Suscríbase a Cloud Tiering desde GCP Marketplace para establecer una suscripción de pago por uso para organizar los datos en niveles desde clústeres de ONTAP hasta el almacenamiento Google Cloud.
+Suscríbete a la organización en niveles de BlueXP desde GCP Marketplace y configura una suscripción de pago por uso para la organización de datos en niveles desde los clústeres de ONTAP al almacenamiento de Google Cloud.
 
 [[subscribe-gcp]]
 .Pasos
@@ -89,7 +89,7 @@ video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
 
 == Utilizar un contrato anual
 
-Pague por el almacenamiento en niveles en el cloud anualmente al comprar un contrato anual.
+Paga por la organización en niveles de BlueXP cada año comprando un contrato anual.
 
 Al organizar en niveles los datos inactivos en AWS, puede suscribirse a un contrato anual que esté disponible en https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace"^]. Está disponible en periodos de 1, 2 o 3 años.
 
@@ -99,34 +99,34 @@ Actualmente, no se admiten contratos anuales si la organización en niveles se r
 
 
 
-== Usar una licencia BYOL de Cloud Tiering
+== Utiliza una licencia BYOL (BYOL) de la organización en niveles de BlueXP
 
-Las licencias que traiga sus propias de NetApp proporcionan períodos de 1, 2 o 3 años. La licencia BYOL *Cloud Tiering* es una licencia _floating_ que puede utilizar en varios clústeres de ONTAP en las instalaciones de su cuenta de BlueXP. La capacidad total de organización en niveles definida en su licencia de Cloud Tiering se comparte entre *todos* de sus clústeres en las instalaciones, lo que facilita la renovación y la licencia iniciales.
+Las licencias que traiga sus propias de NetApp proporcionan períodos de 1, 2 o 3 años. La licencia BYOL *BlueXP Tiering* (antes conocida como licencia de «Cloud Tiering») es una licencia _flotante_ que puedes utilizar en varios clústeres de ONTAP on-premises de tu cuenta de BlueXP. La capacidad total de organización en niveles definida en tu licencia de organización en niveles de BlueXP se comparte entre *todos* de tus clústeres on-premises, por lo que la renovación y la licencia iniciales resultan muy sencillas.
 
-Si no dispone de una licencia de Cloud Tiering, póngase en contacto con nosotros para adquirir una:
+Si no tienes una licencia de organización en niveles de BlueXP, ponte en contacto con nosotros para comprar una:
 
 * Mailto:ng-cloud-tiering@netapp.com?Subject=Licensing[Enviar correo electrónico para adquirir una licencia].
 * Haga clic en el icono de chat situado en la parte inferior derecha de BlueXP para solicitar una licencia.
 
 
-Opcionalmente, si tiene una licencia basada en nodo sin asignar para Cloud Volumes ONTAP que no usará, puede convertirla en una licencia de Cloud Tiering con la misma equivalencia en dólares y la misma fecha de caducidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
+Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de organización en niveles de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
 
-La página de Digital Wallet de BlueXP se utiliza para gestionar las licencias BYOL de Cloud Tiering. Puede añadir licencias nuevas y actualizar las licencias existentes.
+Utilizarás la página Digital Wallet en BlueXP para gestionar las licencias de BYOL de la organización en niveles de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
 
 
-=== Nuevas licencias BYOL para Cloud Tiering a partir del 21 de agosto de 2021
+=== La organización en niveles de las licencias BYOL de BlueXP comenzará en 2021
 
-La nueva licencia *Cloud Tiering* se introdujo en agosto de 2021 para configuraciones de organización en niveles compatibles con BlueXP mediante el servicio Cloud Tiering. Actualmente, BlueXP admite la organización en niveles en el siguiente almacenamiento en cloud: Amazon S3, almacenamiento Azure Blob, Google Cloud Storage, StorageGRID de NetApp y almacenamiento de objetos compatible con S3.
+La nueva licencia *BlueXP Tiering* se introdujo en agosto de 2021 para configuraciones de organización en niveles compatibles con BlueXP mediante el servicio de organización en niveles de BlueXP. Actualmente, BlueXP admite la organización en niveles en el siguiente almacenamiento en cloud: Amazon S3, almacenamiento Azure Blob, Google Cloud Storage, StorageGRID de NetApp y almacenamiento de objetos compatible con S3.
 
 La licencia *FabricPool* que puede haber utilizado en el pasado para organizar los datos de ONTAP en las instalaciones en el cloud se conserva sólo para implementaciones de ONTAP en sitios que no tienen acceso a Internet (también conocidos como "sitios oscuros") y para configuraciones de organización en niveles en IBM Cloud Object Storage. Si utiliza este tipo de configuración, instalará una licencia de FabricPool en cada clúster mediante System Manager o la CLI de ONTAP.
 
 
-TIP: Tenga en cuenta que organizar en niveles en StorageGRID no requiere una licencia de FabricPool o Cloud Tiering.
+TIP: Ten en cuenta que la organización en niveles en StorageGRID no requiere una licencia de organización en niveles de FabricPool o BlueXP.
 
 Si utiliza actualmente la licencia de FabricPool, no se verá afectado hasta que la licencia de FabricPool alcance su fecha de vencimiento o la capacidad máxima. Póngase en contacto con NetApp cuando necesite actualizar su licencia o con versiones anteriores para asegurarse de que no se interrumpa su capacidad para organizar los datos en niveles en el cloud.
 
-* Si utiliza una configuración compatible con BlueXP, sus licencias de FabricPool se convertirán en licencias de Cloud Tiering y aparecerán en la cartera digital. Cuando esas licencias iniciales expiren, tendrá que actualizar las licencias de Cloud Tiering.
+* Si utilizas una configuración compatible con BlueXP, tus licencias de FabricPool se convertirán en licencias de organización en niveles de BlueXP y aparecerán en la cartera digital. Cuando esas licencias iniciales caduquen, deberás actualizar las licencias de organización en niveles de BlueXP.
 * Si está utilizando una configuración que no es compatible con BlueXP, continuará utilizando una licencia de FabricPool. https://docs.netapp.com/us-en/ontap/cloud-install-fabricpool-task.html["Vea cómo se lleva a cabo la organización en niveles de licencias con System Manager"^].
 
 
@@ -134,29 +134,29 @@ A continuación, se indican algunas cosas que debe saber sobre las dos licencias
 
 [cols="50,50"]
 |===
-| Licencia de Cloud Tiering | Licencia de FabricPool 
+| Licencia de organización en niveles de BlueXP | Licencia de FabricPool 
 
 
 | Se trata de una licencia _flotante_ que se puede utilizar en varios clústeres ONTAP de las instalaciones. | Se trata de una licencia por clúster que adquiere y licencia para _every_ cluster. 
 
 
-| Está registrado en BlueXP en la cartera digital. | Se aplica a clústeres individuales mediante System Manager o la CLI de ONTAP. 
+| Está registrada en BlueXP en Digital Wallet. | Se aplica a clústeres individuales mediante System Manager o la CLI de ONTAP. 
 
 
-| La configuración y gestión de niveles se llevan a cabo a través del servicio Cloud Tiering en BlueXP. | La configuración y la gestión por niveles se realizan mediante System Manager o la interfaz de línea de comandos de ONTAP. 
+| La configuración y la gestión de la organización en niveles se lleva a cabo a través del servicio de organización en niveles de BlueXP. | La configuración y la gestión por niveles se realizan mediante System Manager o la interfaz de línea de comandos de ONTAP. 
 
 
 | Una vez configurado, puede utilizar el servicio de organización en niveles sin una licencia durante 30 días con la prueba gratuita. | Una vez configurado, puede organizar los primeros 10 TB de datos de forma gratuita. 
 |===
 
 
-=== Obtenga su archivo de licencia de Cloud Tiering
+=== Obtén el archivo de licencia de la organización en niveles de BlueXP
 
-Después de adquirir la licencia de Cloud Tiering, activa la licencia en BlueXP introduciendo el número de serie de Cloud Tiering y la cuenta de NSS, o cargando el archivo de licencia de NLF. Los pasos a continuación muestran cómo obtener el archivo de licencia de NLF si planea utilizar ese método.
+Después de comprar la licencia de organización en niveles de BlueXP, activa la licencia en BlueXP introduciendo el número de serie y la cuenta de NSS de la organización en niveles de BlueXP o cargando el archivo de la licencia de NLF. Los pasos a continuación muestran cómo obtener el archivo de licencia de NLF si planea utilizar ese método.
 
 .Pasos
 . Inicie sesión en la https://mysupport.netapp.com["Sitio de soporte de NetApp"^] Y haga clic en *sistemas > licencias de software*.
-. Introduzca el número de serie de la licencia de Cloud Tiering.
+. Introduce el número de serie de la licencia de organización en niveles de BlueXP.
 +
 image:screenshot_cloud_tiering_license_step1.gif["Captura de pantalla que muestra una tabla de licencias después de buscar por número de serie."]
 
@@ -172,12 +172,12 @@ Puede encontrar su ID de cuenta de BlueXP seleccionando el menú desplegable *cu
 
 
 
-=== Añada licencias BYOL de Cloud Tiering a su cuenta
+=== Añade licencias BYOL de la organización en niveles de BlueXP a tu cuenta
 
-Después de adquirir una licencia de Cloud Tiering para su cuenta de BlueXP, debe agregar la licencia a BlueXP para utilizar el servicio Cloud Tiering.
+Después de comprar una licencia de organización en niveles de BlueXP para tu cuenta de BlueXP, tendrás que añadir la licencia a BlueXP para utilizar el servicio de organización en niveles de BlueXP.
 
 .Pasos
-. Haga clic en *Gobierno > cartera digital > licencias de servicios de datos*.
+. Haga clic en *Gobernanza > Cartera digital > Licencias de servicios de datos*.
 . Haga clic en *Agregar licencia*.
 . En el cuadro de diálogo _Add License_, introduzca la información de la licencia y haga clic en *Add License*:
 +
@@ -187,37 +187,37 @@ Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desp
 
 ** Si tiene el archivo de licencia de organización en niveles, seleccione la opción *cargar archivo de licencia* y siga las indicaciones para adjuntar el archivo.
 +
-image:screenshot_services_license_add.png["Una captura de pantalla que muestra la página para añadir la licencia BYOL de Cloud Tiering."]
+image:screenshot_services_license_add.png["Una captura de pantalla en la que se muestra la página para añadir la licencia BYOL de organización en niveles de BlueXP."]
 
 
 
 
 
 .Resultado
-BlueXP añade la licencia para que su servicio Cloud Tiering esté activo.
+BlueXP añade la licencia para que tu servicio de organización en niveles de BlueXP esté activo.
 
 
 
-=== Actualizar una licencia BYOL de Cloud Tiering
+=== Actualiza una licencia BYOL de la organización en niveles de BlueXP
 
-Si el término con licencia se acerca a la fecha de vencimiento o si la capacidad con licencia ha alcanzado el límite, se le notificará en Cloud Tiering.
+Si el plazo de la licencia se acerca a la fecha de caducidad o si la capacidad de la licencia está llegando al límite, se te notificará en la organización en niveles de BlueXP.
 
-image:screenshot_services_license_expire2.png["Una captura de pantalla que muestra una licencia que va a caducar en la página Cloud Tiering."]
+image:screenshot_services_license_expire2.png["Una captura de pantalla que muestra una licencia que va a caducar en la página de organización en niveles de BlueXP."]
 
 Este estado también aparece en la página cartera digital.
 
 image:screenshot_services_license_expire1.png["Una captura de pantalla que muestra una licencia que está a punto de caducar en la página de Digital Wallet."]
 
-Puede actualizar su licencia de Cloud Tiering antes de que caduque, para que no se interrumpa su capacidad para organizar los datos en niveles en el cloud.
+Puedes actualizar la licencia de la organización en niveles de BlueXP antes de que caduque para que no haya interrupción en la capacidad de organizar los datos en niveles en la nube.
 
 .Pasos
-. Haga clic en el icono de chat situado en la parte inferior derecha de BlueXP para solicitar una extensión de su término o capacidad adicional a su licencia de Cloud Tiering para el número de serie concreto.
+. Haz clic en el icono de chat en la parte inferior derecha de BlueXP para solicitar una extensión de tu término o capacidad adicional a la licencia de organización en niveles de BlueXP para el número de serie concreto.
 +
 Tras pagar la licencia y registrarse en el sitio de soporte de NetApp, BlueXP actualiza automáticamente la licencia en la cartera digital y la página licencias de servicios de datos reflejarán el cambio en 5 a 10 minutos.
 
 . Si BlueXP no puede actualizar automáticamente la licencia, deberá cargar manualmente el archivo de licencia.
 +
-.. Puede hacerlo <<Obtenga su archivo de licencia de Cloud Tiering,Obtenga el archivo de licencia del sitio de soporte de NetApp>>.
+.. Puede hacerlo <<Obtén el archivo de licencia de la organización en niveles de BlueXP,Obtenga el archivo de licencia del sitio de soporte de NetApp>>.
 .. En la página cartera digital de la ficha _Data Services Licenses_, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el número de serie del servicio que está actualizando y haga clic en *Actualizar licencia*.
 +
 image:screenshot_services_license_update.png["Captura de pantalla de la selección del botón Actualizar licencia de un servicio concreto."]
@@ -228,38 +228,38 @@ image:screenshot_services_license_update.png["Captura de pantalla de la selecci�
 
 
 .Resultado
-BlueXP actualiza la licencia para que su servicio Cloud Tiering siga activo.
+BlueXP actualiza la licencia para que tu servicio de organización en niveles de BlueXP siga estando activo.
 
 
 
-== Aplique licencias de Cloud Tiering en los clústeres que se encuentran en configuraciones especiales
+== Aplica las licencias de organización en niveles de BlueXP a los clústeres en configuraciones especiales
 
-Los clústeres de ONTAP en las siguientes configuraciones pueden usar licencias de organización en niveles de cloud, pero la licencia debe aplicarse de una forma diferente a la de los clústeres de un solo nodo, clústeres configurados de alta disponibilidad, clústeres en configuraciones de segmentación en mirroring y configuraciones de MetroCluster con FabricPool Mirror:
+Los clústeres de ONTAP en las siguientes configuraciones pueden usar licencias de organización en niveles de BlueXP, pero la licencia debe aplicarse de una forma diferente a la de los clústeres de un solo nodo, clústeres configurados con alta disponibilidad, clústeres en configuraciones de Tiering Mirror y configuraciones de MetroCluster con FabricPool Mirror:
 
 * Clústeres organizados en niveles en IBM Cloud Object Storage
-* Cluster que se instala en "sitios oscuros"
+* Clústeres instalados en «sitios oscuros»
 
 
 
 
 === Procese los clústeres existentes que tienen una licencia de FabricPool
 
-Cuando usted link:task-managing-tiering.html#discovering-additional-clusters-from-cloud-tiering["Descubra cualquiera de estos tipos especiales de clústeres en Cloud Tiering"], Cloud Tiering reconoce la licencia de FabricPool y añade la licencia a la cartera digital. Esos clústeres seguirán organizando en niveles los datos de la manera habitual. Cuando caduque la licencia de FabricPool, necesitará adquirir una licencia de Cloud Tiering.
+Cuando usted link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Descubre cualquiera de estos tipos de clúster especiales en la organización en niveles de BlueXP"], BlueXP tiering reconoce la licencia de FabricPool y la añade a la cartera digital. Esos clústeres seguirán organizando en niveles los datos de la manera habitual. Cuando la licencia de FabricPool caduque, necesitarás comprar una licencia de organización en niveles de BlueXP.
 
 
 
 === Proceso para los clústeres recién creados
 
-Cuando descubra clústeres típicos en Cloud Tiering, configurará la organización en niveles mediante la interfaz de Cloud Tiering. En estos casos, se realizan las siguientes acciones:
+Cuando detectes los clústeres típicos en la organización en niveles de BlueXP, configurarás la organización en niveles mediante la interfaz de organización en niveles de BlueXP. En estos casos, se realizan las siguientes acciones:
 
-. La licencia «principal» Cloud Tiering realiza un seguimiento de la capacidad que utilizan todos los clústeres para organizar en niveles con el fin de garantizar que la licencia contiene la capacidad suficiente. La capacidad total de la licencia y la fecha de vencimiento se muestran en la cartera digital.
+. La licencia «primaria» de organización en niveles de BlueXP realiza un seguimiento de la capacidad que están utilizando para organizar en niveles todos los clústeres con el fin de asegurarse de que haya suficiente capacidad en la licencia. La capacidad total de la licencia y la fecha de vencimiento se muestran en la cartera digital.
 . Se instala automáticamente una licencia de organización en niveles "secundaria" en cada clúster para comunicarse con la licencia "principal".
 
 
 
-NOTE: La capacidad con licencia y la fecha de vencimiento que se muestran en System Manager o en la interfaz de línea de comandos de ONTAP para la licencia "secundaria" no son la información real, por lo que no debe preocuparse si la información no es la misma. Este valor se gestiona internamente mediante el software Cloud Tiering. La información real se registra en la cartera digital.
+NOTE: La capacidad con licencia y la fecha de vencimiento que se muestran en System Manager o en la interfaz de línea de comandos de ONTAP para la licencia "secundaria" no son la información real, por lo que no debe preocuparse si la información no es la misma. El software de organización en niveles BlueXP gestiona estos valores internamente. La información real se registra en la cartera digital.
 
-Para las dos configuraciones enumeradas anteriormente, necesitará configurar la organización en niveles mediante System Manager o la interfaz de línea de comandos de ONTAP (no mediante la interfaz de organización en niveles en el cloud). En estos casos, deberás insertar manualmente la licencia "secundaria" en estos clústeres desde la interfaz de Cloud Tiering.
+Para las dos configuraciones enumeradas anteriormente, deberás configurar la organización en niveles mediante System Manager o la CLI de ONTAP (no mediante la interfaz de organización en niveles de BlueXP). Así que, en estos casos, tendrás que enviar la licencia «secundaria» a estos clústeres de forma manual desde la interfaz de organización en niveles de BlueXP.
 
 Tenga en cuenta que, dado que los datos se organizan en niveles en dos ubicaciones de almacenamiento de objetos diferentes para las configuraciones de segmentación de almacenamiento, deberá adquirir una licencia con capacidad suficiente para organizar los datos en niveles en ambas ubicaciones.
 
@@ -268,9 +268,9 @@ Tenga en cuenta que, dado que los datos se organizan en niveles en dos ubicacion
 +
 No configure la organización en niveles en este momento.
 
-. link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Adquiera una licencia de Cloud Tiering"] para la capacidad que se necesita para el nuevo clúster o los clústeres.
-. En BlueXP, link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Añada la licencia a la cartera digital"].
-. En organización en niveles del cloud, link:task-managing-tiering.html#discovering-additional-clusters-from-cloud-tiering["detectar los clústeres nuevos"].
+. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Compra una licencia de organización en niveles de BlueXP"] para la capacidad que se necesita para el nuevo clúster o los clústeres.
+. En BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añada la licencia a la cartera digital"].
+. En la organización en niveles de BlueXP, link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["detectar los clústeres nuevos"].
 . En la página Clusters, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el clúster y seleccione *desplegar licencia*.
 +
 image:screenshot_tiering_deploy_license.png["Una captura de pantalla que muestra cómo implementar una licencia por niveles en un clúster de ONTAP."]

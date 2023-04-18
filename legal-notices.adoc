@@ -48,5 +48,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/media/notice.pdf["Aviso para BlueXP"^]
-* link:media/notice_cloud_tiering.pdf["Cloud Tiering"^]
+* link:media/notice_cloud_tiering.pdf["Aviso para la organización en niveles de BlueXP"^]
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, tiering' 
-summary: Descubra las novedades de Cloud Tiering. 
+summary: Descubre las novedades en la organización en niveles de BlueXP. 
 ---
-= Novedades de Cloud Tiering
+= Novedades de la organización en niveles de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Descubra las novedades de Cloud Tiering.
 
 
 [role="lead"]
-Descubra las novedades de Cloud Tiering.
+Descubre las novedades en la organización en niveles de BlueXP.
 
 
 
@@ -24,7 +24,7 @@ Descubra las novedades de Cloud Tiering.
 
 === Se ha eliminado la pestaña de licencias
 
-La pestaña Licensing se ha eliminado de la interfaz de organización en niveles del cloud. Se accede a todas las licencias de suscripciones de pago por uso (PAYGO) desde la consola local de Cloud Tiering. También hay un enlace de esa página a la cartera digital para que pueda ver y gestionar cualquier Cloud Tiering con sus propias licencias (BYOL).
+La pestaña Licencias se ha eliminado de la interfaz de organización en niveles de BlueXP. Ahora se accede a todas las licencias de pago por uso (PAYGO) desde la consola en las instalaciones de BlueXP Tiering. También hay un enlace desde esa página a la cartera digital para que puedas ver y gestionar cualquier producto que traiga tus propias licencias (BYOL) en la organización en niveles de BlueXP.
 
 
 
@@ -40,7 +40,7 @@ La pestaña "Clusters Dashboard" se ha cambiado de nombre a "Clusters" y la pest
 
 === Ahora puede generar un informe de organización en niveles para sus volúmenes
 
-Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. Cloud Tiering genera un archivo .CSV que puede revisar y enviar a otras personas de su empresa según lo necesite. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Descubra cómo descargar el informe de organización en niveles"].
+Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otras personas de la empresa según sea necesario. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Descubra cómo descargar el informe de organización en niveles"].
 
 
 
@@ -50,7 +50,7 @@ Es posible descargar un informe en la página Tier Volumes para revisar el estad
 
 === Cambios de extremo de acceso saliente a Internet del conector
 
-Debido a un cambio en la organización en niveles del cloud, debe cambiar los siguientes extremos de conector para que la operación de organización en niveles del cloud se realice correctamente:
+Debido a un cambio en la organización en niveles de BlueXP, tienes que cambiar los siguientes extremos de conector para que las operaciones de organización en niveles de BlueXP se realicen correctamente:
 
 [cols="50,50"]
 |===
@@ -70,7 +70,7 @@ Vea la lista completa de puntos finales de la https://docs.netapp.com/us-en/clou
 
 
 
-=== Arrastre y suelte para habilitar Cloud Tiering en Azure Blob, Google Cloud Storage y StorageGRID
+=== Arrastra y suelta para permitir la organización en niveles de BlueXP en Azure Blob, Google Cloud Storage y StorageGRID
 
 Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.
 
@@ -88,7 +88,7 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 
 
 
-=== Arrastre y suelte para habilitar Cloud Tiering en Amazon S3
+=== Arrastre y suelte para habilitar la organización en niveles de BlueXP en Amazon S3
 
 Si el destino de organización en niveles de Amazon S3 existe como entorno de trabajo en Canvas, puede arrastrar el entorno de trabajo de ONTAP local al destino para iniciar el asistente de configuración de organización en niveles.
 
@@ -112,7 +112,7 @@ La interfaz de usuario de organización en niveles en el cloud ha añadido un nu
 
 === Compatibilidad con licencias de Cloud Tiering para configuraciones de MetroCluster
 
-Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de MetroCluster. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
+Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de MetroCluster. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
 
 
 
@@ -122,7 +122,7 @@ Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que 
 
 === Compatibilidad con licencias de Cloud Tiering para configuraciones de clúster adicionales
 
-Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de Tiering Mirror (no incluidas las configuraciones de MetroCluster) y con clústeres organizados en niveles en IBM Cloud Object Storage. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
+Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de Tiering Mirror (no incluidas las configuraciones de MetroCluster) y con clústeres organizados en niveles en IBM Cloud Object Storage. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
 
 
 

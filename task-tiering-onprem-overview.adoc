@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-overview.html 
 keywords: overview, tiering overview, tiered clusters, clusters enabled for tiering, data tiering overview, cold data, hot data, tiered data, savings, savings opportunities, saving opportunity, policies, cold snapshots, all dp user data, cold user data & snapshots, cold user data and snapshots, all user data, no policy, marketplace subscriptions, clusters associated 
-summary: La organización en niveles del cloud proporciona una visión global de la organización en niveles de los datos desde cada uno de los clústeres locales. Esta descripción general proporciona una visión clara de su entorno y le permite tomar las acciones adecuadas. 
+summary: La organización en niveles de BlueXP ofrece una vista agregada de la organización de datos en niveles desde cada uno de los clústeres on-premises. Esta descripción general proporciona una visión clara de su entorno y le permite tomar las acciones adecuadas. 
 ---
 = Obtenga información general sobre la organización en niveles de los datos en los clústeres
 :toc: macro
@@ -17,9 +17,9 @@ summary: La organización en niveles del cloud proporciona una visión global de
 
 
 [role="lead"]
-La organización en niveles del cloud proporciona una visión global de la organización en niveles de los datos desde cada uno de los clústeres locales. Esta descripción general proporciona una visión clara de su entorno y le permite tomar las acciones adecuadas.
+La organización en niveles de BlueXP ofrece una vista agregada de la organización de datos en niveles desde cada uno de los clústeres on-premises. Esta descripción general proporciona una visión clara de su entorno y le permite tomar las acciones adecuadas.
 
-Sólo tiene que hacer clic en *Tiering > On-Prem Dashboard*. El almacenamiento en niveles de cloud proporciona los siguientes detalles sobre su entorno.
+Sólo tiene que hacer clic en *Tiering > On-Prem Dashboard*. La organización en niveles de BlueXP ofrece los siguientes detalles sobre tu entorno.
 
 image:screenshot_tiering_onprem_dashboard.png["Captura de pantalla de la página del panel local."]
 

@@ -4,7 +4,7 @@ permalink: faq-cloud-tiering.html
 keywords: faq, questions, requirements, service connector, object store, object storage, aws, azure, bucket, cluster, aggregate, s3, storage class, standard, inactive data reporting, auto, volume tiering policy, policy, tiering policy, snapshot, cold, inactive, infrequent 
 summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
 ---
-= Preguntas técnicas frecuentes sobre la organización en niveles del cloud
+= Preguntas técnicas frecuentes sobre la organización en niveles de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,15 +18,15 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
-== Servicio de organización en niveles de cloud
+== Servicio de organización en niveles de BlueXP
 
-Las siguientes preguntas frecuentes hacen referencia al funcionamiento de Cloud Tiering.
+Las siguientes preguntas frecuentes hacen referencia al funcionamiento de la organización en niveles de BlueXP.
 
 
 
-=== ¿Cuáles son las ventajas de usar el servicio de organización en niveles del cloud?
+=== ¿Cuáles son las ventajas de utilizar el servicio de organización en niveles de BlueXP?
 
-La organización en niveles de cloud ofrece respuesta a los retos que conlleva un rápido crecimiento de datos, y ofrece ventajas como:
+La organización en niveles de BlueXP aborda los retos que conlleva un rápido crecimiento de los datos y proporciona ventajas como:
 
 * Extensión sencilla del centro de datos al cloud, proporcionando hasta 50 veces más espacio
 * Optimización del almacenamiento, lo que proporciona un ahorro medio en almacenamiento del 70%
@@ -54,15 +54,15 @@ La definición de lo que también se puede hacer referencia a los datos inactivo
 
 
 
-=== ¿Mantendrá el almacenamiento por niveles el cloud mis ahorros de eficiencia del almacenamiento en el nivel de cloud?
+=== ¿La organización en niveles de BlueXP mantendrá mis ahorros de eficiencia del almacenamiento en el nivel de cloud?
 
 Sí, las eficiencias del almacenamiento en el nivel de volumen de ONTAP, como la compresión, la deduplicación y la compactación, se conservan cuando se mueven los datos al nivel de cloud.
 
 
 
-=== ¿Cuál es la diferencia entre FabricPool y Cloud Tiering?
+=== ¿Cuál es la diferencia entre la organización en niveles de FabricPool y BlueXP?
 
-FabricPool es la tecnología de organización en niveles de ONTAP que se puede gestionar automáticamente a través de la interfaz de línea de comandos de ONTAP y System Manager, o bien gestionar como servicio mediante Cloud Tiering. Cloud Tiering convierte a FabricPool en un servicio gestionado con procesos de automatización avanzados, tanto en ONTAP como en el cloud, lo que proporciona una mayor visibilidad y control sobre la organización en niveles en puestas en marcha híbridas y de múltiples clouds.
+FabricPool es la tecnología de organización en niveles de ONTAP, que se puede gestionar automáticamente a través de CLI y System Manager de ONTAP, o bien gestionarse como servicio a través de la organización en niveles de BlueXP. La organización en niveles de BlueXP convierte a FabricPool en un servicio gestionado con procesos de automatización avanzados, tanto en ONTAP como en la nube, lo que proporciona mayor visibilidad y control sobre la organización en niveles en puestas en marcha híbridas y multinube.
 
 
 
@@ -70,31 +70,31 @@ FabricPool es la tecnología de organización en niveles de ONTAP que se puede g
 
 No Dado que los metadatos del volumen nunca se organizan en niveles desde el nivel de rendimiento, no se puede acceder directamente a los datos almacenados en el almacenamiento de objetos.
 
-Sin embargo, Cloud Tiering puede utilizarse para lograr un backup y una recuperación ante desastres rentables, ya que se pueden habilitar en sistemas secundarios y volúmenes de destino de SnapMirror (volúmenes DP) para almacenar por niveles todos los datos (metadatos excluidos) y reducir así el espacio del centro de datos y el coste total de propiedad.
+Sin embargo, la organización en niveles de BlueXP se puede utilizar para conseguir un backup y una recuperación de desastres rentables habilitándolo en sistemas secundarios y en volúmenes de destino de SnapMirror (volúmenes de DP), para organizar en niveles todos los datos (metadatos excluidos) y, por lo tanto, reducir la huella del centro de datos y el TCO.
 
 
 
-=== ¿La organización en niveles del cloud se aplica a nivel de volumen o agregado?
+=== ¿La organización en niveles de BlueXP se aplica a nivel de volumen o agregado?
 
-La organización en niveles de cloud se habilita en el nivel de volumen, pues se asocia una política de organización en niveles con cada volumen. La identificación de datos inactivos se realiza a nivel de bloque.
+La organización en niveles de BlueXP se habilita en el nivel de volumen al asociar una política de organización en niveles con cada volumen. La identificación de datos inactivos se realiza a nivel de bloque.
 
 
 
-=== ¿Cómo determina Cloud Tiering qué bloques se van a organizar en niveles en el cloud?
+=== ¿Cómo determina la organización en niveles de BlueXP qué bloques hay que organizar en niveles en el cloud?
 
 La política de organización en niveles asociada con el volumen es el mecanismo que controla qué bloques se organizan en niveles y cuándo. La política define el tipo de bloques de datos (snapshots, datos de usuarios o ambos) y el período de refrigeración. Consulte link:concept-cloud-tiering.html#volume-tiering-policies["Políticas de organización en niveles del volumen"] para obtener más detalles.
 
 
 
-=== ¿Cómo afecta la organización en niveles de cloud a la capacidad de volumen?
+=== ¿Cómo afecta la organización en niveles de BlueXP a la capacidad de volúmenes?
 
-La organización en niveles del cloud no afecta a la capacidad del volumen, sino más bien al uso del nivel de rendimiento del agregado.
+La organización en niveles de BlueXP no afecta a la capacidad del volumen, sino al uso de nivel de rendimiento del agregado.
 
 
 
-=== ¿La organización por niveles del cloud habilita los informes de datos inactivos?
+=== ¿La organización en niveles de BlueXP permite la generación de informes de datos inactivos?
 
-Sí, Cloud Tiering permite la generación de informes de datos inactivos (IDR) en cada agregado. Este ajuste nos permite identificar la cantidad de datos inactivos que se pueden organizar en niveles en almacenamiento de objetos de bajo coste.
+Sí, la organización en niveles de BlueXP habilita la generación de informes de datos inactivos (IDR) en cada agregado. Este ajuste nos permite identificar la cantidad de datos inactivos que se pueden organizar en niveles en almacenamiento de objetos de bajo coste.
 
 
 
@@ -106,11 +106,11 @@ IDR comienza a mostrar información una vez transcurrido el período de enfriami
 
 == Licencias y costes
 
-Las siguientes preguntas frecuentes hacen referencia a las licencias y los costes de uso de Cloud Tiering.
+Las siguientes preguntas frecuentes están relacionadas con las licencias y los costes para usar la organización en niveles de BlueXP.
 
 
 
-=== ¿Cuánto cuesta usar la organización en niveles de cloud?
+=== ¿Cuánto cuesta usar la organización en niveles de BlueXP?
 
 Cuando organización en niveles de datos fríos en un cloud público:
 
@@ -126,7 +126,7 @@ Cuando se organiza la organización en niveles de los datos fríos en un sistema
 
 === ¿Puedo tener una licencia BYOL y PAYGO para el mismo clúster de ONTAP?
 
-Sí. Cloud Tiering le permite usar una licencia BYOL, una suscripción PAYGO o una combinación de ambos.
+Sí. La organización en niveles de BlueXP te permite usar una licencia BYOL, una suscripción PAYGO o una combinación de ambas opciones.
 
 
 
@@ -138,7 +138,7 @@ Sin embargo, si tiene una suscripción al mercado de PAYGO a _BlueXP - Deploy & 
 
 
 
-=== ¿La licencia de Cloud Tiering incluye las tarifas de salida del proveedor de cloud?
+=== ¿La licencia de organización en niveles de BlueXP incluye los cargos por salida del proveedor de cloud?
 
 No, no lo hace.
 
@@ -150,7 +150,7 @@ Sí. Todas las lecturas del cloud público están sujetas a tarifas de salida.
 
 
 
-=== ¿Cómo puedo calcular los cargos que cobra el cloud? ¿Existe un modo de “qué sucede si” para la organización en niveles de cloud?
+=== ¿Cómo puedo calcular los cargos que cobra el cloud? ¿Hay un modo «qué sucede si» para la organización en niveles de BlueXP?
 
 La mejor forma de estimar cuánto cobrará un proveedor de cloud por alojar sus datos es utilizar sus calculadoras: https://calculator.aws/#/["AWS"], https://azure.microsoft.com/en-us/pricing/calculator/["Azure"] y.. https://cloud.google.com/products/calculator["Google Cloud"].
 
@@ -162,9 +162,9 @@ Sí. Comprobar https://aws.amazon.com/s3/pricing/["Precios de Amazon S3"], https
 
 
 
-=== ¿Cómo puedo calcular el ahorro que han obtenido mis volúmenes y obtener un informe de datos inactivos antes de habilitar Cloud Tiering?
+=== ¿Cómo puedo estimar el ahorro que ahorran mis volúmenes y obtener un informe de datos fríos antes de habilitar la organización en niveles de BlueXP?
 
-Para obtener una estimación, solo tienes que añadir tu clúster ONTAP a BlueXP e inspeccionarlo a través de la página Clusters de Cloud Tiering. Haga clic en *Calcular posibles ahorros de niveles* para que el clúster inicie el https://bluexp.netapp.com/cloud-tiering-service-tco["Calculadora de TCO de Cloud Tiering"^] para ver cuánto dinero puede ahorrar.
+Para obtener una estimación, solo tienes que añadir tu clúster ONTAP a BlueXP e inspeccionarlo a través de la página Clusters de organización en niveles de BlueXP. Haga clic en *Calcular posibles ahorros de niveles* para que el clúster inicie el https://bluexp.netapp.com/cloud-tiering-service-tco["Calculadora de TCO con organización en niveles de BlueXP"^] para ver cuánto dinero puede ahorrar.
 
 
 
@@ -174,15 +174,15 @@ Las siguientes preguntas hacen referencia a ONTAP.
 
 
 
-=== ¿Qué versiones de ONTAP es compatible con Cloud Tiering?
+=== ¿Qué versiones de ONTAP son compatibles con la organización en niveles de BlueXP?
 
-Cloud Tiering admite ONTAP 9.2 y versiones posteriores.
+La organización en niveles de BlueXP es compatible con ONTAP 9,2 y posteriores.
 
 
 
 === ¿Qué tipos de sistemas ONTAP son compatibles?
 
-Cloud Tiering es compatible con clústeres de un único nodo y de alta disponibilidad de AFF, FAS y ONTAP Select. También se admiten los clústeres de las configuraciones de FabricPool Mirror y las configuraciones de MetroCluster.
+La organización en niveles de BlueXP es compatible con clústeres de AFF, FAS y ONTAP Select de un solo nodo y alta disponibilidad. También se admiten los clústeres de las configuraciones de FabricPool Mirror y las configuraciones de MetroCluster.
 
 
 
@@ -194,13 +194,13 @@ Sí, desde ONTAP 9.8 puede organizar los datos en niveles de los volúmenes aloj
 
 === ¿Puedo organizar los datos en niveles desde un AFF Unido a un clúster que tiene nodos FAS con HDD?
 
-Sí. El nivel de cloud puede configurarse para organizar los volúmenes alojados en cualquier agregado. La configuración de organización en niveles de los datos es irrelevante para el tipo de controladora que se utiliza y si el clúster es heterogéneo o no.
+Sí. La organización en niveles de BlueXP se puede configurar para organizar en niveles los volúmenes que estén alojados en cualquier agregado. La configuración de organización en niveles de los datos es irrelevante para el tipo de controladora que se utiliza y si el clúster es heterogéneo o no.
 
 
 
 === ¿y Cloud Volumes ONTAP?
 
-Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Cloud Tiering Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. No se puede configurar la organización en niveles de datos en Cloud Volumes ONTAP desde la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
+Si tienes sistemas de Cloud Volumes ONTAP, encontrarás todos ellos en la página Clusters de organización en niveles de BlueXP para que obtengas una vista completa de la organización en niveles de los datos en tu infraestructura de nube híbrida. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura desde la organización en niveles de BlueXP. No puedes configurar la organización en niveles de los datos en Cloud Volumes ONTAP desde la organización en niveles de BlueXP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
 
 
 
@@ -225,7 +225,7 @@ Las siguientes preguntas están relacionadas con el almacenamiento de objetos.
 
 === ¿Qué proveedores de almacenamiento de objetos son compatibles?
 
-Cloud Tiering admite los siguientes proveedores de almacenamiento de objetos:
+La organización en niveles de BlueXP admite los siguientes proveedores de almacenamiento de objetos:
 
 * Amazon S3
 * Microsoft Azure Blob
@@ -254,17 +254,17 @@ Sí, puedes. Cuando configura la organización en niveles de datos, tiene la opc
 
 === ¿Qué clases de almacenamiento S3 son compatibles?
 
-La organización en niveles de la nube admite la organización en niveles de datos en las clases de almacenamiento _Standard_, _Standard-Infrecuente Access_, _One Zone-Infrecuente Access_, _Intelligent Tiering_ y _Glacier Instant Retrieval_. Consulte link:reference-aws-support.html["Clases de almacenamiento S3 compatibles"] para obtener más detalles.
+La organización en niveles de BlueXP admite la organización de los datos en las clases de almacenamiento _Standard_, _Standard-infrequent Access_, _Intelligent Tiering_ y _Glacier Instant Retrieval_. Consulte link:reference-aws-support.html["Clases de almacenamiento S3 compatibles"] para obtener más detalles.
 
 
 
-=== ¿Por qué la organización en niveles del cloud no es compatible con la solución flexible y la archivo profundo de S3 Glacier?
+=== ¿Por qué la organización en niveles de BlueXP no son compatibles con Amazon S3 Glacier flexible y S3 Glacier Deep Archive?
 
-El motivo principal por el que Amazon S3 Glacier flexible y S3 Glacier Deep Archive no son compatibles es que Cloud Tiering está diseñado como una solución de organización en niveles de alto rendimiento, de forma que los datos deben estar disponibles de forma continua y ser accesibles rápidamente para su recuperación. Con S3 Glacier flexible y S3 Glacier Deep Archive, la recuperación de datos puede durar entre unos pocos minutos y 48 horas.
+El principal motivo por el que Amazon S3 Glacier Flexible y S3 Glacier Deep Archive no son compatibles es que la organización en niveles de BlueXP está diseñada como una solución de organización en niveles de alto rendimiento, por lo que los datos deben estar siempre disponibles y ser accesibles rápidamente para su recuperación. Con S3 Glacier flexible y S3 Glacier Deep Archive, la recuperación de datos puede durar entre unos pocos minutos y 48 horas.
 
 
 
-=== ¿Puedo usar otros servicios de almacenamiento de objetos compatibles con S3, como Minio, con Cloud Tiering?
+=== ¿Puedo utilizar otros servicios de almacenamiento de objetos compatibles con S3, como MinIO, con la organización en niveles de BlueXP?
 
 Sí, la configuración de un almacenamiento de objetos compatible con S3 a través de la interfaz de usuario de organización en niveles es compatible con los clústeres que utilizan ONTAP 9.8 y versiones posteriores. link:task-tiering-onprem-s3-compat.html["Consulte los detalles aquí"].
 
@@ -272,23 +272,23 @@ Sí, la configuración de un almacenamiento de objetos compatible con S3 a trav�
 
 === ¿Qué niveles de acceso de Azure Blob son compatibles?
 
-El cloud por niveles admite la organización en niveles de datos en los niveles de acceso _Hot_ o _Cool_ para los datos inactivos. Consulte link:reference-azure-support.html["Niveles de acceso de Azure Blob compatibles"] para obtener más detalles.
+La organización en niveles de BlueXP admite la organización de los datos en niveles de acceso _Hot_ o _Cool_ para los datos inactivos. Consulte link:reference-azure-support.html["Niveles de acceso de Azure Blob compatibles"] para obtener más detalles.
 
 
 
 === ¿Qué clases de almacenamiento son compatibles con Google Cloud Storage?
 
-Cloud Tiering admite la organización en niveles de los datos en las clases de almacenamiento _Standard_, _Nearline_, _Coldline_ y _Archive_. Consulte link:reference-google-support.html["Clases de almacenamiento compatibles con Google Cloud"] para obtener más detalles.
+La organización en niveles de BlueXP admite la organización de los datos en niveles en las clases de almacenamiento _Standard_, _Nearline_, _Coldline_ y _Archive_. Consulte link:reference-google-support.html["Clases de almacenamiento compatibles con Google Cloud"] para obtener más detalles.
 
 
 
-=== ¿Admite la organización en niveles el cloud el uso de políticas de gestión del ciclo de vida?
+=== ¿La organización en niveles de BlueXP admite el uso de políticas de gestión del ciclo de vida?
 
-Sí. Puede habilitar la gestión del ciclo de vida para que Cloud Tiering pase los datos del nivel de acceso/clase de almacenamiento predeterminado a un nivel más rentable tras un cierto número de días. La regla del ciclo de vida se aplica a todos los objetos del bloque seleccionado para el almacenamiento Amazon S3 y Google Cloud, y a todos los contenedores de la cuenta de almacenamiento seleccionada para Azure Blob.
+Sí. Puedes habilitar la gestión del ciclo de vida para que la organización en niveles de BlueXP haga la transición de los datos del nivel de acceso o clase de almacenamiento predeterminado a un nivel más rentable tras un determinado número de días. La regla del ciclo de vida se aplica a todos los objetos del bloque seleccionado para el almacenamiento Amazon S3 y Google Cloud, y a todos los contenedores de la cuenta de almacenamiento seleccionada para Azure Blob.
 
 
 
-=== ¿Cloud Tiering usa un almacén de objetos para todo el clúster o uno por agregado?
+=== ¿La organización en niveles de BlueXP utiliza un almacén de objetos para todo el clúster o uno por agregado?
 
 En una configuración típica hay un almacén de objetos para todo el clúster. A partir de agosto de 2022, puede utilizar la página *Configuración avanzada* para agregar almacenes de objetos adicionales para un clúster y, a continuación, asociar almacenes de objetos diferentes a agregados diferentes, o adjuntar 2 almacenes de objetos a un agregado para el mirroring.
 
@@ -346,7 +346,7 @@ Las siguientes preguntas se refieren al conector BlueXP.
 
 === ¿Qué es el conector?
 
-Connector es un software que se ejecuta en una instancia informática dentro de su cuenta cloud o en las instalaciones, que permite a BlueXP gestionar de forma segura los recursos cloud. Para utilizar el servicio Cloud Tiering, debe poner en marcha un conector.
+Connector es un software que se ejecuta en una instancia informática dentro de su cuenta cloud o en las instalaciones, que permite a BlueXP gestionar de forma segura los recursos cloud. Para utilizar el servicio de organización en niveles de BlueXP, debes poner en marcha un Connector.
 
 
 
@@ -366,7 +366,7 @@ Sí. El software Connector se puede descargar e instalar manualmente en un host 
 
 
 
-=== ¿Es necesaria una cuenta con un proveedor de servicios de cloud antes de usar Cloud Tiering?
+=== ¿Es necesario contar con una cuenta con un proveedor de servicios de cloud antes de utilizar la organización en niveles de BlueXP?
 
 Sí. Es necesario tener una cuenta para poder definir el almacenamiento de objetos que desea utilizar. Al configurar el conector en el cloud en un VPC o vnet, también se necesita una cuenta con un proveedor de almacenamiento en cloud.
 
@@ -463,7 +463,7 @@ Las siguientes preguntas se refieren a las redes y la seguridad.
 ONTAP lee y escribe datos en y desde el almacenamiento de objetos. El almacenamiento de objetos nunca se inicia, solo responde.
 
 * Para StorageGRID, el clúster ONTAP inicia una conexión HTTPS a través de un puerto especificado por el usuario a StorageGRID (el puerto se puede configurar durante la configuración del almacenamiento por niveles).
-* Un conector necesita una conexión HTTPS de salida a través del puerto 443 a los clústeres de ONTAP, al almacén de objetos y al servicio Cloud Tiering.
+* Un conector necesita una conexión HTTPS saliente a través del puerto 443 a los clústeres de ONTAP, al almacén de objetos y al servicio de organización en niveles de BlueXP.
 
 
 Para obtener información detallada, consulte:
@@ -479,7 +479,7 @@ Para obtener información detallada, consulte:
 
 === ¿Qué herramientas puedo utilizar para supervisar y crear informes con el fin de gestionar los datos inactivos almacenados en el cloud?
 
-Otra organización en niveles del cloud, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] y.. https://docs.netapp.com/us-en/active-iq/index.html["Asesor digital de Active IQ"^] se puede utilizar para la supervisión y la creación de informes.
+Aparte de la organización en niveles de BlueXP, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] y.. https://docs.netapp.com/us-en/active-iq/index.html["Asesor digital de Active IQ"^] se puede utilizar para la supervisión y la creación de informes.
 
 
 
@@ -497,7 +497,7 @@ La latencia de lectura de la tecnología FabricPool Tiering subyacente depende d
 
 === ¿Hay latencia cuando un usuario intenta acceder a los datos por niveles?
 
-Sí. Los niveles de cloud no pueden proporcionar la misma latencia que el nivel local, ya que la latencia depende de la conectividad. Para calcular la latencia y el rendimiento de un almacén de objetos, Cloud Tiering proporciona una prueba de rendimiento del cloud (basada en el generador de perfiles de almacén de objetos de ONTAP) que se puede usar una vez que se asocia el almacén de objetos y antes de configurar la organización en niveles.
+Sí. Los niveles de cloud no pueden proporcionar la misma latencia que el nivel local, ya que la latencia depende de la conectividad. Para estimar la latencia y el rendimiento de un almacén de objetos, la organización en niveles de BlueXP proporciona una prueba de rendimiento de cloud (basada en el generador de perfiles del almacén de objetos de ONTAP) que se puede utilizar una vez que se asocia el almacén de objetos y antes de configurar la organización en niveles.
 
 
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-cloud-tiering.html 
 keywords: cloud tiering, overview, conceptual, value, features, cost, charging, tiering policies, cooling period, fabricpool 
-summary: El servicio Cloud Tiering de NetApp amplía su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres ONTAP en las instalaciones al almacenamiento de objetos. Esto libera un valioso espacio en el clúster para más cargas de trabajo sin tener que realizar cambios en la capa de la aplicación. La organización en niveles del cloud puede reducir los costes en su centro de datos y le permite cambiar de un modelo de gastos de capital a uno operativo. 
+summary: El servicio de organización en niveles de BlueXP de NetApp amplía tu centro de datos a la nube al organizar en niveles automáticamente los datos inactivos desde los clústeres de ONTAP on-premises hasta el almacenamiento de objetos. Esto libera un valioso espacio en el clúster para más cargas de trabajo sin tener que realizar cambios en la capa de la aplicación. La organización en niveles de BlueXP puede reducir los costes de su centro de datos y le permite cambiar de un modelo de gastos de capital a un modelo OPEX. 
 ---
-= Más información acerca de Cloud Tiering
+= Más información sobre la organización en niveles de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: El servicio Cloud Tiering de NetApp amplía su centro de datos al cloud
 
 
 [role="lead"]
-El servicio Cloud Tiering de NetApp amplía su centro de datos al cloud organizando en niveles los datos inactivos de los clústeres ONTAP en las instalaciones al almacenamiento de objetos. Esto libera un valioso espacio en el clúster para más cargas de trabajo sin tener que realizar cambios en la capa de la aplicación. La organización en niveles del cloud puede reducir los costes en su centro de datos y le permite cambiar de un modelo de gastos de capital a uno operativo.
+El servicio de organización en niveles de BlueXP de NetApp amplía tu centro de datos a la nube al organizar en niveles automáticamente los datos inactivos desde los clústeres de ONTAP on-premises hasta el almacenamiento de objetos. Esto libera un valioso espacio en el clúster para más cargas de trabajo sin tener que realizar cambios en la capa de la aplicación. La organización en niveles de BlueXP puede reducir los costes de su centro de datos y le permite cambiar de un modelo de gastos de capital a un modelo OPEX.
 
-El servicio Cloud Tiering de BlueXP (anteriormente Cloud Manager) aprovecha las funcionalidades de _FabricPool_. FabricPool es una tecnología Data Fabric de NetApp que permite la organización en niveles automatizada de los datos en un almacenamiento de objetos de bajo coste. Los datos activos (activos) permanecen en el nivel local (agregados de ONTAP en las instalaciones), mientras que los datos inactivos (fríos) se mueven al nivel de cloud, todo ello conservando las eficiencias de los datos de ONTAP.
+El servicio de organización en niveles de BlueXP aprovecha las funcionalidades de _FabricPool_. FabricPool es una tecnología Data Fabric de NetApp que permite la organización en niveles automatizada de los datos en un almacenamiento de objetos de bajo coste. Los datos activos (activos) permanecen en el nivel local (agregados de ONTAP en las instalaciones), mientras que los datos inactivos (fríos) se mueven al nivel de cloud, todo ello conservando las eficiencias de los datos de ONTAP.
 
 Originalmente compatible con sistemas AFF, FAS y ONTAP Select con agregados íntegramente de SSD, a partir de ONTAP 9.8, puede organizar los datos en niveles de agregados compuestos por HDD además de SSD de alto rendimiento. Consulte https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["Las consideraciones y requisitos para usar FabricPool"^] para obtener más detalles.
 
-Cloud Tiering puede configurarse para clústeres de un solo nodo, clústeres configurados de alta disponibilidad, clústeres en configuraciones de Tiering Mirror y configuraciones de MetroCluster mediante FabricPool Mirror. Las licencias de organización en niveles en cloud se comparten entre todos los clústeres.
+La organización en niveles de BlueXP puede configurarse para clústeres de un solo nodo, clústeres configurados de alta disponibilidad, clústeres en configuraciones de Tiering Mirror y configuraciones de MetroCluster mediante FabricPool Mirror. Las licencias de organización en niveles de BlueXP se comparten entre todos tus clústeres.
 
-https://bluexp.netapp.com/cloud-tiering-service-tco["Utiliza la calculadora de TCO de Cloud Tiering para ver cuánto dinero puedes ahorrar"^].
+https://bluexp.netapp.com/cloud-tiering-service-tco["Utiliza la calculadora de TCO de la organización en niveles de BlueXP para ver cuánto dinero puedes ahorrar"^].
 
 
 
 == Funciones
 
-La organización en niveles del cloud ofrece automatización, supervisión, informes y una interfaz de gestión común:
+La organización en niveles de BlueXP ofrece automatización, supervisión, informes y una interfaz de gestión común:
 
 * Gracias a la automatización, resulta más sencillo configurar y gestionar los datos Organización en niveles desde clústeres de ONTAP en las instalaciones al cloud
 * Puede elegir el nivel de acceso/clase de almacenamiento predeterminado del proveedor de cloud o utilizar la gestión del ciclo de vida para mover los datos antiguos por niveles a un nivel más rentable
@@ -40,10 +40,10 @@ La organización en niveles del cloud ofrece automatización, supervisión, info
 * Si tiene sistemas Cloud Volumes ONTAP, los encontrará en la página Clusters para que obtenga una vista completa de la organización en niveles de los datos en su infraestructura de cloud híbrido
 
 
-Para obtener más información sobre el valor que ofrece Cloud Tiering, https://bluexp.netapp.com/cloud-tiering["Visite la página de Cloud Tiering en el sitio web de BlueXP"^].
+Para obtener más información sobre el valor que ofrece la organización en niveles de BlueXP, https://bluexp.netapp.com/cloud-tiering["Echa un vistazo a la página de organización en niveles de BlueXP en el sitio web de BlueXP"^].
 
 
-TIP: Los sistemas Cloud Volumes ONTAP son de solo lectura de la organización en niveles del cloud. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
+TIP: Los sistemas Cloud Volumes ONTAP son de solo lectura desde la organización en niveles de BlueXP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
 
 
 
@@ -58,7 +58,7 @@ Puede organizar los datos inactivos en niveles desde un sistema ONTAP en las ins
 * Almacenamiento de objetos compatible con S3 (por ejemplo, Minio)
 
 
-Las licencias de la organización en niveles del cloud también se pueden compartir con sus clústeres que están organizando los datos en niveles en el almacenamiento de objetos en cloud de IBM. La configuración de FabricPool debe configurarse mediante System Manager o la CLI de ONTAP, pero https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["La licencia de este tipo de configuración se completa mediante Cloud Tiering."]
+Las licencias de organización en niveles de BlueXP también se pueden compartir con tus clústeres que organizan los datos en niveles en IBM Cloud Object Storage. La configuración de FabricPool debe configurarse mediante System Manager o la CLI de ONTAP, pero link:task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["La licencia para este tipo de configuración se completa mediante la organización en niveles de BlueXP."]
 
 
 NOTE: Puede organizar los datos en niveles desde NAS Volumes en el cloud público o en clouds privados, como StorageGRID. En el caso de la organización en niveles de los datos a los que se accede mediante protocolos SAN, NetApp recomienda utilizar clouds privados debido a consideraciones de conectividad.
@@ -74,7 +74,7 @@ Los clústeres de ONTAP pueden organizar los datos inactivos en niveles en un ú
 * link:reference-google-support.html["Obtenga información sobre las clases de almacenamiento de Google Cloud admitidas"]
 
 
-La organización en niveles de cloud utiliza la clase de almacenamiento/nivel de acceso predeterminados de proveedor de cloud para sus datos inactivos. Sin embargo, puede aplicar una regla de ciclo de vida para que los datos se transiciones automáticamente de la clase de almacenamiento predeterminada a otra clase de almacenamiento después de un determinado número de días. Esto puede ayudarle a reducir los costes al mover datos inactivos a almacenamiento más económico.
+La organización en niveles de BlueXP utiliza el nivel de acceso/clase de almacenamiento predeterminados del proveedor de nube para tus datos inactivos. Sin embargo, puede aplicar una regla de ciclo de vida para que los datos se transiciones automáticamente de la clase de almacenamiento predeterminada a otra clase de almacenamiento después de un determinado número de días. Esto puede ayudarle a reducir los costes al mover datos inactivos a almacenamiento más económico.
 
 
 NOTE: No se pueden seleccionar reglas del ciclo de vida para datos organizados en niveles en sistemas StorageGRID o almacenamiento compatible con S3.
@@ -83,19 +83,19 @@ NOTE: No se pueden seleccionar reglas del ciclo de vida para datos organizados e
 
 == Precios y licencias
 
-Pague por Cloud Tiering mediante una suscripción de pago por uso, una suscripción anual, una licencia de Cloud Tiering propia o una combinación de esta. Hay una prueba gratuita de 30 días disponible para su primer clúster si no tiene una licencia.
+Paga la organización en niveles de BlueXP a través de una suscripción de pago por uso, una suscripción anual, una licencia «bring-your-own» de BlueXP o una combinación de esta. Hay una prueba gratuita de 30 días disponible para su primer clúster si no tiene una licencia.
 
 Al organizar los datos en niveles en StorageGRID, no hay ningún coste. No se requiere ni una licencia BYOL ni registro de PAYGO.
 
 https://bluexp.netapp.com/pricing#tiering["Ver detalles de precios"^].
 
-Como Cloud Tiering mantiene las eficiencias del almacenamiento del volumen de origen, paga los costes del almacenamiento de objetos del proveedor de cloud para los datos organizados en niveles después de las eficiencias del ONTAP (para la menor cantidad de datos una vez aplicada la deduplicación y la compresión).
+Como la organización en niveles de BlueXP preserva las eficiencias del almacenamiento del volumen de origen, usted paga los costes de almacenamiento de objetos del proveedor de cloud para los datos organizados en niveles después de las eficiencias de ONTAP (para la menor cantidad de datos después de que se haya aplicado la deduplicación y la compresión).
 
 
 
 === prueba gratuita de 30 días
 
-Si no tiene una licencia de Cloud Tiering, se inicia una prueba gratuita de 30 días de Cloud Tiering cuando se configura la organización en niveles en su primer clúster. Cuando finalice la prueba gratuita de 30 días, tendrá que pagar por Cloud Tiering mediante una suscripción de pago por uso, una suscripción anual, una licencia de BYOL o una combinación de estos.
+Si no tienes una licencia de organización en niveles de BlueXP, la prueba gratuita de 30 días de la organización en niveles de BlueXP comienza cuando configuras la organización en niveles en el primer clúster. Cuando finalice la prueba gratuita de 30 días, tendrás que pagar la organización en niveles de BlueXP mediante una suscripción de pago por uso, una suscripción anual, una licencia BYOL o una combinación de ellas.
 
 Si su prueba gratuita finaliza y no se ha suscrito o agregado una licencia, ONTAP ya no organiza los datos inactivos en niveles para el almacenamiento de objetos. Todos los datos previamente organizados en niveles siguen siendo accesibles; lo que significa que se pueden recuperar y utilizar estos datos. Cuando se recuperan, estos datos se mueven de nuevo al nivel de rendimiento del cloud.
 
@@ -103,7 +103,7 @@ Si su prueba gratuita finaliza y no se ha suscrito o agregado una licencia, ONTA
 
 === Suscripción de pago por uso
 
-Cloud Tiering ofrece licencias basadas en consumo en un modelo de pago por uso. Después de suscribirse a través del mercado de su proveedor de cloud, pagará por GB los datos organizados en niveles: No hay un pago por adelantado. Su proveedor de cloud se le factura con cargo mensual.
+La organización en niveles de BlueXP ofrece licencias basadas en el consumo en un modelo de pago por uso. Después de suscribirse a través del mercado de su proveedor de cloud, pagará por GB los datos organizados en niveles: No hay un pago por adelantado. Su proveedor de cloud se le factura con cargo mensual.
 
 Debe suscribirse aunque tenga una prueba gratuita o si lleva su propia licencia (BYOL):
 
@@ -117,15 +117,15 @@ Por ejemplo, si tiene una licencia de 10 TB, toda la capacidad que supere los 10
 
 
 
-No se le cobrará de su suscripción de pago por uso durante su prueba gratuita o si no ha superado su licencia de BYOL de Cloud Tiering.
+No se te cobrará mediante tu suscripción de pago por uso durante la prueba gratuita o si no has superado la licencia BYOL de organización en niveles de BlueXP.
 
-link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-paygo-subscription["Aprenda a configurar una suscripción de pago por uso"].
+link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-paygo-subscription["Aprenda a configurar una suscripción de pago por uso"].
 
 
 
 === Contrato anual
 
-Cloud Tiering ofrece un contrato anual cuando organiza en niveles los datos inactivos en Amazon S3. Está disponible en periodos de 1, 2 o 3 años.
+La organización en niveles de BlueXP ofrece un contrato anual al organizar en niveles los datos inactivos en Amazon S3. Está disponible en periodos de 1, 2 o 3 años.
 
 Actualmente, no se admiten contratos anuales si la organización en niveles se realiza en Azure o GCP.
 
@@ -133,26 +133,26 @@ Actualmente, no se admiten contratos anuales si la organización en niveles se r
 
 === Con su propia licencia
 
-Con su propia licencia adquiere una licencia de *Cloud Tiering* de NetApp. Puede comprar licencias de períodos de 1, 2 o 3 años y especificar la capacidad de organización en niveles que desee. La licencia de organización en niveles en cloud BYOL es una licencia flotante que se puede usar en varios clústeres de ONTAP en las instalaciones. La capacidad total de organización en niveles que define en su licencia de Cloud Tiering puede utilizarla todos sus clústeres en las instalaciones.
+Trae tu propia licencia al comprar una licencia *organización en niveles de BlueXP* de NetApp (anteriormente conocida como licencia de «Cloud Tiering»). Puede comprar licencias de períodos de 1, 2 o 3 años y especificar la capacidad de organización en niveles que desee. La licencia de organización en niveles BYOL BlueXP es una licencia _flotante_ que se puede utilizar en varios clústeres de ONTAP en las instalaciones. Todos los clústeres on-premises pueden utilizar la capacidad total de organización en niveles que definas en la licencia de organización en niveles de BlueXP.
 
-Después de adquirir una licencia de Cloud Tiering, necesitará utilizar la cartera digital en BlueXP para añadir la licencia. link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Descubra cómo usar una licencia BYOL de Cloud Tiering"].
+Después de comprar una licencia de organización en niveles de BlueXP, necesitarás utilizar la cartera digital de BlueXP para añadir la licencia. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Descubre cómo utilizar una licencia BYOL para la organización en niveles de BlueXP"].
 
 Como se ha indicado anteriormente, le recomendamos que establezca una suscripción de pago por uso, incluso si ha adquirido una licencia de BYOL.
 
 
-NOTE: A partir de agosto de 2021, la antigua licencia *FabricPool* fue sustituida por la licencia *Cloud Tiering*. link:task-licensing-cloud-tiering.html#new-cloud-tiering-byol-licensing-starting-august-21-2021["Obtenga más información acerca de cómo la licencia Cloud Tiering es diferente de la licencia de FabricPool"].
+NOTE: A partir de agosto de 2021, la antigua licencia *FabricPool* fue sustituida por la licencia *Cloud Tiering*. link:task-licensing-cloud-tiering.html#bluexp-tiering-byol-licensing-starting-in-2021["Obtén más información sobre cómo difiere la licencia de organización en niveles de BlueXP de la licencia de FabricPool"].
 
 
 
-== Funcionamiento de Cloud Tiering
+== Funcionamiento de la organización en niveles de BlueXP
 
-Cloud Tiering es un servicio gestionado por NetApp que utiliza tecnología de FabricPool para organizar automáticamente en niveles los datos inactivos (inactivos) de sus clústeres de ONTAP en las instalaciones en almacenamiento de objetos en su cloud público o en su cloud privado. Las conexiones a ONTAP se realizan desde un conector.
+La organización en niveles de BlueXP es un servicio gestionado por NetApp que utiliza la tecnología FabricPool para organizar automáticamente en niveles los datos inactivos (fríos) de tus clústeres de ONTAP en las instalaciones en un almacenamiento de objetos en tu nube pública o nube privada. Las conexiones a ONTAP se realizan desde un conector.
 
 La siguiente imagen muestra la relación entre cada componente:
 
-image:diagram_cloud_tiering.png["\"Una imagen de arquitectura que muestra el servicio Cloud Tiering con una conexión al conector de su proveedor de cloud, el conector con una conexión a su clúster de ONTAP y una conexión entre el clúster de ONTAP y el almacenamiento de objetos de su proveedor de cloud. Los datos activos residen en el clúster de ONTAP, mientras que los datos inactivos residen en el almacenamiento de objetos»."]
+image:diagram_cloud_tiering.png["Una imagen de arquitectura que muestra el servicio de organización en niveles de BlueXP con una conexión al conector en su proveedor de cloud, el conector con una conexión a su clúster de ONTAP y una conexión entre el clúster de ONTAP y el almacenamiento de objetos de su proveedor de cloud. Los datos activos residen en el clúster de ONTAP, mientras que los datos inactivos residen en el almacenamiento de objetos»."]
 
-En un nivel general, Cloud Tiering funciona como este:
+En general, la organización en niveles de BlueXP funciona así:
 
 . Descubre su clúster en las instalaciones desde BlueXP.
 . Para configurar la organización en niveles, debe proporcionar detalles sobre su almacenamiento de objetos, como el bloque/contenedor, una clase de almacenamiento o nivel de acceso, y las reglas de ciclo de vida de los datos organizados en niveles.
@@ -205,7 +205,7 @@ Tenga en cuenta lo siguiente antes de elegir esta política de organización en 
 +
 Dado que los datos se organizan en niveles de inmediato, SnapMirror lee los datos del nivel de cloud en lugar del nivel de rendimiento. Como resultado, las operaciones de SnapMirror serán más lentas, posiblemente ralentizarán otras operaciones de SnapMirror más adelante en la cola, aunque utilicen diferentes políticas de organización en niveles.
 
-* Cloud Backup se ve afectado de forma similar por los volúmenes establecidos con una política de organización en niveles. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Consulte las consideraciones sobre la política de organización en niveles con Cloud Backup"^].
+* Cloud Backup se ve afectado de forma similar por los volúmenes establecidos con una política de organización en niveles. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Consulta las consideraciones sobre las políticas de organización en niveles con el backup y la recuperación de BlueXP"^].
 
 
 --

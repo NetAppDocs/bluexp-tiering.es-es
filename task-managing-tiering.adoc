@@ -80,7 +80,7 @@ La política de organización en niveles se modifica y los datos comienzan a Tie
 
 == Descargue un informe de organización en niveles para los volúmenes
 
-Es posible descargar un informe de la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. Simplemente haga clic en el image:button_download.png["Descargue"] botón. Cloud Tiering genera un archivo .CSV que puede revisar y enviar a otros grupos según sea necesario. El archivo .CSV incluye hasta 10,000 filas de datos.
+Es posible descargar un informe de la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. Simplemente haga clic en el image:button_download.png["Descargue"] botón. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otros grupos según sea necesario. El archivo .CSV incluye hasta 10,000 filas de datos.
 
 image:screenshot_tiering_report_download.png["Una captura de pantalla que muestra cómo generar un archivo CSV en el que se enumera el estado de organización en niveles de todos los volúmenes."]
 
@@ -162,7 +162,7 @@ image:screenshot_tiering_modify_aggregate.png["Captura de pantalla que muestra u
 
 == Revisión de la información de organización en niveles de un clúster
 
-Puede que desee ver cuántos datos hay en el nivel de cloud y cuántos datos hay en los discos. O bien, puede que desee ver la cantidad de datos activos y inactivos en los discos del clúster. La organización en niveles de cloud proporciona esta información para cada clúster.
+Puede que desee ver cuántos datos hay en el nivel de cloud y cuántos datos hay en los discos. O bien, puede que desee ver la cantidad de datos activos y inactivos en los discos del clúster. La organización en niveles de BlueXP proporciona esta información para cada clúster.
 
 .Pasos
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
@@ -184,7 +184,7 @@ image:screenshot_tiering_aiq_fabricpool_info.png["Una captura de pantalla que mu
 
 == Reparación de la salud operativa
 
-Los fallos pueden producirse. Cuando lo hacen, Cloud Tiering muestra un estado de estado operativo que no se ha podido completar en la consola del clúster. La salud refleja el estado del sistema ONTAP y BlueXP.
+Los fallos pueden producirse. Cuando lo hacen, la organización en niveles de BlueXP muestra un estado operativo «Error» en la consola de clúster. La salud refleja el estado del sistema ONTAP y BlueXP.
 
 .Pasos
 . Identifique los clústeres con un estado operativo de "error".
@@ -192,21 +192,21 @@ Los fallos pueden producirse. Cuando lo hacen, Cloud Tiering muestra un estado d
 . Corrija el problema:
 +
 .. Compruebe que el clúster de ONTAP esté operativo y que tenga una conexión entrante y saliente con el proveedor de almacenamiento de objetos.
-.. Compruebe que BlueXP tiene conexiones salientes al servicio Cloud Tiering, al almacén de objetos y a los clústeres de ONTAP que detecta.
+.. Compruebe que BlueXP tenga conexiones salientes con el servicio de organización en niveles de BlueXP, con el almacén de objetos y con los clústeres de ONTAP que detecta.
 
 
 
 
 
 
-== Se han detectado clústeres adicionales de Cloud Tiering
+== Detecta clústeres adicionales de la organización en niveles de BlueXP
 
 Puede añadir sus clústeres de ONTAP en las instalaciones sin detectar a BlueXP desde la página Tiering _Cluster_ para que pueda habilitar la organización en niveles para el clúster.
 
 Tenga en cuenta que los botones también aparecen en la página Tiering _on-Prem Dashboard_ para que pueda detectar clústeres adicionales.
 
 .Pasos
-. En Cloud Tiering, haga clic en la pestaña *Clusters*.
+. Desde la organización en niveles de BlueXP, haz clic en la pestaña *Clusters*.
 . Para ver cualquier clúster no descubierto, haga clic en *Mostrar clústeres no detectados*.
 +
 image:screenshot_tiering_show_undiscovered_cluster.png["Una captura de pantalla que muestra el botón Mostrar clústeres sin detectar en el panel de organización en niveles."]

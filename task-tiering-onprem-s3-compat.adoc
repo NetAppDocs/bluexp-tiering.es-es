@@ -39,7 +39,7 @@ Necesita lo siguiente:
 * Un clúster ONTAP de origen en las instalaciones que ejecuta ONTAP 9.8 o posterior, y una conexión a través de un puerto especificado por el usuario al almacenamiento de objetos compatible con S3 de destino. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 * El FQDN, la clave de acceso y la clave secreta del servidor de almacenamiento de objetos para que el clúster ONTAP pueda acceder al bloque.
 * Un conector instalado en sus instalaciones.
-* Redes para el conector que permite una conexión HTTPS de salida al clúster de ONTAP de origen, al almacenamiento de objetos compatible con S3 y al servicio Cloud Tiering.
+* Conexión a redes para el conector que permite una conexión HTTPS saliente al clúster ONTAP de origen, al almacenamiento de objetos compatible con S3 y al servicio de organización en niveles de BlueXP.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Configure la organización en niveles
@@ -48,11 +48,11 @@ En BlueXP, seleccione un entorno de trabajo en las instalaciones, haga clic en *
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] Configurar la licencia
 [role="quick-margin-para"]
-Pague por niveles en el cloud mediante una suscripción de pago por uso de su proveedor de cloud, una organización en niveles en el cloud de NetApp que le aporte su propia licencia o una combinación de ambas:
+Paga la organización en niveles de BlueXP a través de una suscripción de pago por uso desde tu proveedor de nube, una organización en niveles de NetApp BlueXP para traer tu propia licencia o una combinación de ambas opciones:
 
 [role="quick-margin-list"]
 * Para suscribirse a la oferta de BlueXP PAYGO de la https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], o. https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^], Haga clic en *Suscribirse* y siga las indicaciones.
-* Para pagar con una licencia BYOL de Cloud Tiering, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[contactarnos si necesita adquirirla], y luego link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Agréguela a su cuenta desde la cartera digital BlueXP"].
+* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Agréguela a su cuenta desde la cartera digital BlueXP"].
 
 
 
@@ -63,7 +63,7 @@ Verifique la compatibilidad con su clúster de ONTAP, configure las redes y prep
 
 La siguiente imagen muestra cada componente y las conexiones que necesita preparar entre ellos:
 
-image:diagram_cloud_tiering_s3_compat.png["Una imagen de arquitectura que muestra el servicio Cloud Tiering con una conexión al conector en las instalaciones, el conector con una conexión al clúster de ONTAP y una conexión entre el clúster de ONTAP y el almacenamiento de objetos. Los datos activos residen en el clúster de ONTAP, mientras que los datos inactivos residen en el almacenamiento de objetos»."]
+image:diagram_cloud_tiering_s3_compat.png["Una imagen de arquitectura que muestra el servicio de organización en niveles de BlueXP con una conexión al conector en tus instalaciones, el conector con una conexión a tu clúster de ONTAP y una conexión entre el clúster de ONTAP y el almacenamiento de objetos. Los datos activos residen en el clúster de ONTAP, mientras que los datos inactivos residen en el almacenamiento de objetos»."]
 
 
 NOTE: La comunicación entre el conector y el servidor de almacenamiento de objetos compatible con S3 es únicamente para la configuración del almacenamiento de objetos.
@@ -86,20 +86,20 @@ El sistema ONTAP de origen lee y escribe datos en el almacenamiento de objetos y
 
 * Es necesaria una conexión de entrada desde el conector, que debe residir en sus instalaciones.
 +
-No se necesita una conexión entre el clúster y el servicio Cloud Tiering.
+No es necesaria una conexión entre el clúster y el servicio de organización en niveles de BlueXP.
 
 * Se requiere una LIF de interconexión de clústeres en cada nodo ONTAP en el que se alojan los volúmenes que se desean organizar. La LIF debe estar asociada al _IPspace_ que ONTAP debería utilizar para conectarse al almacenamiento de objetos.
 +
-Cuando configura la organización en niveles de datos, Cloud Tiering le solicita que utilice el espacio IP. Debe elegir el espacio IP al que está asociada cada LIF. Puede ser el espacio IP «predeterminado» o un espacio IP personalizado que haya creado. Más información acerca de https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] y.. https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["Espacios IP"^].
+Cuando configuras la organización en niveles de los datos, la organización en niveles de BlueXP te indica que debes utilizar el espacio IP. Debe elegir el espacio IP al que está asociada cada LIF. Puede ser el espacio IP «predeterminado» o un espacio IP personalizado que haya creado. Más información acerca de https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] y.. https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["Espacios IP"^].
 
 
 
 --
-Volúmenes y agregados compatibles:: El número total de volúmenes que puede organizar en niveles en Cloud puede ser menor que el número de volúmenes en su sistema ONTAP. Esto se debe a que los volúmenes no pueden estar organizados en niveles desde algunos agregados. Consulte la documentación de ONTAP para https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funcionalidad o funciones no compatibles con FabricPool"^].
+Volúmenes y agregados compatibles:: El número total de volúmenes que puede organizar en niveles BlueXP puede ser inferior al número de volúmenes en tu sistema ONTAP. Esto se debe a que los volúmenes no pueden estar organizados en niveles desde algunos agregados. Consulte la documentación de ONTAP para https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["Funcionalidad o funciones no compatibles con FabricPool"^].
 
 
 
-TIP: Cloud Tiering admite tanto FlexVol como FlexGroup Volumes.
+TIP: La organización en niveles de BlueXP admite tanto FlexVol como FlexGroup Volumes.
 
 
 
@@ -115,7 +115,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 El almacenamiento de objetos compatible con S3 debe cumplir con los siguientes requisitos.
 
-Credenciales de S3:: Cuando se configura la organización en niveles en un almacenamiento de objetos compatible con S3, se le solicita que cree un bloque de S3 o que seleccione un bloque de S3 existente. Debe proporcionar la organización en niveles del cloud con una clave de acceso S3 y una clave secreta. Cloud Tiering utiliza las claves para acceder a su bloque.
+Credenciales de S3:: Cuando se configura la organización en niveles en un almacenamiento de objetos compatible con S3, se le solicita que cree un bloque de S3 o que seleccione un bloque de S3 existente. Tienes que proporcionar la organización en niveles de BlueXP con una clave de acceso S3 y una clave secreta. La organización en niveles de BlueXP utiliza las claves para acceder a tu bloque.
 +
 --
 Estas claves de acceso deben estar asociadas a un usuario que tenga los siguientes permisos:
@@ -152,7 +152,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias.
 .Pasos
 . Asegúrese de que la red en la que está instalado el conector habilita las siguientes conexiones:
 +
-** Una conexión HTTPS a través del puerto 443 al servicio Cloud Tiering (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
+** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
 ** Una conexión HTTPS a través del puerto 443 para un almacenamiento de objetos compatible con S3
 ** Una conexión HTTPS a través del puerto 443 para la LIF de gestión del clúster ONTAP
 
@@ -185,7 +185,7 @@ image:screenshot_setup_tiering_onprem.png["Una captura de pantalla que muestra l
 .. *Bucket*: Agregue un nuevo cucharón o seleccione uno existente y haga clic en *Continue*.
 .. *Red de clúster*: Seleccione el espacio IP que ONTAP debe utilizar para conectarse al almacenamiento de objetos y haga clic en *continuar*.
 +
-Al seleccionar el espacio IP correcto, se garantiza que Cloud Tiering pueda configurar una conexión desde ONTAP al almacenamiento de objetos compatible con S3.
+Al seleccionar el espacio IP correcto se garantiza que la organización en niveles de BlueXP pueda configurar una conexión desde ONTAP a tu almacenamiento de objetos compatible con S3.
 
 
 
@@ -213,7 +213,7 @@ image:screenshot_tiering_policy_settings.png["Captura de pantalla que muestra la
 Ha configurado correctamente la organización en niveles de datos desde los volúmenes del clúster en el almacenamiento de objetos compatible con S3.
 
 .El futuro
-link:task-licensing-cloud-tiering.html["Asegúrese de suscribirse al servicio de organización en niveles de cloud"].
+link:task-licensing-cloud-tiering.html["Asegúrate de suscribirte al servicio de organización en niveles de BlueXP"].
 
 Puede revisar información acerca de los datos activos e inactivos en el clúster. link:task-managing-tiering.html["Más información sobre la gestión de la configuración de organización en niveles"].
 
