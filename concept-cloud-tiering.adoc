@@ -135,7 +135,7 @@ Actualmente, no se admiten contratos anuales si la organización en niveles se r
 
 Trae tu propia licencia al comprar una licencia *organización en niveles de BlueXP* de NetApp (anteriormente conocida como licencia de «Cloud Tiering»). Puede comprar licencias de períodos de 1, 2 o 3 años y especificar la capacidad de organización en niveles que desee. La licencia de organización en niveles BYOL BlueXP es una licencia _flotante_ que se puede utilizar en varios clústeres de ONTAP en las instalaciones. Todos los clústeres on-premises pueden utilizar la capacidad total de organización en niveles que definas en la licencia de organización en niveles de BlueXP.
 
-Después de comprar una licencia de organización en niveles de BlueXP, necesitarás utilizar la cartera digital de BlueXP para añadir la licencia. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Descubre cómo utilizar una licencia BYOL para la organización en niveles de BlueXP"].
+Después de comprar una licencia de organización en niveles de BlueXP, necesitarás utilizar la cartera digital de BlueXP en BlueXP para añadir la licencia. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Descubre cómo utilizar una licencia BYOL para la organización en niveles de BlueXP"].
 
 Como se ha indicado anteriormente, le recomendamos que establezca una suscripción de pago por uso, incluso si ha adquirido una licencia de BYOL.
 
@@ -205,7 +205,7 @@ Tenga en cuenta lo siguiente antes de elegir esta política de organización en 
 +
 Dado que los datos se organizan en niveles de inmediato, SnapMirror lee los datos del nivel de cloud en lugar del nivel de rendimiento. Como resultado, las operaciones de SnapMirror serán más lentas, posiblemente ralentizarán otras operaciones de SnapMirror más adelante en la cola, aunque utilicen diferentes políticas de organización en niveles.
 
-* Cloud Backup se ve afectado de forma similar por los volúmenes establecidos con una política de organización en niveles. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Consulta las consideraciones sobre las políticas de organización en niveles con el backup y la recuperación de BlueXP"^].
+* El backup y la recuperación de datos de BlueXP se ven afectados de forma similar por los volúmenes conjuntos con una política de organización en niveles. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Consulta las consideraciones sobre las políticas de organización en niveles con el backup y la recuperación de BlueXP"^].
 
 
 --

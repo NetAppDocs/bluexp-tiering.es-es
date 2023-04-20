@@ -111,7 +111,7 @@ Si no tienes una licencia de organización en niveles de BlueXP, ponte en contac
 
 Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de organización en niveles de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
 
-Utilizarás la página Digital Wallet en BlueXP para gestionar las licencias de BYOL de la organización en niveles de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
+Utilizarás la página de cartera digital de BlueXP para gestionar las licencias de BYOL en la organización en niveles de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
 
 
@@ -126,7 +126,7 @@ TIP: Ten en cuenta que la organización en niveles en StorageGRID no requiere un
 
 Si utiliza actualmente la licencia de FabricPool, no se verá afectado hasta que la licencia de FabricPool alcance su fecha de vencimiento o la capacidad máxima. Póngase en contacto con NetApp cuando necesite actualizar su licencia o con versiones anteriores para asegurarse de que no se interrumpa su capacidad para organizar los datos en niveles en el cloud.
 
-* Si utilizas una configuración compatible con BlueXP, tus licencias de FabricPool se convertirán en licencias de organización en niveles de BlueXP y aparecerán en la cartera digital. Cuando esas licencias iniciales caduquen, deberás actualizar las licencias de organización en niveles de BlueXP.
+* Si utilizas una configuración compatible con BlueXP, tus licencias de FabricPool se convertirán en licencias de organización en niveles de BlueXP y aparecerán en la cartera digital de BlueXP. Cuando esas licencias iniciales caduquen, deberás actualizar las licencias de organización en niveles de BlueXP.
 * Si está utilizando una configuración que no es compatible con BlueXP, continuará utilizando una licencia de FabricPool. https://docs.netapp.com/us-en/ontap/cloud-install-fabricpool-task.html["Vea cómo se lleva a cabo la organización en niveles de licencias con System Manager"^].
 
 
@@ -140,7 +140,7 @@ A continuación, se indican algunas cosas que debe saber sobre las dos licencias
 | Se trata de una licencia _flotante_ que se puede utilizar en varios clústeres ONTAP de las instalaciones. | Se trata de una licencia por clúster que adquiere y licencia para _every_ cluster. 
 
 
-| Está registrada en BlueXP en Digital Wallet. | Se aplica a clústeres individuales mediante System Manager o la CLI de ONTAP. 
+| Está registrada en la cartera digital de BlueXP. | Se aplica a clústeres individuales mediante System Manager o la CLI de ONTAP. 
 
 
 | La configuración y la gestión de la organización en niveles se lleva a cabo a través del servicio de organización en niveles de BlueXP. | La configuración y la gestión por niveles se realizan mediante System Manager o la interfaz de línea de comandos de ONTAP. 
@@ -204,21 +204,21 @@ Si el plazo de la licencia se acerca a la fecha de caducidad o si la capacidad d
 
 image:screenshot_services_license_expire2.png["Una captura de pantalla que muestra una licencia que va a caducar en la página de organización en niveles de BlueXP."]
 
-Este estado también aparece en la página cartera digital.
+Este estado también aparece en la página de la cartera digital de BlueXP.
 
-image:screenshot_services_license_expire1.png["Una captura de pantalla que muestra una licencia que está a punto de caducar en la página de Digital Wallet."]
+image:screenshot_services_license_expire1.png["Una captura de pantalla que muestra una licencia que va a caducar en la página de la cartera digital de BlueXP."]
 
 Puedes actualizar la licencia de la organización en niveles de BlueXP antes de que caduque para que no haya interrupción en la capacidad de organizar los datos en niveles en la nube.
 
 .Pasos
 . Haz clic en el icono de chat en la parte inferior derecha de BlueXP para solicitar una extensión de tu término o capacidad adicional a la licencia de organización en niveles de BlueXP para el número de serie concreto.
 +
-Tras pagar la licencia y registrarse en el sitio de soporte de NetApp, BlueXP actualiza automáticamente la licencia en la cartera digital y la página licencias de servicios de datos reflejarán el cambio en 5 a 10 minutos.
+Después de pagar la licencia y estar registrado en el sitio de soporte de NetApp, BlueXP actualiza automáticamente la licencia en la cartera digital de BlueXP y la página de licencias de servicios de datos reflejará el cambio que se ha producido en un plazo de 5 a 10 minutos.
 
 . Si BlueXP no puede actualizar automáticamente la licencia, deberá cargar manualmente el archivo de licencia.
 +
 .. Puede hacerlo <<Obtén el archivo de licencia de la organización en niveles de BlueXP,Obtenga el archivo de licencia del sitio de soporte de NetApp>>.
-.. En la página cartera digital de la ficha _Data Services Licenses_, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el número de serie del servicio que está actualizando y haga clic en *Actualizar licencia*.
+.. En la página de Digital Wallet de BlueXP, en la ficha _Data Services Licenses_, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el número de serie del servicio que está actualizando y haga clic en *Actualizar licencia*.
 +
 image:screenshot_services_license_update.png["Captura de pantalla de la selección del botón Actualizar licencia de un servicio concreto."]
 
@@ -244,7 +244,7 @@ Los clústeres de ONTAP en las siguientes configuraciones pueden usar licencias 
 
 === Procese los clústeres existentes que tienen una licencia de FabricPool
 
-Cuando usted link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Descubre cualquiera de estos tipos de clúster especiales en la organización en niveles de BlueXP"], BlueXP tiering reconoce la licencia de FabricPool y la añade a la cartera digital. Esos clústeres seguirán organizando en niveles los datos de la manera habitual. Cuando la licencia de FabricPool caduque, necesitarás comprar una licencia de organización en niveles de BlueXP.
+Cuando usted link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Descubre cualquiera de estos tipos de clúster especiales en la organización en niveles de BlueXP"], BlueXP tiering reconoce la licencia de FabricPool y la añade a la cartera digital de BlueXP. Esos clústeres seguirán organizando en niveles los datos de la manera habitual. Cuando la licencia de FabricPool caduque, necesitarás comprar una licencia de organización en niveles de BlueXP.
 
 
 
@@ -252,12 +252,12 @@ Cuando usted link:task-managing-tiering.html#discovering-additional-clusters-fro
 
 Cuando detectes los clústeres típicos en la organización en niveles de BlueXP, configurarás la organización en niveles mediante la interfaz de organización en niveles de BlueXP. En estos casos, se realizan las siguientes acciones:
 
-. La licencia «primaria» de organización en niveles de BlueXP realiza un seguimiento de la capacidad que están utilizando para organizar en niveles todos los clústeres con el fin de asegurarse de que haya suficiente capacidad en la licencia. La capacidad total de la licencia y la fecha de vencimiento se muestran en la cartera digital.
+. La licencia «primaria» de organización en niveles de BlueXP realiza un seguimiento de la capacidad que están utilizando para organizar en niveles todos los clústeres con el fin de asegurarse de que haya suficiente capacidad en la licencia. La capacidad total con licencia y la fecha de caducidad se muestran en la cartera digital de BlueXP.
 . Se instala automáticamente una licencia de organización en niveles "secundaria" en cada clúster para comunicarse con la licencia "principal".
 
 
 
-NOTE: La capacidad con licencia y la fecha de vencimiento que se muestran en System Manager o en la interfaz de línea de comandos de ONTAP para la licencia "secundaria" no son la información real, por lo que no debe preocuparse si la información no es la misma. El software de organización en niveles BlueXP gestiona estos valores internamente. La información real se registra en la cartera digital.
+NOTE: La capacidad con licencia y la fecha de vencimiento que se muestran en System Manager o en la interfaz de línea de comandos de ONTAP para la licencia "secundaria" no son la información real, por lo que no debe preocuparse si la información no es la misma. El software de organización en niveles BlueXP gestiona estos valores internamente. La información real se sigue en la cartera digital de BlueXP.
 
 Para las dos configuraciones enumeradas anteriormente, deberás configurar la organización en niveles mediante System Manager o la CLI de ONTAP (no mediante la interfaz de organización en niveles de BlueXP). Así que, en estos casos, tendrás que enviar la licencia «secundaria» a estos clústeres de forma manual desde la interfaz de organización en niveles de BlueXP.
 
@@ -269,7 +269,7 @@ Tenga en cuenta que, dado que los datos se organizan en niveles en dos ubicacion
 No configure la organización en niveles en este momento.
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Compra una licencia de organización en niveles de BlueXP"] para la capacidad que se necesita para el nuevo clúster o los clústeres.
-. En BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añada la licencia a la cartera digital"].
+. En BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añade la licencia a la cartera digital de BlueXP"].
 . En la organización en niveles de BlueXP, link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["detectar los clústeres nuevos"].
 . En la página Clusters, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el clúster y seleccione *desplegar licencia*.
 +

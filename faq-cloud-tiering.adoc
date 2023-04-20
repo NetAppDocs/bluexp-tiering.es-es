@@ -479,7 +479,7 @@ Para obtener información detallada, consulte:
 
 === ¿Qué herramientas puedo utilizar para supervisar y crear informes con el fin de gestionar los datos inactivos almacenados en el cloud?
 
-Aparte de la organización en niveles de BlueXP, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] y.. https://docs.netapp.com/us-en/active-iq/index.html["Asesor digital de Active IQ"^] se puede utilizar para la supervisión y la creación de informes.
+Aparte de la organización en niveles de BlueXP, https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] y.. https://docs.netapp.com/us-en/active-iq/index.html["Asesor digital de BlueXP"^] se puede utilizar para la supervisión y la creación de informes.
 
 
 

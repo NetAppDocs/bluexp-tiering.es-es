@@ -24,7 +24,7 @@ Descubre las novedades en la organización en niveles de BlueXP.
 
 === Se ha eliminado la pestaña de licencias
 
-La pestaña Licencias se ha eliminado de la interfaz de organización en niveles de BlueXP. Ahora se accede a todas las licencias de pago por uso (PAYGO) desde la consola en las instalaciones de BlueXP Tiering. También hay un enlace desde esa página a la cartera digital para que puedas ver y gestionar cualquier producto que traiga tus propias licencias (BYOL) en la organización en niveles de BlueXP.
+La pestaña Licencias se ha eliminado de la interfaz de organización en niveles de BlueXP. Ahora se accede a todas las licencias de pago por uso (PAYGO) desde la consola en las instalaciones de BlueXP Tiering. También hay un enlace desde esa página a la cartera digital de BlueXP para que puedas ver y gestionar cualquier producto con tus propias licencias (BYOL) en la organización en niveles de BlueXP.
 
 
 
