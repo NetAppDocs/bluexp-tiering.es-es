@@ -101,7 +101,7 @@ Actualmente, no se admiten contratos anuales si la organización en niveles se r
 
 == Utiliza una licencia BYOL (BYOL) de la organización en niveles de BlueXP
 
-Las licencias que traiga sus propias de NetApp proporcionan períodos de 1, 2 o 3 años. La licencia BYOL *BlueXP Tiering* (antes conocida como licencia de «Cloud Tiering») es una licencia _flotante_ que puedes utilizar en varios clústeres de ONTAP on-premises de tu cuenta de BlueXP. La capacidad total de organización en niveles definida en tu licencia de organización en niveles de BlueXP se comparte entre *todos* de tus clústeres on-premises, por lo que la renovación y la licencia iniciales resultan muy sencillas.
+Las licencias que traiga sus propias de NetApp proporcionan períodos de 1, 2 o 3 años. La licencia BYOL *BlueXP Tiering* (antes conocida como licencia de «Cloud Tiering») es una licencia _flotante_ que puedes utilizar en varios clústeres de ONTAP on-premises de tu cuenta de BlueXP. La capacidad total de organización en niveles definida en tu licencia de organización en niveles de BlueXP se comparte entre *todos* de tus clústeres on-premises, por lo que la renovación y la licencia iniciales resultan muy sencillas. La capacidad mínima para una licencia BYOL en niveles comienza en 10 TiB.
 
 Si no tienes una licencia de organización en niveles de BlueXP, ponte en contacto con nosotros para comprar una:
 
