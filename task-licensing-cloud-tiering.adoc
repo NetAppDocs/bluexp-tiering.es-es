@@ -39,7 +39,7 @@ Suscríbete a la organización en niveles de BlueXP desde AWS Marketplace y conf
 
 [[subscribe-aws]]
 .Pasos
-. En BlueXP, haga clic en *movilidad > organización en niveles > Consola en las instalaciones*.
+. En BlueXP, haz clic en *Mobility > Tiering > On-premises Dashboard*.
 . En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Amazon Web Services y, a continuación, haga clic en *continuar*.
 . Suscríbase en el https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
@@ -57,7 +57,7 @@ Suscríbete a la organización en niveles de BlueXP desde Azure Marketplace y co
 
 [[subscribe-azure]]
 .Pasos
-. En BlueXP, haga clic en *movilidad > organización en niveles > Consola en las instalaciones*.
+. En BlueXP, haz clic en *Mobility > Tiering > On-premises Dashboard*.
 . En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Microsoft Azure y, a continuación, haga clic en *continuar*.
 . Suscríbase en el https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
@@ -75,7 +75,7 @@ Suscríbete a la organización en niveles de BlueXP desde GCP Marketplace y conf
 
 [[subscribe-gcp]]
 .Pasos
-. En BlueXP, haga clic en *movilidad > organización en niveles > Consola en las instalaciones*.
+. En BlueXP, haz clic en *Mobility > Tiering > On-premises Dashboard*.
 . En la sección _Marketplace Subscriptions_, haga clic en *Suscribirse* en Google Cloud y, a continuación, haga clic en *continuar*.
 . Suscríbase en el https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
