@@ -43,7 +43,7 @@ La organización en niveles de BlueXP ofrece automatización, supervisión, info
 Para obtener más información sobre el valor que ofrece la organización en niveles de BlueXP, https://bluexp.netapp.com/cloud-tiering["Echa un vistazo a la página de organización en niveles de BlueXP en el sitio web de BlueXP"^].
 
 
-TIP: Los sistemas Cloud Volumes ONTAP son de solo lectura desde la organización en niveles de BlueXP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
+TIP: Los sistemas Cloud Volumes ONTAP son de solo lectura desde la organización en niveles de BlueXP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
 
 
 
@@ -205,7 +205,7 @@ Tenga en cuenta lo siguiente antes de elegir esta política de organización en 
 +
 Dado que los datos se organizan en niveles de inmediato, SnapMirror lee los datos del nivel de cloud en lugar del nivel de rendimiento. Como resultado, las operaciones de SnapMirror serán más lentas, posiblemente ralentizarán otras operaciones de SnapMirror más adelante en la cola, aunque utilicen diferentes políticas de organización en niveles.
 
-* El backup y la recuperación de datos de BlueXP se ven afectados de forma similar por los volúmenes conjuntos con una política de organización en niveles. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Consulta las consideraciones sobre las políticas de organización en niveles con el backup y la recuperación de BlueXP"^].
+* El backup y la recuperación de datos de BlueXP se ven afectados de forma similar por los volúmenes conjuntos con una política de organización en niveles. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["Consulta las consideraciones sobre las políticas de organización en niveles con el backup y la recuperación de BlueXP"^].
 
 
 --

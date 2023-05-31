@@ -200,7 +200,7 @@ Sí. La organización en niveles de BlueXP se puede configurar para organizar en
 
 === ¿y Cloud Volumes ONTAP?
 
-Si tienes sistemas de Cloud Volumes ONTAP, encontrarás todos ellos en la página Clusters de organización en niveles de BlueXP para que obtengas una vista completa de la organización en niveles de los datos en tu infraestructura de nube híbrida. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura desde la organización en niveles de BlueXP. No puedes configurar la organización en niveles de los datos en Cloud Volumes ONTAP desde la organización en niveles de BlueXP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
+Si tienes sistemas de Cloud Volumes ONTAP, encontrarás todos ellos en la página Clusters de organización en niveles de BlueXP para que obtengas una vista completa de la organización en niveles de los datos en tu infraestructura de nube híbrida. Sin embargo, los sistemas Cloud Volumes ONTAP son de solo lectura desde la organización en niveles de BlueXP. No puedes configurar la organización en niveles de los datos en Cloud Volumes ONTAP desde la organización en niveles de BlueXP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Configuras la organización en niveles para los sistemas Cloud Volumes ONTAP desde el entorno de trabajo en BlueXP"^].
 
 
 
@@ -362,7 +362,7 @@ Connector es un software que se ejecuta en una instancia informática dentro de 
 
 === ¿Puedo desplegar el conector en las instalaciones?
 
-Sí. El software Connector se puede descargar e instalar manualmente en un host Linux de la red. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Vea cómo instalar el conector en sus instalaciones"].
+Sí. El software Connector se puede descargar e instalar manualmente en un host Linux de la red. https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Vea cómo instalar el conector en sus instalaciones"].
 
 
 

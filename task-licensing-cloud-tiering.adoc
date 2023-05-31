@@ -18,7 +18,7 @@ Una prueba gratuita de 30 días de la organización en niveles de BlueXP comienz
 
 Antes de leer más:
 
-* Si ya te has suscrito a la suscripción de BlueXP (PAYGO) en el mercado de tu proveedor de nube, también te suscribirás automáticamente a la organización en niveles de BlueXP para sistemas ONTAP on-premises. Verás una suscripción activa en la pestaña *Consola en las instalaciones* de BlueXP Tiering. No tendrá que volver a suscribirse. Verá una suscripción activa en Digital Wallet.
+* Si ya te has suscrito a la suscripción de BlueXP (PAYGO) en el mercado de tu proveedor de nube, también te suscribirás automáticamente a la organización en niveles de BlueXP para sistemas ONTAP on-premises. Verás una suscripción activa en la pestaña *Consola en las instalaciones* de BlueXP Tiering. No tendrá que volver a suscribirse. Verás una suscripción activa en la cartera digital de BlueXP.
 * La licencia BYOL BlueXP Tiering (anteriormente conocida como licencia de «Cloud Tiering») es una licencia _flotante_ que puedes utilizar en varios clústeres de ONTAP on-premises en tu cuenta de BlueXP. Esto es diferente (y mucho más sencillo) que en el pasado en el que se adquirió una licencia _FabricPool_ para cada clúster.
 * Los datos se ofrecen en niveles en StorageGRID sin ningún coste, por lo que no es necesario ni una licencia BYOL ni un registro PAYGO. Estos datos organizados en niveles no cuentan con la capacidad adquirida en su licencia.
 
@@ -93,7 +93,7 @@ Paga por la organización en niveles de BlueXP cada año comprando un contrato a
 
 Al organizar en niveles los datos inactivos en AWS, puede suscribirse a un contrato anual que esté disponible en https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace"^]. Está disponible en periodos de 1, 2 o 3 años.
 
-Si desea utilizar esta opción, configure su suscripción desde la página Marketplace y, a continuación, configure https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Asocie la suscripción con sus credenciales de AWS"^].
+Si desea utilizar esta opción, configure su suscripción desde la página Marketplace y, a continuación, configure https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Asocie la suscripción con sus credenciales de AWS"^].
 
 Actualmente, no se admiten contratos anuales si la organización en niveles se realiza en Azure o GCP.
 
@@ -109,7 +109,7 @@ Si no tienes una licencia de organización en niveles de BlueXP, ponte en contac
 * Haga clic en el icono de chat situado en la parte inferior derecha de BlueXP para solicitar una licencia.
 
 
-Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de organización en niveles de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
+Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de organización en niveles de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
 
 Utilizarás la página de cartera digital de BlueXP para gestionar las licencias de BYOL en la organización en niveles de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
 
@@ -183,7 +183,7 @@ Después de comprar una licencia de organización en niveles de BlueXP para tu c
 +
 ** Si tiene el número de serie de la licencia de organización en niveles y conoce su cuenta de NSS, seleccione la opción *introducir número de serie* e introduzca esa información.
 +
-Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desplegable, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a BlueXP"^].
+Si su cuenta del sitio de soporte de NetApp no está disponible en la lista desplegable, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Agregue la cuenta NSS a BlueXP"^].
 
 ** Si tiene el archivo de licencia de organización en niveles, seleccione la opción *cargar archivo de licencia* y siga las indicaciones para adjuntar el archivo.
 +

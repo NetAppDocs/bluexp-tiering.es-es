@@ -40,7 +40,7 @@ Se ha cambiado el nombre de la pestaña «Consola de clústeres» a «Clusters»
 
 === Ahora puede generar un informe de organización en niveles para sus volúmenes
 
-Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otras personas de la empresa según sea necesario. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Descubra cómo descargar el informe de organización en niveles"].
+Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otras personas de la empresa según sea necesario. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Descubra cómo descargar el informe de organización en niveles"].
 
 
 
@@ -62,7 +62,7 @@ Debido a un cambio en la organización en niveles de BlueXP, tienes que cambiar 
 
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
-Vea la lista completa de puntos finales de la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], o. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] de cloud híbrido.
+Vea la lista completa de puntos finales de la https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], o. https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] de cloud híbrido.
 
 
 
@@ -82,9 +82,9 @@ Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe c
 
 === El asistente de organización en niveles permite configurar AWS PrivateLink cuando la organización en niveles se encuentra en un almacenamiento S3
 
-En versiones anteriores, era muy lento proporcionar esta forma segura de conectar el clúster a un bloque de S3 a través de un extremo de VPC. Ahora puede seguir los pasos de los requisitos previos a. https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["Configure el sistema para una conexión privada mediante una interfaz de extremo VPC"]Y, a continuación, puede seleccionar PrivateLink durante el asistente de configuración de capas en la página Networking.
+En versiones anteriores, era muy lento proporcionar esta forma segura de conectar el clúster a un bloque de S3 a través de un extremo de VPC. Ahora puede seguir los pasos de los requisitos previos a. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["Configure el sistema para una conexión privada mediante una interfaz de extremo VPC"]Y, a continuación, puede seleccionar PrivateLink durante el asistente de configuración de capas en la página Networking.
 
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["Revise los requisitos y los pasos para organizar los datos inactivos en niveles en Amazon S3"].
+https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["Revise los requisitos y los pasos para organizar los datos inactivos en niveles en Amazon S3"].
 
 
 
@@ -106,13 +106,13 @@ Al quitar el almacén de objetos de réplica de una configuración de MetroClust
 
 === Capacidad de configurar almacenes de objetos adicionales para otros agregados del clúster
 
-La interfaz de usuario de organización en niveles en el cloud ha añadido un nuevo conjunto de páginas para la configuración del almacenamiento de objetos. Puede añadir almacenes de objetos nuevos, conectar varios almacenes de objetos a un agregado para mirroring FabricPool, cambiar los almacenes de objetos primario y de reflejo, eliminar conexiones de almacén de objetos a agregados, etc. https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-object-storage.html["Más información acerca de la nueva funcionalidad de almacenamiento de objetos."]
+La interfaz de usuario de organización en niveles en el cloud ha añadido un nuevo conjunto de páginas para la configuración del almacenamiento de objetos. Puede añadir almacenes de objetos nuevos, conectar varios almacenes de objetos a un agregado para mirroring FabricPool, cambiar los almacenes de objetos primario y de reflejo, eliminar conexiones de almacén de objetos a agregados, etc. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-object-storage.html["Más información acerca de la nueva funcionalidad de almacenamiento de objetos."]
 
 
 
 === Compatibilidad con licencias de Cloud Tiering para configuraciones de MetroCluster
 
-Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de MetroCluster. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
+Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de MetroCluster. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
 
 
 
@@ -122,7 +122,7 @@ Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que 
 
 === Compatibilidad con licencias de Cloud Tiering para configuraciones de clúster adicionales
 
-Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de Tiering Mirror (no incluidas las configuraciones de MetroCluster) y con clústeres organizados en niveles en IBM Cloud Object Storage. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
+Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de Tiering Mirror (no incluidas las configuraciones de MetroCluster) y con clústeres organizados en niveles en IBM Cloud Object Storage. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
 
 
 
@@ -132,7 +132,7 @@ Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que 
 
 === La clase de almacenamiento de recuperación instantánea de Amazon S3 Glacier ya está disponible
 
-Al configurar Cloud Tiering, ahora puede configurar una regla de ciclo de vida para que los datos inactivos se traspasar de la clase de almacenamiento _Standard_ a _Glacier Instant Retrieval_ después de un determinado número de días. Esto le ayudará a reducir los costes de infraestructura de AWS. https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html["Consulte las clases de almacenamiento S3 admitidas."]
+Al configurar Cloud Tiering, ahora puede configurar una regla de ciclo de vida para que los datos inactivos se traspasar de la clase de almacenamiento _Standard_ a _Glacier Instant Retrieval_ después de un determinado número de días. Esto le ayudará a reducir los costes de infraestructura de AWS. https://docs.netapp.com/us-en/bluexp-tiering/reference-aws-support.html["Consulte las clases de almacenamiento S3 admitidas."]
 
 
 

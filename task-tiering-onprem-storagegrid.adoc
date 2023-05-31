@@ -27,7 +27,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 Necesita lo siguiente:
 
 [role="quick-margin-list"]
-* Un clúster de ONTAP en las instalaciones que ejecuta ONTAP 9.4 o posterior y una conexión a StorageGRID a través de un puerto especificado por el usuario. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
+* Un clúster de ONTAP en las instalaciones que ejecuta ONTAP 9.4 o posterior y una conexión a StorageGRID a través de un puerto especificado por el usuario. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 * StorageGRID 10.3 o una versión posterior con claves de acceso de AWS que tienen permisos de S3.
 * Un conector instalado en sus instalaciones.
 * Conexión de red para el conector que permite una conexión HTTPS saliente al clúster de ONTAP, a StorageGRID y al servicio de organización en niveles de BlueXP.
@@ -96,7 +96,7 @@ NOTE: La organización en niveles de BlueXP admite volúmenes FlexGroup, a parti
 
 Debe crear un entorno de trabajo ONTAP en las instalaciones en el lienzo BlueXP antes de iniciar la clasificación por niveles de los datos inactivos.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 
 
 
@@ -129,9 +129,9 @@ Control de versiones de objetos:: No debe habilitar el control de versiones de o
 
 Se requiere un conector para organizar los datos en niveles en el cloud. Al organizar los datos en niveles en StorageGRID, debe haber un conector disponible en las instalaciones. Tendrá que instalar un conector nuevo o asegurarse de que el conector seleccionado actualmente reside en las instalaciones.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Instalar un conector en un host Linux"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Más información sobre conectores"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Instalar un conector en un host Linux"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
 
 
 
@@ -143,7 +143,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias.
 .Pasos
 . Asegúrese de que la red en la que está instalado el conector habilita las siguientes conexiones:
 +
-** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
+** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
 ** Una conexión HTTPS por el puerto 443 al sistema StorageGRID
 ** Una conexión HTTPS a través del puerto 443 para la LIF de gestión del clúster ONTAP
 
@@ -157,7 +157,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias.
 Después de preparar su entorno, comience a organizar en niveles los datos inactivos del primer clúster.
 
 .Lo que necesitará
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Un entorno de trabajo en las instalaciones"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Un entorno de trabajo en las instalaciones"^].
 * El FQDN del nodo de puerta de enlace StorageGRID y el puerto que se utilizarán para las comunicaciones HTTPS.
 * Una clave de acceso de AWS que tiene los permisos de S3 requeridos.
 

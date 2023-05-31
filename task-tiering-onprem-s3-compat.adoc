@@ -36,7 +36,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 Necesita lo siguiente:
 
 [role="quick-margin-list"]
-* Un clúster ONTAP de origen en las instalaciones que ejecuta ONTAP 9.8 o posterior, y una conexión a través de un puerto especificado por el usuario al almacenamiento de objetos compatible con S3 de destino. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
+* Un clúster ONTAP de origen en las instalaciones que ejecuta ONTAP 9.8 o posterior, y una conexión a través de un puerto especificado por el usuario al almacenamiento de objetos compatible con S3 de destino. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 * El FQDN, la clave de acceso y la clave secreta del servidor de almacenamiento de objetos para que el clúster ONTAP pueda acceder al bloque.
 * Un conector instalado en sus instalaciones.
 * Conexión a redes para el conector que permite una conexión HTTPS saliente al clúster ONTAP de origen, al almacenamiento de objetos compatible con S3 y al servicio de organización en niveles de BlueXP.
@@ -52,7 +52,7 @@ Paga la organización en niveles de BlueXP a través de una suscripción de pago
 
 [role="quick-margin-list"]
 * Para suscribirse a la oferta de BlueXP PAYGO de la https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], o. https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^], Haga clic en *Suscribirse* y siga las indicaciones.
-* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Agréguela a su cuenta desde la cartera digital BlueXP"].
+* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añádelo a tu cuenta desde la cartera digital de BlueXP"].
 
 
 
@@ -106,7 +106,7 @@ TIP: La organización en niveles de BlueXP admite tanto FlexVol como FlexGroup V
 
 Debe crear un entorno de trabajo ONTAP en las instalaciones en el lienzo BlueXP antes de iniciar la clasificación por niveles de los datos inactivos.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 
 
 
@@ -137,9 +137,9 @@ Estas claves de acceso deben estar asociadas a un usuario que tenga los siguient
 
 Se requiere un conector para organizar los datos en niveles en el cloud. Al organizar los datos en niveles en un almacenamiento de objetos compatible con S3, debe haber un conector disponible en las instalaciones. Tendrá que instalar un conector nuevo o asegurarse de que el conector seleccionado actualmente reside en las instalaciones.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Instalar un conector en un host Linux"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Más información sobre conectores"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Instalar un conector en un host Linux"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Cambio entre conectores"^]
 
 
 
@@ -151,7 +151,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias.
 .Pasos
 . Asegúrese de que la red en la que está instalado el conector habilita las siguientes conexiones:
 +
-** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
+** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
 ** Una conexión HTTPS a través del puerto 443 para un almacenamiento de objetos compatible con S3
 ** Una conexión HTTPS a través del puerto 443 para la LIF de gestión del clúster ONTAP
 
@@ -165,7 +165,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias.
 Después de preparar su entorno, comience a organizar en niveles los datos inactivos del primer clúster.
 
 .Lo que necesitará
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Un entorno de trabajo en las instalaciones"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Un entorno de trabajo en las instalaciones"^].
 * El FQDN del servidor de almacenamiento de objetos compatible con S3 y el puerto que se utilizarán para las comunicaciones HTTPS.
 * Una clave de acceso y una clave secreta con los permisos de S3 requeridos.
 

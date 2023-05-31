@@ -27,7 +27,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 Necesita lo siguiente:
 
 [role="quick-margin-list"]
-* Un clúster de ONTAP en las instalaciones que ejecuta ONTAP 9.6 o posterior y que tiene una conexión HTTPS con Google Cloud Storage. https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
+* Un clúster de ONTAP en las instalaciones que ejecuta ONTAP 9.6 o posterior y que tiene una conexión HTTPS con Google Cloud Storage. https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 * Una cuenta de servicio con el rol de administrador de almacenamiento predefinido y las claves de acceso al almacenamiento.
 * Un conector instalado en un VPC de Google Cloud Platform.
 * Conexión de red para el conector que permite una conexión HTTPS saliente con el clúster de ONTAP en el centro de datos, con Google Cloud Storage y con el servicio de organización en niveles de BlueXP.
@@ -43,7 +43,7 @@ Cuando finalice la prueba gratuita, paga por la organización en niveles de Blue
 
 [role="quick-margin-list"]
 * Para suscribirse desde el mercado de GCP, https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Vaya a la oferta de BlueXP Marketplace"^], Haga clic en *Suscribirse* y, a continuación, siga las indicaciones.
-* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Agréguela a su cuenta desde la cartera digital BlueXP"].
+* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añádelo a tu cuenta desde la cartera digital de BlueXP"].
 
 
 
@@ -107,7 +107,7 @@ NOTE: La organización en niveles de BlueXP admite FlexGroup Volumes. El program
 
 Necesita crear un entorno de trabajo de ONTAP en las instalaciones en BlueXP para poder empezar a organizar en niveles los datos inactivos.
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Aprenda a detectar un clúster"^].
 
 
 
@@ -115,8 +115,8 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 Se requiere un conector para organizar los datos en niveles en el cloud. Al organizar los datos en niveles en Google Cloud Storage, debe haber un conector disponible en un VPC de Google Cloud Platform. Tendrá que crear un conector nuevo o asegurarse de que el conector seleccionado actualmente reside en GCP.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Despliegue de un conector en GCP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Más información sobre conectores"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Despliegue de un conector en GCP"^]
 
 
 
@@ -128,7 +128,7 @@ Asegúrese de que el conector tiene las conexiones de red necesarias.
 .Pasos
 . Asegúrese de que el VPC donde está instalado el conector habilita las siguientes conexiones:
 +
-** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP y a tu Google Cloud Storage (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
+** Una conexión HTTPS a través del puerto 443 al servicio de organización en niveles de BlueXP y a tu Google Cloud Storage (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["consulte la lista de extremos"^])
 ** Una conexión HTTPS a través del puerto 443 para la LIF de gestión del clúster ONTAP
 
 
@@ -169,7 +169,7 @@ Tendrás que introducir las claves más adelante cuando configures la organizaci
 Después de preparar su entorno de Google Cloud, comience a organizar en niveles los datos inactivos del primer clúster.
 
 .Lo que necesitará
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Un entorno de trabajo en las instalaciones"^].
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Un entorno de trabajo en las instalaciones"^].
 * Claves de acceso al almacenamiento de una cuenta de servicio con el rol Storage Admin.
 
 
