@@ -206,6 +206,9 @@ Tenga en cuenta que la regla del ciclo de vida se aplica a todos los contenedore
 +
 Al seleccionar el espacio IP correcto se garantiza que la organización en niveles de BlueXP pueda configurar una conexión desde ONTAP al almacenamiento de objetos del proveedor de cloud.
 
++
+También puede establecer el ancho de banda de red disponible para cargar datos inactivos en el almacenamiento de objetos definiendo la “tasa de transferencia máxima”. Seleccione el botón de opción *limitado* e introduzca el ancho de banda máximo que puede utilizarse, o seleccione *ilimitado* para indicar que no hay límite.
+
 
 
 . En la página _Tier Volumes_, seleccione los volúmenes para los que desea configurar la organización en niveles e inicie la página Tiering Policy:

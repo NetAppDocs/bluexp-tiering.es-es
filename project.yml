@@ -46,6 +46,8 @@ sidebar:
     - title: Vea la información general sobre organización en niveles de todos los
         clústeres
       url: "/task-tiering-onprem-overview.html"
+    - title: Supervisar el estado de las alertas de organización en niveles
+      url: "/task-monitor-tiering-alerts.html"
   - title: Referencia
     entries:
     - title: Clases y regiones de almacenamiento de Amazon S3 admitidas
@@ -92,6 +94,9 @@ homepage:
       url: task-managing-tiering.html#reviewing-tiering-info-for-a-cluster
     - title: Organice en niveles los datos de volúmenes adicionales
       url: task-managing-tiering.html#tiering-data-from-additional-volumes
+    - title: Cambie el ancho de banda para cargar datos inactivos en el almacenamiento
+        de objetos
+      url: task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage
     - title: Mueva datos del cloud al nivel de rendimiento
       url: task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier
     - title: Gestione la configuración de organización en niveles en agregados

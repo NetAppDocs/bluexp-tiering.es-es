@@ -206,7 +206,7 @@ Tendrá que configurar dos conjuntos de permisos:
 
 
 .Pasos
-. Confirme eso https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["Estos permisos de S3"^] Forman parte de la función IAM que proporciona permisos al conector. Se deberían haber incluido de forma predeterminada cuando se desplegó el conector por primera vez. De lo contrario, deberá agregar los permisos que faltan. Consulte https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentación de AWS: Editar políticas de IAM"^].
+. Confirme eso https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Estos permisos de S3"^] Forman parte de la función IAM que proporciona permisos al conector. Se deberían haber incluido de forma predeterminada cuando se desplegó el conector por primera vez. De lo contrario, deberá agregar los permisos que faltan. Consulte https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentación de AWS: Editar políticas de IAM"^].
 . Al activar el servicio, el asistente de organización en niveles le solicitará que introduzca una clave de acceso y una clave secreta. Estas credenciales se pasan al clúster de ONTAP para que ONTAP pueda organizar los datos en niveles en el bloque de S3. Para ello, deberá crear un usuario de IAM con los siguientes permisos:
 +
 [source, json]
@@ -307,14 +307,14 @@ image:screenshot_setup_tiering_onprem.png["Captura de pantalla que muestra la op
 +
 image:screenshot_tiering_aws_s3_bucket.png["Una captura de pantalla que muestra los datos que se deben proporcionar para configurar la organización en niveles en un bloque de S3."]
 
-. Complete las secciones de la página *Crear almacenamiento de objetos*:
+. Complete las secciones en la página *Configuración de niveles*:
 +
-.. *S3 Bucket*: Agregue un nuevo bucket de S3 o seleccione un bloque de S3 existente que empiece por el prefijo _Fabric-pool_, seleccione la región de la cuchara y haga clic en *Continue*.
+.. *S3 Bucket*: Agrega un nuevo bucket S3 o selecciona un bucket S3 existente que comience con el prefijo definido “fabric-pool”, selecciona la región bucket y haz clic en *Continue*.
 +
 Cuando se usa un conector en las instalaciones, debe introducir el identificador de cuenta de AWS que proporciona acceso al bloque de S3 existente o al nuevo bloque de S3 que se creará.
 
 +
-Se requiere el prefijo _Fabric-pool_ porque la política IAM del conector permite a la instancia realizar acciones S3 en bloques denominados con ese prefijo exacto. Por ejemplo, se puede asignar un nombre al bloque de S3 _Fabric-pool-AFF1_, donde AFF1 es el nombre del clúster.
+El prefijo _fabric-pool_ se utiliza de forma predeterminada porque la política IAM para el conector permite a la instancia realizar acciones S3 en los bloques con ese prefijo exacto. Por ejemplo, se puede asignar un nombre al bloque de S3 _Fabric-pool-AFF1_, donde AFF1 es el nombre del clúster.
 
 .. *Clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos escalonados. Los datos se inician en la clase _Standard_, pero puede crear una regla para mover los datos a otra clase después de un determinado número de días.
 +
@@ -338,10 +338,10 @@ El usuario IAM debe estar en la misma cuenta de AWS que el bloque que ha selecci
 Seleccione el espacio IP en el clúster de ONTAP donde residen los volúmenes que desea organizar en niveles. Las LIF entre clústeres de este espacio IP deben tener acceso a Internet saliente para que puedan conectarse al almacenamiento de objetos de su proveedor de cloud.
 
 +
-Si lo desea, puede elegir si va a utilizar un AWS PrivateLink que haya configurado previamente. <<Configure el sistema para una conexión privada mediante una interfaz de extremo VPC,Consulte la información de configuración anterior.>>
+Si lo desea, puede elegir si va a utilizar un AWS PrivateLink que haya configurado previamente. <<Configure el sistema para una conexión privada mediante una interfaz de extremo VPC,Consulte la información de configuración anterior.>> Aparecerá un cuadro de diálogo que le ayudará a guiarle a través de la configuración del punto final.
 
 +
-Aparecerá un cuadro de diálogo que le ayudará a guiarle a través de la configuración del punto final.
+También puede establecer el ancho de banda de red disponible para cargar datos inactivos en el almacenamiento de objetos definiendo la “tasa de transferencia máxima”. Seleccione el botón de opción *limitado* e introduzca el ancho de banda máximo que puede utilizarse, o seleccione *ilimitado* para indicar que no hay límite.
 
 
 

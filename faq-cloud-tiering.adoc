@@ -493,6 +493,8 @@ Si se produce un fallo de la red, el nivel de rendimiento local permanece en lí
 
 La latencia de lectura de la tecnología FabricPool Tiering subyacente depende de la conectividad al nivel de cloud. Aunque la organización en niveles funciona en cualquier ancho de banda, se recomienda colocar LIF de interconexión de clústeres en puertos de 10 Gbps para ofrecer el rendimiento adecuado. No existen recomendaciones ni limitaciones de ancho de banda para el conector.
 
+Además, es posible reducir la cantidad de ancho de banda de red que se utiliza durante la transferencia de datos inactivos del volumen al almacenamiento de objetos. La configuración _Maximum transfer rate_ está disponible al configurar el cluster para la organización en niveles y, posteriormente, desde la página *Clusters*.
+
 
 
 === ¿Hay latencia cuando un usuario intenta acceder a los datos por niveles?

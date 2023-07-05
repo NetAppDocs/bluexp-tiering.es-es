@@ -4,7 +4,7 @@ permalink: task-managing-tiering.html
 keywords: discover, volumes, report, hot, cold, inactive, active, capacity, used capacity, savings, health, failed 
 summary: Ahora que ha configurado la organización en niveles de datos desde los clústeres ONTAP en las instalaciones, puede ordenar los datos de volúmenes adicionales, cambiar la política de organización en niveles de un volumen, detectar clústeres adicionales y mucho más. 
 ---
-= Gestionar la organización en niveles de datos desde los clústeres
+= Gestión de la organización de datos en niveles para sus clústeres
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,6 +15,33 @@ summary: Ahora que ha configurado la organización en niveles de datos desde los
 
 [role="lead"]
 Ahora que ha configurado la organización en niveles de datos desde los clústeres ONTAP en las instalaciones, puede ordenar los datos de volúmenes adicionales, cambiar la política de organización en niveles de un volumen, detectar clústeres adicionales y mucho más.
+
+
+
+== Revisión de la información de organización en niveles de un clúster
+
+Puede que desee ver cuántos datos hay en el nivel de cloud y cuántos datos hay en los discos. O bien, puede que desee ver la cantidad de datos activos y inactivos en los discos del clúster. La organización en niveles de BlueXP proporciona esta información para cada clúster.
+
+.Pasos
+. En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
+. En la página *Clusters*, haz clic en el icono del menú image:icon-action.png["El icono Actions"] Para un clúster y seleccione *Información del clúster*.
++
+image:screenshot_tiering_cluster_info_button.png["Una captura de pantalla de la selección del botón Cluster Info en la página Clusters."]
+
+. Revise los detalles sobre el clúster.
++
+Veamos un ejemplo:
+
++
+image:screenshot_tiering_cluster_info.png["Una captura de pantalla que muestra la capacidad de datos total usada del clúster, la capacidad utilizada del clúster y la información del clúster."]
+
+
+
+Tenga en cuenta que la pantalla es diferente para los sistemas Cloud Volumes ONTAP. Si bien Cloud Volumes ONTAP Volumes puede tener datos en niveles en el cloud, no utilizan el servicio de organización en niveles de BlueXP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Descubre cómo organizar en niveles los datos inactivos desde sistemas Cloud Volumes ONTAP en un almacenamiento de objetos de bajo coste"^].
+
+También puede hacerlo https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Vea la información de organización en niveles de un clúster desde Digital Advisor"^] Si está familiarizado con este producto de NetApp. Sólo tiene que seleccionar *recomendaciones de la nube* en el panel de navegación izquierdo.
+
+image:screenshot_tiering_aiq_fabricpool_info.png["Una captura de pantalla que muestra información de FabricPool para un clúster mediante el asesor FabricPool de Digital Advisor."]
 
 
 
@@ -75,6 +102,25 @@ image:screenshot_tiering_policy_settings.png["Captura de pantalla que muestra la
 
 .Resultado
 La política de organización en niveles se modifica y los datos comienzan a Tiering en función de la nueva política.
+
+
+
+== Cambio del ancho de banda de red disponible para cargar datos inactivos en el almacenamiento de objetos
+
+Cuando activas la organización en niveles de BlueXP en un clúster, de forma predeterminada, ONTAP puede usar una cantidad ilimitada de ancho de banda para transferir los datos inactivos de los volúmenes del entorno de trabajo al almacenamiento de objetos. Si observa que el tráfico por niveles está afectando a las cargas de trabajo de usuario normales, puede limitar la cantidad de ancho de banda de red que se utiliza durante la transferencia. Puede elegir un valor entre 1 y 10.000 Mbps como velocidad de transferencia máxima.
+
+. En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
+. En la página *Clusters*, haz clic en el icono del menú image:icon-action.png["El icono Actions"] Para un clúster y seleccione *Tasa de transferencia máxima*.
++
+image:screenshot_tiering_transfer_rate_button.png["Captura de pantalla de la selección del botón de velocidad de transferencia máxima en la página Clusters."]
+
+. En la página _Velocidad de transferencia máxima_, seleccione el botón de opción *Limited* e introduzca el ancho de banda máximo que se puede utilizar, o seleccione *Unlimited* para indicar que no hay límite. Luego haga clic en *Aplicar*.
++
+image:screenshot_tiering_transfer_rate.png["Captura de pantalla del cuadro de diálogo Tasa de transferencia máxima de un cluster."]
+
+
+
+Esta configuración no afecta al ancho de banda asignado a otros clústeres que sean datos de organización en niveles.
 
 
 
@@ -157,28 +203,6 @@ image:screenshot_tiering_modify_aggregate.png["Captura de pantalla que muestra u
 
 . Haga clic en *aplicar*.
 
-
-
-
-== Revisión de la información de organización en niveles de un clúster
-
-Puede que desee ver cuántos datos hay en el nivel de cloud y cuántos datos hay en los discos. O bien, puede que desee ver la cantidad de datos activos y inactivos en los discos del clúster. La organización en niveles de BlueXP proporciona esta información para cada clúster.
-
-.Pasos
-. En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
-. En la página *Clusters*, haga clic en el icono de menú de un clúster y seleccione *Cluster info*.
-. Revise los detalles sobre el clúster.
-+
-Veamos un ejemplo:
-
-+
-image:screenshot_tiering_cluster_info.png["Una captura de pantalla que muestra el informe del clúster, donde se detalla la capacidad total utilizada, la capacidad utilizada del clúster, la información del clúster y la información sobre el almacenamiento de objetos"]
-
-
-
-También puede hacerlo https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Vea la información de organización en niveles de un clúster desde Digital Advisor"^] Si está familiarizado con este producto de NetApp. Sólo tiene que seleccionar *recomendaciones de la nube* en el panel de navegación izquierdo.
-
-image:screenshot_tiering_aiq_fabricpool_info.png["Una captura de pantalla que muestra información de FabricPool para un clúster mediante el asesor FabricPool de Digital Advisor."]
 
 
 

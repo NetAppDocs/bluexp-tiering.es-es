@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-tiering-alerts.html 
+keywords: tiering, status, monitor, alert, notification 
+summary: Puedes ver el estado de las alertas de organización en niveles en el Centro de notificaciones de BlueXP. 
+---
+= Supervisar el estado de las alertas de organización en niveles
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puedes ver el estado de las alertas de organización en niveles en el Centro de notificaciones de BlueXP.
+
+El Centro de notificaciones realiza un seguimiento del progreso de los incidentes de organización en niveles para que pueda verificar si se han resuelto o no. Puede mostrar las notificaciones haciendo clic en (image:icon_bell.png["timbre de notificación"]) En la barra de menús de BlueXP.
+
+En este momento, hay un evento de organización en niveles que aparecerá como notificación:
+
+* Organice en niveles los datos adicionales del cluster <name> al almacenamiento de objetos para aumentar la eficiencia de su almacenamiento
+
+
+Esta notificación es una «recomendación» que pretende hacer que sus sistemas sean más eficientes y ahorrar costes de almacenamiento. Indica que un clúster organiza en niveles menos de un 20 % de sus datos inactivos, incluidos clústeres que no organizan datos en niveles. Proporciona un enlace al https://bluexp.netapp.com/cloud-tiering-service-tco["Calculadora de ahorro y coste total de propiedad de la organización en niveles de BlueXP"^] para ayudarle a calcular el ahorro de costes.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Obtenga más información sobre el Centro de notificaciones"^].
