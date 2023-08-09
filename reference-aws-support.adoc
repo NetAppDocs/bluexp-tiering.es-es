@@ -22,9 +22,9 @@ La organización en niveles de BlueXP admite varias clases de almacenamiento S3 
 
 Cuando configuras la organización en niveles de los datos en AWS, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el que los datos pasan de la clase de almacenamiento _Standard_ a otra clase de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
 
-* Acceso Estándar-poco frecuente
-* Una Zona de acceso poco frecuente
-* Intelligent-Tiering (AWS mueve datos automáticamente entre dos niveles: Acceso frecuente y acceso poco frecuente: Cuando cambian los patrones de acceso)
+* Acceso estándar poco frecuente (S3 Estándar - IA)
+* Una zona - Acceso poco frecuente (S3 una zona - IA)
+* Organización en niveles inteligente (S3 organización en niveles inteligente)
 * Recuperación instantánea de Glacier
 
 

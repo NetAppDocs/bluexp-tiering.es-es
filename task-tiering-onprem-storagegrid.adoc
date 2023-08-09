@@ -195,7 +195,7 @@ También puede establecer el ancho de banda de red disponible para cargar datos 
 ** Para seleccionar varios volúmenes, active la casilla de cada volumen (image:button_backup_1_volume.png[""]) Y haga clic en *Configurar volúmenes*.
 ** Para seleccionar un único volumen, haga clic en la fila (o. image:screenshot_edit_icon.gif["editar icono de lápiz"] ) para el volumen.
 +
-image:screenshot_tiering_tier_volumes.png["Una captura de pantalla que muestra cómo seleccionar un único volumen, varios volúmenes o todos los volúmenes y el botón Modificar volúmenes seleccionados."]
+image:screenshot_tiering_initial_volumes.png["Una captura de pantalla que muestra cómo seleccionar un único volumen, varios volúmenes o todos los volúmenes y el botón Modificar volúmenes seleccionados."]
 
 
 
@@ -204,7 +204,7 @@ image:screenshot_tiering_tier_volumes.png["Una captura de pantalla que muestra c
 link:concept-cloud-tiering.html#volume-tiering-policies["Obtenga más información acerca de las políticas de organización en niveles de volumen y los días de refrigeración"].
 
 +
-image:screenshot_tiering_policy_settings.png["Captura de pantalla que muestra la configuración de la política de organización en niveles configurable."]
+image:screenshot_tiering_initial_policy_settings.png["Captura de pantalla que muestra la configuración de la política de organización en niveles configurable."]
 
 
 

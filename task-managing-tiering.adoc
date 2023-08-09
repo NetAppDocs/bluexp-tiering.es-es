@@ -256,3 +256,21 @@ Tenga en cuenta que la dirección IP de gestión del clúster se rellena en func
 BlueXP detecta el clúster y lo agrega a un entorno de trabajo en el lienzo utilizando el nombre del clúster como nombre del entorno de trabajo.
 
 En el panel derecho puede habilitar el servicio de organización en niveles u otros servicios para este clúster.
+
+
+
+== Busca un clúster en todos los conectores de BlueXP
+
+Si utiliza varios conectores para gestionar todo el almacenamiento del entorno, es posible que algunos clústeres en los que desee implementar la organización en niveles estén en otro conector. Si no estás seguro de qué Connector gestiona un determinado clúster, puedes buscar en todos los conectores mediante la organización en niveles de BlueXP.
+
+.Pasos
+. En la barra de menús de la organización en niveles de BlueXP, haga clic en el menú de acciones y seleccione *Buscar clúster en todos los conectores*.
++
+image:screenshot_tiering_search for_cluster.png["Una captura de pantalla que muestra cómo buscar un clúster que puede estar en cualquiera de tus conectores BlueXP."]
+
+. En el cuadro de diálogo Buscar mostrado, introduzca el nombre del clúster y haga clic en *Buscar*.
++
+La organización en niveles de BlueXP muestra el nombre del conector si es capaz de encontrar el clúster.
+
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["Cambie al conector y configure la organización en niveles del clúster"^].
+

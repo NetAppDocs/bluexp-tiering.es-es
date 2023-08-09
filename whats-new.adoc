@@ -18,6 +18,22 @@ Descubre las novedades en la organización en niveles de BlueXP.
 
 
 
+== 9 de agosto de 2023
+
+
+
+=== Use un prefijo personalizado para el nombre del bloque donde se almacenan los datos almacenados en niveles
+
+Anteriormente, era necesario utilizar el prefijo predeterminado «fabric-pool» al definir el nombre del bucket, por ejemplo, _fabric-pool-bucket1_. Ahora puede utilizar un prefijo personalizado al asignar un nombre a su cubo. Esta funcionalidad solo está disponible cuando se organizan los datos en niveles en Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["Leer más"].
+
+
+
+=== Busca un clúster en todos los conectores de BlueXP
+
+Si utiliza varios conectores para gestionar todos los sistemas de almacenamiento del entorno, algunos clústeres en los que desea implementar la organización en niveles pueden estar en conectores diferentes. Si no estás seguro de qué Connector gestiona un determinado clúster, puedes buscar en todos los conectores mediante la organización en niveles de BlueXP. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["Leer más"].
+
+
+
 == 4 de julio de 2023
 
 
@@ -131,13 +147,3 @@ La interfaz de usuario de organización en niveles en el cloud ha añadido un nu
 === Compatibilidad con licencias de Cloud Tiering para configuraciones de MetroCluster
 
 Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de MetroCluster. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]
-
-
-
-== 3 de mayo de 2022
-
-
-
-=== Compatibilidad con licencias de Cloud Tiering para configuraciones de clúster adicionales
-
-Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de Tiering Mirror (no incluidas las configuraciones de MetroCluster) y con clústeres organizados en niveles en IBM Cloud Object Storage. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]

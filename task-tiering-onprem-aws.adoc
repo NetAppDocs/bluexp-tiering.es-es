@@ -188,9 +188,9 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["A
 
 == Prepare el entorno AWS
 
-Cuando se configura la organización en niveles de datos en un nuevo clúster, se le pedirá que cree un bloque de S3 o que seleccione un bloque de S3 existente en la cuenta de AWS donde se haya configurado el conector. La cuenta de AWS debe tener permisos y una clave de acceso a la que puedas acceder en la organización en niveles de BlueXP. El clúster de ONTAP utiliza la clave de acceso para colocar los datos en niveles dentro y fuera de S3.
+Cuando configura la organización de datos en niveles para un nuevo clúster, se le preguntará si desea que el servicio cree un bucket de S3 o si desea seleccionar un bucket de S3 existente en la cuenta de AWS donde está configurado Connector. La cuenta de AWS debe tener permisos y una clave de acceso a la que puedas acceder en la organización en niveles de BlueXP. El clúster de ONTAP utiliza la clave de acceso para colocar los datos en niveles dentro y fuera de S3.
 
-El bloque de S3 debe estar en una link:reference-aws-support.html#supported-aws-regions["Región compatible con la organización en niveles de BlueXP"].
+De forma predeterminada, el servicio de organización en niveles crea el bloque necesario para usted. Si desea utilizar su propio bloque, puede crear uno antes de iniciar el asistente de activación de organización en niveles y, a continuación, seleccionar ese bloque en el asistente. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Descubre cómo crear buckets S3 a partir de BlueXP"^]. El depósito se debe utilizar exclusivamente para almacenar datos inactivos de sus volúmenes; no se puede utilizar para ningún otro propósito. El bloque de S3 debe estar en una link:reference-aws-support.html#supported-aws-regions["Región compatible con la organización en niveles de BlueXP"].
 
 
 NOTE: Si tienes pensado configurar la organización en niveles de BlueXP para utilizar una clase de almacenamiento de menor coste a la que pasarán tus datos organizados en niveles después de un cierto número de días, no debes seleccionar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de AWS. La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida.
@@ -201,13 +201,30 @@ NOTE: Si tienes pensado configurar la organización en niveles de BlueXP para ut
 
 Tendrá que configurar dos conjuntos de permisos:
 
-* Permisos para que el conector cree y gestione el bloque de S3.
+* Permisos para el conector para que pueda crear y gestionar el cucharón S3.
 * Permisos para el clúster ONTAP en las instalaciones para que pueda leer y escribir datos en el bloque de S3.
 
 
 .Pasos
-. Confirme eso https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Estos permisos de S3"^] Forman parte de la función IAM que proporciona permisos al conector. Se deberían haber incluido de forma predeterminada cuando se desplegó el conector por primera vez. De lo contrario, deberá agregar los permisos que faltan. Consulte https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentación de AWS: Editar políticas de IAM"^].
-. Al activar el servicio, el asistente de organización en niveles le solicitará que introduzca una clave de acceso y una clave secreta. Estas credenciales se pasan al clúster de ONTAP para que ONTAP pueda organizar los datos en niveles en el bloque de S3. Para ello, deberá crear un usuario de IAM con los siguientes permisos:
+. *Permisos de conector*:
++
+** Confirme eso https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Estos permisos de S3"^] Forman parte de la función IAM que proporciona permisos al conector. Se deberían haber incluido de forma predeterminada cuando se desplegó el conector por primera vez. De lo contrario, deberá agregar los permisos que falten. Consulte https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentación de AWS: Editar políticas de IAM"^] si desea obtener instrucciones.
+** El bloque predeterminado que crea la organización en niveles de BlueXP tiene un prefijo de «fabric-pool». Si desea utilizar un prefijo diferente para el depósito, deberá personalizar los permisos con el nombre que desee utilizar. En los S3 permisos verás una línea `"Resource": ["arn:aws:s3:::fabric-pool*"]`. Deberá cambiar el «pool de estructura» por el prefijo que desee utilizar. Por ejemplo, si quieres usar “tiering-1” como prefijo para tus buckets, cambiarás esta línea a. `"Resource": ["arn:aws:s3:::tiering-1*"]`.
++
+Si quieres usar un prefijo diferente para los bloques que utilizarás para clústeres adicionales en esta misma cuenta de BlueXP, puedes añadir otra línea con el prefijo para otros bloques. Por ejemplo:
+
++
+`"Resource": ["arn:aws:s3:::tiering-1*"]`
+`"Resource": ["arn:aws:s3:::tiering-2*"]`
+
++
+Si va a crear su propio depósito y no utiliza un prefijo estándar, debe cambiar esta línea a. `"Resource": ["arn:aws:s3:::*"]` para que se reconozca cualquier cucharón. Sin embargo, esto puede exponer todos sus cubos en lugar de los que ha diseñado para mantener los datos inactivos de sus volúmenes.
+
+
+
+. *Permisos de clúster*:
++
+** Al activar el servicio, el asistente de organización en niveles le solicitará que introduzca una clave de acceso y una clave secreta. Estas credenciales se pasan al clúster de ONTAP para que ONTAP pueda organizar los datos en niveles en el bloque de S3. Para ello, deberá crear un usuario de IAM con los siguientes permisos:
 +
 [source, json]
 ----
@@ -220,6 +237,8 @@ Tendrá que configurar dos conjuntos de permisos:
 ----
 +
 Consulte https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html["Documentación de AWS: Crear un rol para delegar permisos en un usuario de IAM"^] para obtener más detalles.
+
+
 
 . Cree o busque la clave de acceso.
 +
@@ -309,12 +328,12 @@ image:screenshot_tiering_aws_s3_bucket.png["Una captura de pantalla que muestra 
 
 . Complete las secciones en la página *Configuración de niveles*:
 +
-.. *S3 Bucket*: Agrega un nuevo bucket S3 o selecciona un bucket S3 existente que comience con el prefijo definido “fabric-pool”, selecciona la región bucket y haz clic en *Continue*.
+.. *S3 Bucket*: Agrega un nuevo bucket S3 o selecciona un bucket S3 existente, selecciona la región del bucket y haz clic en *Continuar*.
 +
 Cuando se usa un conector en las instalaciones, debe introducir el identificador de cuenta de AWS que proporciona acceso al bloque de S3 existente o al nuevo bloque de S3 que se creará.
 
 +
-El prefijo _fabric-pool_ se utiliza de forma predeterminada porque la política IAM para el conector permite a la instancia realizar acciones S3 en los bloques con ese prefijo exacto. Por ejemplo, se puede asignar un nombre al bloque de S3 _Fabric-pool-AFF1_, donde AFF1 es el nombre del clúster.
+El prefijo _fabric-pool_ se utiliza de forma predeterminada porque la política IAM para el conector permite a la instancia realizar acciones S3 en los bloques con ese prefijo exacto. Por ejemplo, se puede asignar un nombre al bloque de S3 _Fabric-pool-AFF1_, donde AFF1 es el nombre del clúster. También puede definir el prefijo de los bloques utilizados para la organización en niveles. Consulte <<Configure permisos de S3,Configuración de permisos S3>> Para asegurarse de que tiene permisos de AWS que reconocen cualquier prefijo personalizado que planea utilizar.
 
 .. *Clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos escalonados. Los datos se inician en la clase _Standard_, pero puede crear una regla para mover los datos a otra clase después de un determinado número de días.
 +
@@ -351,7 +370,7 @@ También puede establecer el ancho de banda de red disponible para cargar datos 
 ** Para seleccionar varios volúmenes, active la casilla de cada volumen (image:button_backup_1_volume.png[""]) Y haga clic en *Configurar volúmenes*.
 ** Para seleccionar un único volumen, haga clic en la fila (o. image:screenshot_edit_icon.gif["editar icono de lápiz"] ) para el volumen.
 +
-image:screenshot_tiering_tier_volumes.png["Una captura de pantalla que muestra cómo seleccionar un único volumen, varios volúmenes o todos los volúmenes y el botón Modificar volúmenes seleccionados."]
+image:screenshot_tiering_initial_volumes.png["Una captura de pantalla que muestra cómo seleccionar un único volumen, varios volúmenes o todos los volúmenes y el botón Modificar volúmenes seleccionados."]
 
 
 
@@ -360,7 +379,7 @@ image:screenshot_tiering_tier_volumes.png["Una captura de pantalla que muestra c
 link:concept-cloud-tiering.html#volume-tiering-policies["Obtenga más información acerca de las políticas de organización en niveles de volumen y los días de refrigeración"].
 
 +
-image:screenshot_tiering_policy_settings.png["Captura de pantalla que muestra la configuración de la política de organización en niveles configurable."]
+image:screenshot_tiering_initial_policy_settings.png["Captura de pantalla que muestra la configuración de la política de organización en niveles configurable."]
 
 
 
