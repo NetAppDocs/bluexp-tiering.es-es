@@ -147,7 +147,7 @@ Cuando se configura una organización en niveles, debe proporcionar claves de ac
 Los cubos de almacenamiento en el cloud deben estar en una link:reference-google-support.html#supported-google-cloud-regions["Región compatible con la organización en niveles de BlueXP"].
 
 
-NOTE: Si tienes pensado configurar la organización en niveles de BlueXP para utilizar clases de almacenamiento de menor coste a las que pasarán tus datos organizados en niveles después de un cierto número de días, no debes seleccionar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de GCP. La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida.
+NOTE: Si estás planeando configurar la organización en niveles de BlueXP para utilizar clases de almacenamiento de menor coste a las que tus datos organizados en niveles se pasarán después de un cierto número de días, no debes seleccionar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de GCP. La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida.
 
 .Pasos
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Cree una cuenta de servicio con el Administrador de almacenamiento predefinido función"^].
@@ -187,18 +187,18 @@ image:screenshot_setup_tiering_onprem.png["Captura de pantalla que muestra la op
 . Siga estos pasos en las páginas *Crear almacenamiento de objetos*:
 +
 .. *Bucket*: Agregue un nuevo cubo de Google Cloud Storage o seleccione un bloque existente.
-.. * Ciclo de vida de la clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos escalonados. Los datos se inician en la clase _Standard_, pero puede crear reglas para mover los datos a otras clases después de un determinado número de días.
+.. * Ciclo de vida de la clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos organizados en niveles. Los datos comienzan en la clase _Standard_, pero puede crear reglas para aplicar diferentes clases de almacenamiento después de un cierto número de días.
 +
-Seleccione la clase de almacenamiento de Google Cloud a la que desea transferir los datos organizados por niveles y el número de días antes de que se muevan los datos, y haga clic en *continuar*. Por ejemplo, la siguiente captura de pantalla muestra que los datos organizados por niveles se mueven de la clase _Standard_ a la clase _Nearline_ después de 30 días en el almacenamiento de objetos y, a continuación, a la clase _Coldline_ después de 60 días en el almacenamiento de objetos.
+Seleccione la clase de almacenamiento de Google Cloud a la que desea realizar la transición de los datos almacenados en niveles y el número de días antes de que se asignen los datos a esa clase, y haga clic en * Continuar *. Por ejemplo, la siguiente captura de pantalla muestra que los datos en niveles se asignan a la clase _Nearline_ de la clase _Standard_ después de 30 días en el almacenamiento de objetos y, a continuación, a la clase _Coldline_ después de 60 días en el almacenamiento de objetos.
 
 +
 Si elige *mantener datos en esta clase de almacenamiento*, los datos permanecerán en esa clase de almacenamiento. link:reference-google-support.html["Consulte las clases de almacenamiento compatibles"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_gcp.png["Una captura de pantalla que muestra cómo seleccionar clases de almacenamiento adicionales en las que se moverán los datos después de un determinado número de días."]
+image:screenshot_tiering_lifecycle_selection_gcp.png["Una captura de pantalla que muestra cómo seleccionar clases de almacenamiento adicionales que se asignan a los datos después de un cierto número de días."]
 
 +
-Tenga en cuenta que la regla de ciclo de vida se aplica a todos los objetos del cucharón seleccionado.
+Tenga en cuenta que la regla de ciclo de vida se aplica a todos los objetos del depósito seleccionado.
 
 .. *Credentials*: Introduzca la clave de acceso al almacenamiento y la clave secreta para una cuenta de servicio que tenga el rol Storage Admin.
 .. *Red de clúster*: Seleccione el espacio IP que ONTAP debe utilizar para conectarse al almacenamiento de objetos.

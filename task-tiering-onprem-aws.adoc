@@ -193,7 +193,7 @@ Cuando configura la organización de datos en niveles para un nuevo clúster, se
 De forma predeterminada, el servicio de organización en niveles crea el bloque necesario para usted. Si desea utilizar su propio bloque, puede crear uno antes de iniciar el asistente de activación de organización en niveles y, a continuación, seleccionar ese bloque en el asistente. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Descubre cómo crear buckets S3 a partir de BlueXP"^]. El depósito se debe utilizar exclusivamente para almacenar datos inactivos de sus volúmenes; no se puede utilizar para ningún otro propósito. El bloque de S3 debe estar en una link:reference-aws-support.html#supported-aws-regions["Región compatible con la organización en niveles de BlueXP"].
 
 
-NOTE: Si tienes pensado configurar la organización en niveles de BlueXP para utilizar una clase de almacenamiento de menor coste a la que pasarán tus datos organizados en niveles después de un cierto número de días, no debes seleccionar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de AWS. La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida.
+NOTE: Si tienes pensado configurar la organización en niveles de BlueXP para utilizar una clase de almacenamiento de menor coste a la que pasarán tus datos organizados en niveles transcurridos un cierto número de días, no debes seleccionar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de AWS. La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida.
 
 
 
@@ -335,18 +335,18 @@ Cuando se usa un conector en las instalaciones, debe introducir el identificador
 +
 El prefijo _fabric-pool_ se utiliza de forma predeterminada porque la política IAM para el conector permite a la instancia realizar acciones S3 en los bloques con ese prefijo exacto. Por ejemplo, se puede asignar un nombre al bloque de S3 _Fabric-pool-AFF1_, donde AFF1 es el nombre del clúster. También puede definir el prefijo de los bloques utilizados para la organización en niveles. Consulte <<Configure permisos de S3,Configuración de permisos S3>> Para asegurarse de que tiene permisos de AWS que reconocen cualquier prefijo personalizado que planea utilizar.
 
-.. *Clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos escalonados. Los datos se inician en la clase _Standard_, pero puede crear una regla para mover los datos a otra clase después de un determinado número de días.
+.. *Clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos organizados en niveles. Los datos comienzan en la clase _Standard_, pero puede crear una regla para aplicar una clase de almacenamiento diferente a los datos después de un cierto número de días.
 +
-Seleccione la clase de almacenamiento S3 a la que desea transferir los datos organizados por niveles y el número de días antes de que se muevan los datos y haga clic en *continuar*. Por ejemplo, la siguiente captura de pantalla muestra que los datos organizados en niveles se mueven de la clase _Standard_ a la clase _Standard-IA_ después de 45 días en el almacenamiento de objetos.
+Seleccione la clase de almacenamiento S3 a la que desea realizar la transición de los datos escalonados y el número de días antes de que los datos se asignen a esa clase, y haga clic en * Continuar *. Por ejemplo, la siguiente captura de pantalla muestra que los datos en niveles se asignan a la clase _Standard-IA_ de la clase _Standard_ después de 45 días en el almacenamiento de objetos.
 
 +
 Si elige *mantener datos en esta clase de almacenamiento*, los datos permanecerán en la clase de almacenamiento _Standard_ y no se aplicarán reglas. link:reference-aws-support.html["Consulte las clases de almacenamiento compatibles"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_aws.png["Una captura de pantalla que muestra cómo seleccionar otra clase de almacenamiento en la que los datos se mueven después de un cierto número de días."]
+image:screenshot_tiering_lifecycle_selection_aws.png["Una captura de pantalla que muestra cómo seleccionar otra clase de almacenamiento que se asigne a los datos después de un cierto número de días."]
 
 +
-Tenga en cuenta que la regla de ciclo de vida se aplica a todos los objetos del cucharón seleccionado.
+Tenga en cuenta que la regla de ciclo de vida se aplica a todos los objetos del depósito seleccionado.
 
 .. *Credenciales*: Introduzca el ID de clave de acceso y la clave secreta para un usuario IAM que tenga los permisos S3 necesarios y haga clic en *continuar*.
 +

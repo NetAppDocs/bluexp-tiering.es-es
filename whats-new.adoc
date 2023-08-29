@@ -130,7 +130,7 @@ Si el destino de organización en niveles de Amazon S3 existe como entorno de tr
 
 === Elija el comportamiento de organización en niveles al eliminar el almacén de objetos reflejados en una configuración de MetroCluster
 
-Al quitar el almacén de objetos de réplica de una configuración de MetroCluster, se le preguntará si desea quitar también el almacén de objetos principal. Puede optar por mantener el almacén de objetos principal Unido al agregado o eliminarlo.
+Al eliminar el almacén de objetos de reflejos de una configuración de MetroCluster, se le preguntará si también desea quitar el almacén de objetos primario. Puede optar por mantener el almacén de objetos principal Unido al agregado o eliminarlo.
 
 
 

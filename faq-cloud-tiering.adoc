@@ -284,7 +284,7 @@ La organización en niveles de BlueXP admite la organización de los datos en ni
 
 === ¿La organización en niveles de BlueXP admite el uso de políticas de gestión del ciclo de vida?
 
-Sí. Puedes habilitar la gestión del ciclo de vida para que la organización en niveles de BlueXP haga la transición de los datos del nivel de acceso o clase de almacenamiento predeterminado a un nivel más rentable tras un determinado número de días. La regla del ciclo de vida se aplica a todos los objetos del bloque seleccionado para el almacenamiento Amazon S3 y Google Cloud, y a todos los contenedores de la cuenta de almacenamiento seleccionada para Azure Blob.
+Sí. Puede habilitar la gestión del ciclo de vida para que la organización en niveles de BlueXP haga la transición de los datos del nivel de acceso o clase de almacenamiento predeterminado a un nivel más rentable tras un determinado número de días. La regla de ciclo de vida se aplica a todos los objetos del bloque seleccionado para el almacenamiento de Amazon S3 y Google Cloud, así como a todos los contenedores de la cuenta de almacenamiento seleccionada para Azure Blob.
 
 
 

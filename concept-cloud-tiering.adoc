@@ -31,7 +31,7 @@ https://bluexp.netapp.com/cloud-tiering-service-tco["Utiliza la calculadora de T
 La organización en niveles de BlueXP ofrece automatización, supervisión, informes y una interfaz de gestión común:
 
 * Gracias a la automatización, resulta más sencillo configurar y gestionar los datos Organización en niveles desde clústeres de ONTAP en las instalaciones al cloud
-* Puede elegir el nivel de acceso/clase de almacenamiento predeterminado del proveedor de cloud o utilizar la gestión del ciclo de vida para mover los datos antiguos por niveles a un nivel más rentable
+* Puede elegir el nivel de acceso o la clase de almacenamiento del proveedor de cloud predeterminado, o utilizar la gestión del ciclo de vida para asignar un nivel más rentable a los datos antiguos organizados en niveles
 * Puede crear conexiones a almacenes de objetos adicionales que se puedan usar para otros agregados del clúster
 * Con la interfaz de usuario de se pueden arrastrar almacenes de objetos a un agregado para la organización en niveles y para el mirroring de FabricPool
 * Un único panel elimina la necesidad de disponer de forma independiente Gestione FabricPool en varios clústeres
@@ -159,7 +159,7 @@ En general, la organización en niveles de BlueXP funciona así:
 . BlueXP configura ONTAP para que utilice el proveedor de almacenamiento de objetos y determina la cantidad de datos activos e inactivos del clúster.
 . La política de organización en niveles y los volúmenes se aplican a esos volúmenes.
 . ONTAP inicia la organización en niveles de los datos inactivos en el almacén de objetos tan pronto como los datos han alcanzado los umbrales que se deben considerar inactivos (consulte <<Políticas de organización en niveles del volumen>>).
-. Si ha aplicado una regla de ciclo de vida a los datos organizados en niveles (solo disponible para algunos proveedores), los datos antiguos se mueven a un nivel más rentable al cabo de un determinado número de días.
+. Si ha aplicado una regla de ciclo de vida a los datos escalonados (solo disponibles para algunos proveedores), los datos escalonados más antiguos se asignan a un nivel más rentable después de un determinado número de días.
 
 
 

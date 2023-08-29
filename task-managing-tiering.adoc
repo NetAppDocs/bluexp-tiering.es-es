@@ -154,7 +154,7 @@ Existen dos opciones:
 NOTE: Puede que su proveedor de cloud le cargue en función de la cantidad de datos que se transfieren fuera del cloud.
 
 .Pasos
-Asegúrese de tener suficiente espacio en el nivel de rendimiento para todos los datos que se van a mover desde el cloud.
+Asegúrese de tener suficiente espacio en el nivel de rendimiento para todos los datos que se vuelven a mover desde el cloud.
 
 . En el menú de navegación de la izquierda, seleccione *movilidad > Organización en niveles*.
 . En la página *Clusters*, haga clic en *Tier Volumes* para el clúster.

@@ -189,18 +189,18 @@ Cuando se utiliza un conector en las instalaciones, debe introducir la suscripci
 +
 Las cuentas de almacenamiento y los contenedores que aparecen en este paso pertenecen al grupo de recursos seleccionado en el paso anterior.
 
-.. *Ciclo de vida del nivel de acceso*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos escalonados. Los datos comienzan en la clase _Hot_, pero puede crear una regla para mover los datos a la clase _Cool_ después de un determinado número de días.
+.. *Ciclo de vida del nivel de acceso*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos organizados en niveles. Los datos comienzan en la clase _Hot_, pero puede crear una regla para aplicar la clase _Cool_ a los datos después de un cierto número de días.
 +
-Seleccione el nivel de acceso al que desea transferir los datos organizados por niveles y el número de días antes de que se muevan los datos y haga clic en *continuar*. Por ejemplo, la siguiente captura de pantalla muestra que los datos organizados en niveles se mueven de la clase _Hot_ a la clase _Cool_ después de 45 días en el almacenamiento de objetos.
+Seleccione el nivel de acceso al que desea realizar la transición de los datos escalonados y el número de días antes de que los datos se asignen a ese nivel, y haga clic en * Continuar *. Por ejemplo, la siguiente captura de pantalla muestra que los datos en niveles se asignan a la clase _Cool_ de la clase _Hot_ después de 45 días en el almacenamiento de objetos.
 
 +
 Si elige *mantener datos en este nivel de acceso*, los datos permanecerán en el nivel de acceso _Hot_ y no se aplicarán reglas. link:reference-azure-support.html["Consulte los niveles de acceso compatibles"^].
 
 +
-image:screenshot_tiering_lifecycle_selection_azure.png["Una captura de pantalla que muestra cómo seleccionar otro nivel de acceso en el que se mueven los datos después de un determinado número de días."]
+image:screenshot_tiering_lifecycle_selection_azure.png["Una captura de pantalla que muestra cómo seleccionar otro nivel de acceso que se asigna a los datos después de un cierto número de días."]
 
 +
-Tenga en cuenta que la regla del ciclo de vida se aplica a todos los contenedores BLOB de la cuenta de almacenamiento seleccionada.
+Tenga en cuenta que la regla de ciclo de vida se aplica a todos los contenedores blob de la cuenta de almacenamiento seleccionada.
 
 .. *Red de clúster*: Seleccione el espacio IP que ONTAP debe utilizar para conectarse al almacenamiento de objetos y haga clic en *continuar*.
 +
