@@ -727,7 +727,6 @@
   <block id="e298f51ca48eff0d92cee75ca43aaa3a" category="paragraph"><block ref="ac0a406faf148be2b386c73b962697e7" category="inline-link-rx"></block>.</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">Antes de poder abrir un caso de soporte con el soporte técnico de NetApp, debe añadir una cuenta de la página de soporte de NetApp a BlueXP y, a continuación, registrarse para recibir soporte.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Regístrese para recibir soporte</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Soporte para soluciones de proveedores cloud</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX para ONTAP</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service para Google Cloud</block>
@@ -933,7 +932,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Otros recursos</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">Casos de uso de BlueXP</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
   <block id="1c573cd95f6407add05436f6ac05d6ec" category="section-title">Descargue un informe de organización en niveles para los volúmenes</block>
   <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">Descargue</block>
   <block id="fe8e7e0f08b18c3c012d94d74e8386ce" category="inline-image-macro">Una captura de pantalla que muestra cómo generar un archivo CSV en el que se enumera el estado de organización en niveles de todos los volúmenes.</block>
@@ -1286,9 +1284,7 @@
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Para utilizar la funcionalidad *Crear un caso*, primero debes asociar tus credenciales del sitio de soporte de NetApp con el inicio de sesión de BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si abre un caso para un sistema ONTAP que tiene un número de serie, su cuenta de NSS deberá estar asociada con el número de serie de ese sistema.</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">Este error podría significar que la cuenta NSS y la compañía de registro con la que está asociada no es la misma compañía de registro para el número de serie de la cuenta de BlueXP (es decir, 960xxxx) o el número de serie del entorno de trabajo. Puede solicitar ayuda utilizando una de las siguientes opciones:</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">Es necesario registrarse en soporte para tu cuenta de BlueXP y para sistemas de Cloud Volumes ONTAP individuales.</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">El registro de ambos tipos de números de serie permite funcionalidades, como abrir tickets de soporte y la generación automática de casos. Para completar el registro, añade cuentas del sitio de soporte de NetApp (NSS) a BlueXP, como se describe a continuación.</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Para obtener soporte técnico para las siguientes soluciones de proveedores de nube, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Registra tu cuenta de BlueXP para recibir soporte de NetApp</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Para registrarte para obtener soporte y activar el soporte, un usuario de tu cuenta de BlueXP debe asociar una cuenta en el sitio de soporte de NetApp a su inicio de sesión en BlueXP. La forma de registrarse para recibir soporte de NetApp depende de si ya tiene una cuenta del sitio de soporte de NetApp (NSS).</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Seleccione *Agregar credenciales NSS* y siga el aviso de autenticación del sitio de soporte de NetApp (NSS).</block>
@@ -1435,4 +1431,9 @@
   <block id="15b2d2644c0eb82c219365b9d3ed6f75" category="paragraph">Asegúrese de tener suficiente espacio en el nivel de rendimiento para todos los datos que se vuelven a mover desde el cloud.</block>
   <block id="18711602a05157009e1d81446d484cb4" category="list-text">* Ciclo de vida de la clase de almacenamiento*: La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida de tus datos organizados en niveles. Los datos comienzan en la clase _Standard_, pero puede crear una regla para aplicar una clase de almacenamiento diferente a los datos después de un cierto número de días.</block>
   <block id="8ca0007104a6880fedaff25fc59dc8ad" category="paragraph">Al eliminar el almacén de objetos de reflejos de una configuración de MetroCluster, se le preguntará si también desea quitar el almacén de objetos primario. Puede optar por mantener el almacén de objetos principal Unido al agregado o eliminarlo.</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">Es necesario registrarse en soporte para recibir soporte técnico específico para BlueXP y sus servicios y soluciones de almacenamiento. También es necesario registrar soporte para habilitar flujos de trabajo clave para los sistemas Cloud Volumes ONTAP.</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">Al registrarse para recibir soporte, no se habilita el soporte de NetApp para un servicio de archivos de proveedor de cloud. Para obtener soporte técnico relacionado con un servicio de archivos del proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenga soporte para un servicio de archivos de proveedores de cloud</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Para obtener soporte técnico relacionado con un servicio de archivos del proveedor de cloud, su infraestructura o cualquier solución que utilice el servicio, consulte «Obtener ayuda» en la documentación de BlueXP para ese producto.</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Para recibir soporte técnico específico sobre BlueXP y sus soluciones y servicios de almacenamiento, use las opciones de soporte descritas a continuación.</block>
 </blocks>
