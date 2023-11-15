@@ -125,9 +125,9 @@ link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-paygo-subscription["
 
 === Contrato anual
 
-La organización en niveles de BlueXP ofrece un contrato anual al organizar en niveles los datos inactivos en Amazon S3. Está disponible en periodos de 1, 2 o 3 años.
+La organización en niveles de BlueXP ofrece un contrato anual al organizar en niveles los datos inactivos en Amazon S3 o Azure. Está disponible en periodos de 1, 2 o 3 años.
 
-Actualmente, no se admiten contratos anuales si la organización en niveles se realiza en Azure o GCP.
+Actualmente, los contratos anuales no se admiten cuando la organización en niveles en Google Cloud.
 
 
 

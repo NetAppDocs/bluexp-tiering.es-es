@@ -27,6 +27,14 @@ link:concept-cloud-tiering.html#pricing-and-licenses["Descubre cómo funciona la
 
 
 
+== prueba gratuita de 30 días
+
+Si no tienes una licencia de organización en niveles de BlueXP, la prueba gratuita de 30 días de la organización en niveles de BlueXP comienza cuando configuras la organización en niveles en el primer clúster. Cuando finalice la prueba gratuita de 30 días, tendrás que pagar la organización en niveles de BlueXP mediante una suscripción de pago por uso, una suscripción anual, una licencia BYOL o una combinación de ellas.
+
+Si su prueba gratuita finaliza y no se ha suscrito o agregado una licencia, ONTAP ya no organiza los datos inactivos en niveles para el almacenamiento de objetos. Todos los datos previamente organizados en niveles siguen siendo accesibles; lo que significa que se pueden recuperar y utilizar estos datos. Cuando se recuperan, estos datos se mueven de nuevo al nivel de rendimiento del cloud.
+
+
+
 == Utiliza una suscripción PAYGO en la organización en niveles de BlueXP
 
 Las suscripciones de pago por uso desde el mercado de su proveedor de cloud permiten utilizar las licencias para usar los sistemas Cloud Volumes ONTAP y muchos servicios de datos de cloud, como la organización en niveles de BlueXP.
@@ -41,7 +49,7 @@ Suscríbete a la organización en niveles de BlueXP desde AWS Marketplace y conf
 .Pasos
 . En BlueXP, haz clic en *Mobility > Tiering > On-premises Dashboard*.
 . En la sección _Marketplace subscriptions_, haga clic en *Suscribirse* en Amazon Web Services y, a continuación, haga clic en *continuar*.
-. Suscríbase en el https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
+. Suscríbase en el https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["Mercado AWS"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
 El siguiente vídeo muestra el proceso:
 
@@ -69,15 +77,15 @@ video::video_subscribing_azure_tiering.mp4[width=848,height=480]
 
 
 
-=== Suscribirse desde el mercado de GCP
+=== Suscribirse desde Google Cloud Marketplace
 
-Suscríbete a la organización en niveles de BlueXP desde GCP Marketplace y configura una suscripción de pago por uso para la organización de datos en niveles desde los clústeres de ONTAP al almacenamiento de Google Cloud.
+Suscríbete a la organización en niveles de BlueXP desde Google Cloud Marketplace y configura una suscripción de pago por uso para la organización de datos en niveles desde los clústeres de ONTAP al almacenamiento de Google Cloud.
 
 [[subscribe-gcp]]
 .Pasos
 . En BlueXP, haz clic en *Mobility > Tiering > On-premises Dashboard*.
 . En la sección _Marketplace Subscriptions_, haga clic en *Suscribirse* en Google Cloud y, a continuación, haga clic en *continuar*.
-. Suscríbase en el https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
+. Suscríbase en el https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^], Y a continuación, vuelva a iniciar sesión en el sitio Web de BlueXP para completar el registro.
 +
 El siguiente vídeo muestra el proceso:
 
@@ -89,13 +97,13 @@ video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
 
 == Utilizar un contrato anual
 
-Paga por la organización en niveles de BlueXP cada año comprando un contrato anual.
+Paga por la organización en niveles de BlueXP cada año comprando un contrato anual. Los contratos anuales están disponibles en plazos de 1, 2 o 3 años.
 
-Al organizar en niveles los datos inactivos en AWS, puede suscribirse a un contrato anual que esté disponible en https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace"^]. Está disponible en periodos de 1, 2 o 3 años.
+Al organizar los datos inactivos en niveles en AWS, puedes suscribirte a un contrato anual del https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS Marketplace"^]. Si desea utilizar esta opción, configure su suscripción desde la página Marketplace y, a continuación, configure https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Asocie la suscripción con sus credenciales de AWS"^].
 
-Si desea utilizar esta opción, configure su suscripción desde la página Marketplace y, a continuación, configure https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Asocie la suscripción con sus credenciales de AWS"^].
+Al organizar en niveles los datos inactivos en Azure, puedes suscribirte a un contrato anual del https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["Página de Azure Marketplace"^]. Si desea utilizar esta opción, configure su suscripción desde la página Marketplace y, a continuación, configure https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html#subscribe["Asocie la suscripción a sus credenciales de Azure"^].
 
-Actualmente, no se admiten contratos anuales si la organización en niveles se realiza en Azure o GCP.
+Actualmente, los contratos anuales no se admiten al organizar en niveles en Google Cloud.
 
 
 
