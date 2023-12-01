@@ -5,15 +5,12 @@ keywords: overview, tiering overview, tiered clusters, clusters enabled for tier
 summary: La organización en niveles de BlueXP ofrece una vista agregada de la organización de datos en niveles desde cada uno de los clústeres on-premises. Esta descripción general proporciona una visión clara de su entorno y le permite tomar las acciones adecuadas. 
 ---
 = Obtenga información general sobre la organización en niveles de los datos en los clústeres
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
