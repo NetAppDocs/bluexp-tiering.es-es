@@ -20,7 +20,7 @@ La organización en niveles de BlueXP admite dos niveles de acceso y la mayoría
 
 == Niveles de acceso de Azure Blob compatibles
 
-Cuando configuras la organización en niveles de los datos en Azure, la organización en niveles de BlueXP utiliza automáticamente el nivel de acceso _Hot_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en la transición de los datos del nivel de acceso _Hot_ al nivel de acceso _Cool_ tras un cierto número de días.
+Cuando configuras la organización en niveles de los datos en Azure desde tus sistemas ONTAP on-premises, la organización en niveles de BlueXP utiliza automáticamente el nivel de acceso _Hot_ de los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en la transición de los datos del nivel de acceso _Hot_ al nivel de acceso _Cool_ tras un cierto número de días.
 
 Si no elige el nivel de acceso _Cool_, los datos permanecerán en el nivel de acceso _Hot_ y no se aplicarán reglas.
 

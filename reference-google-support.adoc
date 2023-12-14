@@ -20,7 +20,7 @@ La organización en niveles de BlueXP admite varias clases de almacenamiento de 
 
 == Clases de almacenamiento de GCP admitidas
 
-Cuando configuras la organización en niveles de los datos en GCP, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el sentido de que la transición de los datos de la clase de almacenamiento _Standard_ a otras clases de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
+Cuando configuras la organización en niveles de los datos en GCP desde tus sistemas ONTAP on-premises, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el sentido de que la transición de los datos de la clase de almacenamiento _Standard_ a otras clases de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
 
 * Nearline
 * Coldline

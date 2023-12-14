@@ -20,7 +20,7 @@ La organización en niveles de BlueXP admite varias clases de almacenamiento S3 
 
 == Clases de almacenamiento S3 compatibles
 
-Cuando configuras la organización en niveles de los datos en AWS, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el que los datos pasan de la clase de almacenamiento _Standard_ a otra clase de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
+Cuando configuras la organización en niveles de los datos en AWS desde tus sistemas ONTAP on-premises, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el que los datos pasan de la clase de almacenamiento _Standard_ a otra clase de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:
 
 * Acceso estándar poco frecuente (S3 Estándar - IA)
 * Una zona - Acceso poco frecuente (S3 una zona - IA)
