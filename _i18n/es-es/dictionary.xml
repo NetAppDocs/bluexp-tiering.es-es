@@ -365,8 +365,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">Únase a la comunidad de BlueXP para seguir los debates en curso o crear otros nuevos.</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentación</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">La documentación de BlueXP que está viendo actualmente.</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Correo:ng-cloudmanager-feedback@netapp.com[correo electrónico de comentarios]</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Apreciamos sus opiniones. Envíe sus comentarios para ayudarnos a mejorar BlueXP.</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Además de las opciones de autosoporte anteriores, puede trabajar con un especialista de soporte de NetApp para resolver cualquier problema después de activar el soporte de.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Antes de empezar</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Servicio*: Seleccione el servicio con el que está asociado el problema. Por ejemplo, cuando BlueXP es específico de un problema de soporte técnico con flujos de trabajo o funcionalidades dentro del servicio.</block>
@@ -738,7 +736,6 @@
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si tiene una cuenta de nivel de cliente, puede añadir una o varias cuentas de NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si tiene una cuenta de partner o distribuidor, puede añadir una o varias cuentas de NSS, pero no se podrán añadir junto con las cuentas de nivel de cliente.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Una captura de pantalla del menú Ayuda en el que Soporte es la primera opción de la lista</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utiliza Microsoft Azure Active Directory como proveedor de identidades para servicios de autenticación específicos para soporte y licencias.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">En la página de inicio de sesión, proporcione su dirección de correo electrónico registrada en el sitio de soporte de NetApp y contraseña para realizar el proceso de autenticación.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Estas acciones permiten a BlueXP utilizar su cuenta NSS para cosas como descargas de licencias, verificación de actualizaciones de software y futuros registros de soporte.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Tenga en cuenta lo siguiente:</block>
@@ -907,26 +904,6 @@
   <block id="51ae64fb3620d7b88a6fc20148f0e2d7" category="sidebar">Clases y regiones de almacenamiento de Amazon S3 admitidas</block>
   <block id="483b947377ff3a8f0bfe2df65d4f5292" category="sidebar">Niveles de acceso de Azure y regiones compatibles</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conocimiento y apoyo</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Novedades</block>
-  <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">Organice en niveles los datos de ONTAP en las instalaciones en el cloud</block>
-  <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Organice en niveles Azure Blob</block>
-  <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Organice en niveles Google Cloud</block>
-  <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">Organice en niveles los S3 genéricos</block>
-  <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">Gestione la configuración de organización en niveles</block>
-  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">Cambiar la política de organización en niveles de un volumen</block>
-  <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">Revise la información de organización en niveles para un clúster</block>
-  <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">Organice en niveles los datos de volúmenes adicionales</block>
-  <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">Mueva datos del cloud al nivel de rendimiento</block>
-  <block id="b19237098460d786516168b98687becc" category="sidebar">Gestione la configuración de organización en niveles en agregados</block>
-  <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">Añada un nuevo almacén de objetos para un clúster de</block>
-  <block id="f479e40bc5b0a3dc9ce1b1c43ebdec89" category="sidebar">Añada un segundo almacén de objetos a un agregado para mirroring</block>
-  <block id="07ed437d90cdfd3243fc6c8fa8ddacff" category="sidebar">Cambie el almacén de objetos primario y de réplica</block>
-  <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">Quite un almacén de objetos de reflejo</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
-  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Otros recursos</block>
-  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">Casos de uso de BlueXP</block>
   <block id="1c573cd95f6407add05436f6ac05d6ec" category="section-title">Descargue un informe de organización en niveles para los volúmenes</block>
   <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">Descargue</block>
   <block id="fe8e7e0f08b18c3c012d94d74e8386ce" category="inline-image-macro">Una captura de pantalla que muestra cómo generar un archivo CSV en el que se enumera el estado de organización en niveles de todos los volúmenes.</block>
@@ -1035,7 +1012,6 @@
   <block id="9f8c581a3e79e5eec6093e6268b28bc1" category="paragraph">En general, la organización en niveles de BlueXP funciona así:</block>
   <block id="5a7419c9aa51e2139e939dedaa6171a0" category="inline-link">Consulta las consideraciones sobre las políticas de organización en niveles con el backup y la recuperación de BlueXP</block>
   <block id="7cbf862de1ab23f12df78abcf9a0087e" category="list-text">El número total de volúmenes que puede organizar en niveles BlueXP puede ser inferior al número de volúmenes en tu sistema ONTAP. Esto se debe a que los volúmenes no pueden estar organizados en niveles desde algunos agregados. Consulte la documentación de ONTAP para<block ref="bc16a784cd65f4901578ebb3b70f2118" category="inline-link-rx"></block>.</block>
-  <block id="9f59a0e0e7951a95c986f51f69c22219" category="summary">La organización en niveles de BlueXP (Cloud Tiering) amplía tu centro de datos al cloud al organizar en niveles automáticamente los datos inactivos desde los clústeres de ONTAP on-premises hasta el almacenamiento de objetos.</block>
   <block id="94cbb43a5cde5c6df8693b056bc08139" category="doc">Documentación de la organización en niveles de BlueXP</block>
   <block id="385f5a69872344869e286bbc3eedd68b" category="doc">Preguntas técnicas frecuentes sobre la organización en niveles de BlueXP</block>
   <block id="85ce209d7aca067422f010e5d0f9ae5e" category="section-title">Servicio de organización en niveles de BlueXP</block>
@@ -1185,7 +1161,6 @@
   <block id="b17634fcfc0a3e48f196f1ec2f579385" category="paragraph">Al seleccionar el espacio IP correcto se garantiza que la organización en niveles de BlueXP pueda configurar una conexión desde ONTAP a tu almacenamiento de objetos compatible con S3.</block>
   <block id="54715a5b3c5fb74681657643084de7cc" category="sidebar">Documentos de organización en niveles de BlueXP</block>
   <block id="578b58628b699675aa94a9cb030f4eec" category="sidebar">Utiliza la organización en niveles de BlueXP</block>
-  <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">Blog sobre organización en niveles de BlueXP</block>
   <block id="368170efaa08caf814d05ad25b8849fe" category="paragraph">Después de comprar una licencia de organización en niveles de BlueXP, necesitarás utilizar la cartera digital de BlueXP en BlueXP para añadir la licencia. <block ref="18ff855f2755df77b673603c1159f8d7" category="inline-link-macro-rx"></block>.</block>
   <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="inline-link">Asesor digital de BlueXP</block>
   <block id="3ee9290056c3e6ae9cd8482931c1f104" category="paragraph">Aparte de la organización en niveles de BlueXP,<block ref="5ed6ecd932db92d4be0f0df08b269167" category="inline-link-rx"></block> y..<block ref="bced2809c175fbbacaa63c811a554606" category="inline-link-rx"></block> se puede utilizar para la supervisión y la creación de informes.</block>
@@ -1331,7 +1306,6 @@
   <block id="b6d7a1ad9440cb7fff09db239b1313d7" category="paragraph">Esta configuración no afecta al ancho de banda asignado a otros clústeres que sean datos de organización en niveles.</block>
   <block id="7911cbd17bf94032db18ecf08e4fe5c8" category="list-text">Complete las secciones en la página *Configuración de niveles*:</block>
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">Si lo desea, puede elegir si va a utilizar un AWS PrivateLink que haya configurado previamente. <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> Aparecerá un cuadro de diálogo que le ayudará a guiarle a través de la configuración del punto final.</block>
-  <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">Cambie el ancho de banda para cargar datos inactivos en el almacenamiento de objetos</block>
   <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">Después de comprar la licencia de organización en niveles de BlueXP, puedes activar la licencia en BlueXP introduciendo el número de serie y la cuenta de NSS de BlueXP Tiering o cargando el archivo de licencia de NLF. Los pasos a continuación muestran cómo obtener el archivo de licencia de NLF si planea utilizar ese método.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Antes de empezar</block>
   <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">Antes de comenzar, necesitará tener la siguiente información:</block>
@@ -1440,4 +1414,6 @@
   <block id="a6946f1b4a14c4860d7cb9b918379334" category="paragraph">Cuando configuras la organización en niveles de los datos en GCP desde tus sistemas ONTAP on-premises, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el sentido de que la transición de los datos de la clase de almacenamiento _Standard_ a otras clases de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:</block>
   <block id="90fd6199eed378ef0bf6c4f8d3ed5ebc" category="paragraph">Cuando configuras la organización en niveles de los datos en Azure desde tus sistemas ONTAP on-premises, la organización en niveles de BlueXP utiliza automáticamente el nivel de acceso _Hot_ de los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en la transición de los datos del nivel de acceso _Hot_ al nivel de acceso _Cool_ tras un cierto número de días.</block>
   <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">Cuando configuras la organización en niveles de los datos en AWS desde tus sistemas ONTAP on-premises, la organización en niveles de BlueXP utiliza automáticamente la clase de almacenamiento _Standard_ para los datos inactivos. La organización en niveles de BlueXP puede aplicar una regla de ciclo de vida en el que los datos pasan de la clase de almacenamiento _Standard_ a otra clase de almacenamiento transcurridos un cierto número de días. Puede elegir entre las siguientes clases de almacenamiento:</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utiliza Microsoft Entra ID como proveedor de identidad para los servicios de autenticación específicos de soporte y licencias.</block>
+  <block id="36a7f0d732c9746e546a6bf227b6a550" category="summary">La organización en niveles de BlueXP amplía tu centro de datos al cloud al organizar en niveles los datos inactivos desde los clústeres de ONTAP on-premises al almacenamiento de objetos.</block>
 </blocks>
