@@ -272,5 +272,5 @@ image:screenshot_tiering_search for_cluster.png["Una captura de pantalla que mue
 +
 La organización en niveles de BlueXP muestra el nombre del conector si es capaz de encontrar el clúster.
 
-. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["Cambie al conector y configure la organización en niveles del clúster"^].
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Cambie al conector y configure la organización en niveles del clúster"^].
 
