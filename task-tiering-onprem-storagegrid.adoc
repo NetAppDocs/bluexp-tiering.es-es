@@ -65,7 +65,7 @@ Plataformas ONTAP compatibles::
 
 --
 Versión de ONTAP compatible:: ONTAP 9.4 o posterior
-Licencia:: No es necesaria una licencia de organización en niveles de BlueXP en tu cuenta de BlueXP ni una licencia de FabricPool en el clúster de ONTAP para organizar los datos en niveles en StorageGRID.
+Licencia:: No se requiere una licencia de organización en niveles de BlueXP  en la organización de BlueXP  ni una licencia de FabricPool en el clúster de ONTAP cuando se organizan los datos en niveles en StorageGRID.
 Requisitos para la red de clúster::
 +
 --
@@ -130,7 +130,7 @@ Control de versiones de objetos:: No debe habilitar el control de versiones de o
 Se requiere un conector para organizar los datos en niveles en el cloud. Al organizar los datos en niveles en StorageGRID, debe haber un conector disponible en las instalaciones. Tendrá que instalar un conector nuevo o asegurarse de que el conector seleccionado actualmente reside en las instalaciones.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Más información sobre conectores"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Instalar y configurar un conector en las instalaciones"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Instale y configure un conector en las instalaciones"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Cambiar entre conectores"^]
 
 

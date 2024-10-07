@@ -211,7 +211,7 @@ Tendrá que configurar dos conjuntos de permisos:
 ** Confirme eso https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["Estos permisos de S3"^] Forman parte de la función IAM que proporciona permisos al conector. Se deberían haber incluido de forma predeterminada cuando se desplegó el conector por primera vez. De lo contrario, deberá agregar los permisos que falten. Consulte https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["Documentación de AWS: Editar políticas de IAM"^] si desea obtener instrucciones.
 ** El bloque predeterminado que crea la organización en niveles de BlueXP tiene un prefijo de «fabric-pool». Si desea utilizar un prefijo diferente para el depósito, deberá personalizar los permisos con el nombre que desee utilizar. En los S3 permisos verás una línea `"Resource": ["arn:aws:s3:::fabric-pool*"]`. Deberá cambiar el «pool de estructura» por el prefijo que desee utilizar. Por ejemplo, si quieres usar “tiering-1” como prefijo para tus buckets, cambiarás esta línea a. `"Resource": ["arn:aws:s3:::tiering-1*"]`.
 +
-Si quieres usar un prefijo diferente para los bloques que utilizarás para clústeres adicionales en esta misma cuenta de BlueXP, puedes añadir otra línea con el prefijo para otros bloques. Por ejemplo:
+Si desea utilizar un prefijo diferente para los depósitos que utilizará para los clústeres adicionales en esta misma organización de BlueXP , puede agregar otra línea con el prefijo para otros depósitos. Por ejemplo:
 
 +
 `"Resource": ["arn:aws:s3:::tiering-1*"]`
