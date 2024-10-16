@@ -20,9 +20,10 @@ El Centro de notificaciones realiza un seguimiento del progreso de los incidente
 
 En este momento, hay un evento de organización en niveles que aparecerá como notificación:
 
-* Organice en niveles los datos adicionales del cluster <name> al almacenamiento de objetos para aumentar la eficiencia de su almacenamiento
-
+Organice en niveles los datos adicionales del cluster <name> al almacenamiento de objetos para aumentar la eficiencia de su almacenamiento
 
 Esta notificación es una «recomendación» que pretende hacer que sus sistemas sean más eficientes y ahorrar costes de almacenamiento. Indica que un clúster organiza en niveles menos de un 20 % de sus datos inactivos, incluidos clústeres que no organizan datos en niveles. Proporciona un enlace al https://bluexp.netapp.com/cloud-tiering-service-tco["Calculadora de ahorro y coste total de propiedad de la organización en niveles de BlueXP"^] para ayudarle a calcular el ahorro de costes.
+
+BlueXP  no envía un correo electrónico para esta notificación.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Obtenga más información sobre el Centro de notificaciones"^].

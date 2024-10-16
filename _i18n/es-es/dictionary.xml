@@ -1445,4 +1445,5 @@
   <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">Instale y configure un conector en las instalaciones</block>
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">No se requiere una licencia de organización en niveles de BlueXP  en la organización de BlueXP  ni una licencia de FabricPool en el clúster de ONTAP cuando se organizan los datos en niveles en StorageGRID.</block>
+  <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP  no envía un correo electrónico para esta notificación.</block>
 </blocks>
