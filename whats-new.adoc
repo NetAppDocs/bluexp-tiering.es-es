@@ -22,7 +22,7 @@ Descubre las novedades en la organización en niveles de BlueXP.
 
 
 
-=== Use un prefijo personalizado para el nombre del bloque donde se almacenan los datos almacenados en niveles
+=== Utilice un prefijo personalizado para el nombre del depósito
 
 Anteriormente, era necesario utilizar el prefijo predeterminado «fabric-pool» al definir el nombre del bucket, por ejemplo, _fabric-pool-bucket1_. Ahora puede utilizar un prefijo personalizado al asignar un nombre a su cubo. Esta funcionalidad solo está disponible cuando se organizan los datos en niveles en Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["Leer más"].
 
@@ -38,13 +38,13 @@ Si utiliza varios conectores para gestionar todos los sistemas de almacenamiento
 
 
 
-=== Ahora puede ajustar el ancho de banda utilizado para cargar datos inactivos en el almacenamiento de objetos
+=== Ajuste el ancho de banda para transferir datos inactivos
 
 Al activar la organización en niveles de BlueXP, ONTAP puede utilizar una cantidad ilimitada de ancho de banda de red para transferir los datos inactivos de los volúmenes del clúster al almacenamiento de objetos. Si observa que el tráfico por niveles afecta a las cargas de trabajo normales de usuario, puede limitar la cantidad de ancho de banda que se puede utilizar durante la transferencia. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["Leer más"].
 
 
 
-=== El evento de organización en niveles para el nivel bajo se muestra en el Centro de notificaciones
+=== Evento de organización en niveles que se muestra en el Centro de notificaciones
 
 El evento de organización en niveles «Almacenar los datos adicionales del clúster <name> en el almacenamiento de objetos para aumentar la eficiencia del almacenamiento» aparece ahora como una notificación cuando un clúster está organizando en niveles menos del 20 % de sus datos inactivos, incluidos los clústeres que organizan en niveles ningún dato.
 
@@ -62,7 +62,7 @@ La pestaña Licencias se ha eliminado de la interfaz de organización en niveles
 
 
 
-=== Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido
+=== Se ha cambiado el nombre de las pestañas de organización en niveles y se han actualizado
 
 Se ha cambiado el nombre de la pestaña «Consola de clústeres» a «Clusters» y la pestaña «On-Prem Overview» se ha cambiado a «On-premises Dashboard». Estas páginas han añadido información que le ayudará a evaluar si puede optimizar el espacio de almacenamiento con una configuración adicional de organización en niveles.
 
@@ -72,7 +72,7 @@ Se ha cambiado el nombre de la pestaña «Consola de clústeres» a «Clusters»
 
 
 
-=== Ahora puede generar un informe de organización en niveles para sus volúmenes
+=== Generar un informe de organización en niveles para los volúmenes
 
 Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otras personas de la empresa según sea necesario. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Descubra cómo descargar el informe de organización en niveles"].
 
@@ -104,7 +104,7 @@ Vea la lista completa de puntos finales de la https://docs.netapp.com/us-en/blue
 
 
 
-=== Arrastra y suelta para permitir la organización en niveles de BlueXP en Azure Blob, Google Cloud Storage y StorageGRID
+=== Arrastre y suelte para habilitar la organización en niveles en destinos adicionales
 
 Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.
 
@@ -114,7 +114,7 @@ Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe c
 
 
 
-=== El asistente de organización en niveles permite configurar AWS PrivateLink cuando la organización en niveles se encuentra en un almacenamiento S3
+=== Configure AWS PrivateLink cuando organice en niveles en Amazon S3
 
 En versiones anteriores, era muy lento proporcionar esta forma segura de conectar el clúster a un bloque de S3 a través de un extremo de VPC. Ahora puede seguir los pasos de los requisitos previos a. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["Configure el sistema para una conexión privada mediante una interfaz de extremo VPC"]Y, a continuación, puede seleccionar PrivateLink durante el asistente de configuración de capas en la página Networking.
 
@@ -122,13 +122,13 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["Revis
 
 
 
-=== Arrastre y suelte para habilitar la organización en niveles de BlueXP en Amazon S3
+=== Arrastre y suelte para habilitar la organización en niveles en Amazon S3
 
 Si el destino de organización en niveles de Amazon S3 existe como entorno de trabajo en Canvas, puede arrastrar el entorno de trabajo de ONTAP local al destino para iniciar el asistente de configuración de organización en niveles.
 
 
 
-=== Elija el comportamiento de organización en niveles al eliminar el almacén de objetos reflejados en una configuración de MetroCluster
+=== Elegir el comportamiento de organización en niveles al eliminar el almacén de objetos de reflejos
 
 Al eliminar el almacén de objetos de reflejos de una configuración de MetroCluster, se le preguntará si también desea quitar el almacén de objetos primario. Puede optar por mantener el almacén de objetos principal Unido al agregado o eliminarlo.
 
@@ -138,12 +138,12 @@ Al eliminar el almacén de objetos de reflejos de una configuración de MetroClu
 
 
 
-=== Capacidad de configurar almacenes de objetos adicionales para otros agregados del clúster
+=== Configure almacenes de objetos adicionales para otros agregados
 
 La interfaz de usuario de organización en niveles en el cloud ha añadido un nuevo conjunto de páginas para la configuración del almacenamiento de objetos. Puede añadir almacenes de objetos nuevos, conectar varios almacenes de objetos a un agregado para mirroring FabricPool, cambiar los almacenes de objetos primario y de reflejo, eliminar conexiones de almacén de objetos a agregados, etc. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-object-storage.html["Más información acerca de la nueva funcionalidad de almacenamiento de objetos."]
 
 
 
-=== Compatibilidad con licencias de Cloud Tiering para configuraciones de MetroCluster
+=== Compatibilidad con la licencia de configuraciones de MetroCluster
 
 Las licencias de Cloud Tiering ahora se pueden compartir con los clústeres que se encuentran en configuraciones de MetroCluster. Ya no es necesario utilizar las licencias de FabricPool obsoletas para estos casos. De este modo, es más fácil usar las licencias "flotantes" en el cloud Tiering en más clústeres. https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["Consulte cómo se License y se configuran estos tipos de clústeres."]

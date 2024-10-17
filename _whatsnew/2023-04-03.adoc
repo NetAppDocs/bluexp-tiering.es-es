@@ -1,0 +1,15 @@
+= Se ha eliminado la pestaña de licencias
+:allow-uri-read: 
+
+
+
+
+=== Se ha eliminado la pestaña de licencias
+
+La pestaña Licencias se ha eliminado de la interfaz de organización en niveles de BlueXP. Ahora, se accede a todas las licencias de suscripciones de pago por uso (PAYGO) desde la consola de organización en niveles de BlueXP en las instalaciones. También hay un enlace desde esa página a la cartera digital de BlueXP para que puedas ver y gestionar cualquier producto con tus propias licencias (BYOL) en la organización en niveles de BlueXP.
+
+
+
+=== Se ha cambiado el nombre de las pestañas de organización en niveles y se han actualizado
+
+Se ha cambiado el nombre de la pestaña «Consola de clústeres» a «Clusters» y la pestaña «On-Prem Overview» se ha cambiado a «On-premises Dashboard». Estas páginas han añadido información que le ayudará a evaluar si puede optimizar el espacio de almacenamiento con una configuración adicional de organización en niveles.

@@ -706,15 +706,11 @@
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 de noviembre de 2022</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">19 de septiembre de 2022</block>
-  <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">El asistente de organización en niveles permite configurar AWS PrivateLink cuando la organización en niveles se encuentra en un almacenamiento S3</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">Configure el sistema para una conexión privada mediante una interfaz de extremo VPC</block>
   <block id="883959b6b7ad90936b33d524655bc282" category="inline-link">Revise los requisitos y los pasos para organizar los datos inactivos en niveles en Amazon S3</block>
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Si el destino de organización en niveles de Amazon S3 existe como entorno de trabajo en Canvas, puede arrastrar el entorno de trabajo de ONTAP local al destino para iniciar el asistente de configuración de organización en niveles.</block>
-  <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">Elija el comportamiento de organización en niveles al eliminar el almacén de objetos reflejados en una configuración de MetroCluster</block>
   <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">3 de agosto de 2022</block>
-  <block id="059c9f6829260507f53186d7191b058c" category="section-title">Capacidad de configurar almacenes de objetos adicionales para otros agregados del clúster</block>
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">Más información acerca de la nueva funcionalidad de almacenamiento de objetos.</block>
-  <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">Compatibilidad con licencias de Cloud Tiering para configuraciones de MetroCluster</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">Consulte cómo se License y se configuran estos tipos de clústeres.</block>
   <block id="fa62afbf244eb2e9a07f57b1803fe0e6" category="doc">Niveles de acceso de Azure Blob y regiones compatibles</block>
   <block id="6c02b1bd844652e850bc128a20e71bc7" category="paragraph">Si no elige el nivel de acceso _Cool_, los datos permanecerán en el nivel de acceso _Hot_ y no se aplicarán reglas.</block>
@@ -906,7 +902,6 @@
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Cree un caso con el soporte de NetApp</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">En la página *Recursos*, elija una de las opciones disponibles en Soporte técnico:</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 de marzo de 2023</block>
-  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Ahora puede generar un informe de organización en niveles para sus volúmenes</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Descubra cómo descargar el informe de organización en niveles</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Gestione sus casos de soporte (vista previa)</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Puede ver y gestionar los casos de soporte activos y resueltos directamente desde BlueXP. Es posible gestionar los casos asociados con su cuenta de NSS y con su empresa.</block>
@@ -948,7 +943,6 @@
   <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">En la página _Details &amp; Credentials_ el nombre del clúster se añade como el Nombre del entorno de trabajo, por lo que solo tiene que hacer clic en *Go*.</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 de abril de 2023</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Se ha eliminado la pestaña de licencias</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Accesorio (opcional)*: Cargue hasta cinco archivos adjuntos, uno a la vez.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Los archivos adjuntos están limitados a 25 MB por archivo. Se admiten las siguientes extensiones de archivo: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx y csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Actualizar notas de caso*: Proporcione detalles adicionales sobre su problema o seleccione *cargar archivos* para adjuntar hasta un máximo de cinco archivos.</block>
@@ -1118,8 +1112,6 @@
   <block id="56273c1cb08574200c49973b9bc5c615" category="summary">Descubre las novedades en la organización en niveles de BlueXP.</block>
   <block id="d423420066ca2ec630afe096f14eae4b" category="doc">Novedades de la organización en niveles de BlueXP</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">Debido a un cambio en la organización en niveles de BlueXP, tienes que cambiar los siguientes extremos de conector para que las operaciones de organización en niveles de BlueXP se realicen correctamente:</block>
-  <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">Arrastra y suelta para permitir la organización en niveles de BlueXP en Azure Blob, Google Cloud Storage y StorageGRID</block>
-  <block id="18cd1c130656412d8089667948bc48a2" category="section-title">Arrastre y suelte para habilitar la organización en niveles de BlueXP en Amazon S3</block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">La organización en niveles de BlueXP admite varias clases de almacenamiento de Google Cloud y la mayoría de regiones.</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">Al configurar una regla de ciclo de vida de organización en niveles de BlueXP, no debes configurar ninguna regla de ciclo de vida al configurar el bloque en tu cuenta de Google.</block>
   <block id="2d5551329360393b3ea83aeec84cf519" category="paragraph">La organización en niveles de BlueXP admite las siguientes regiones.</block>
@@ -1249,10 +1241,8 @@
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">Es necesario proporcionar su cuenta NSS para que BlueXP pueda cargar su clave de licencia y activar la suscripción para el plazo que adquirió. Esto incluye actualizaciones automáticas para renovaciones de términos.</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Actualizar el software Cloud Volumes ONTAP a la versión más reciente</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 de julio de 2023</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Ahora puede ajustar el ancho de banda utilizado para cargar datos inactivos en el almacenamiento de objetos</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Al activar la organización en niveles de BlueXP, ONTAP puede utilizar una cantidad ilimitada de ancho de banda de red para transferir los datos inactivos de los volúmenes del clúster al almacenamiento de objetos. Si observa que el tráfico por niveles afecta a las cargas de trabajo normales de usuario, puede limitar la cantidad de ancho de banda que se puede utilizar durante la transferencia.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">El evento de organización en niveles para el nivel bajo se muestra en el Centro de notificaciones</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">El evento de organización en niveles «Almacenar los datos adicionales del clúster &lt;name&gt; en el almacenamiento de objetos para aumentar la eficiencia del almacenamiento» aparece ahora como una notificación cuando un clúster está organizando en niveles menos del 20 % de sus datos inactivos, incluidos los clústeres que organizan en niveles ningún dato.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calculadora de ahorro y coste total de propiedad de la organización en niveles de BlueXP</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Esta notificación es una «recomendación» que pretende hacer que sus sistemas sean más eficientes y ahorrar costes de almacenamiento. Proporciona un enlace al<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> para ayudarle a calcular el ahorro de costes.</block>
@@ -1341,7 +1331,6 @@
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Seleccione *Administración de NSS &gt; Agregar cuenta de NSS*.</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">Cuando se le solicite, seleccione *continuar* para que se le redirija a una página de inicio de sesión de Microsoft.</block>
   <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">9 de agosto de 2023</block>
-  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">Use un prefijo personalizado para el nombre del bloque donde se almacenan los datos almacenados en niveles</block>
   <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">Anteriormente, era necesario utilizar el prefijo predeterminado «fabric-pool» al definir el nombre del bucket, por ejemplo, _fabric-pool-bucket1_. Ahora puede utilizar un prefijo personalizado al asignar un nombre a su cubo. Esta funcionalidad solo está disponible cuando se organizan los datos en niveles en Amazon S3.<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>.</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">Si utiliza varios conectores para gestionar todos los sistemas de almacenamiento del entorno, algunos clústeres en los que desea implementar la organización en niveles pueden estar en conectores diferentes. Si no estás seguro de qué Connector gestiona un determinado clúster, puedes buscar en todos los conectores mediante la organización en niveles de BlueXP.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
   <block id="d441270e2d66b6759e1bbe07190e3d30" category="admonition">Si estás planeando configurar la organización en niveles de BlueXP para utilizar un nivel de acceso de menor coste al que pasarán tus datos organizados en niveles después de un cierto número de días, no debes seleccionar ninguna regla de ciclo de vida al configurar el contenedor en tu cuenta de Azure. La organización en niveles de BlueXP gestiona las transiciones del ciclo de vida.</block>
@@ -1446,4 +1435,15 @@
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">No se requiere una licencia de organización en niveles de BlueXP  en la organización de BlueXP  ni una licencia de FabricPool en el clúster de ONTAP cuando se organizan los datos en niveles en StorageGRID.</block>
   <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP  no envía un correo electrónico para esta notificación.</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se han actualizado</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="doc">Ajuste el ancho de banda para transferir datos inactivos</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">Evento de organización en niveles que se muestra en el Centro de notificaciones</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="doc">Utilice un prefijo personalizado para el nombre del depósito</block>
+  <block id="5f659aa043041b7c7bd07335ac62ca55" category="section-title">Generar un informe de organización en niveles para los volúmenes</block>
+  <block id="02a02728987c939621edc3e2dc71d234" category="section-title">Arrastre y suelte para habilitar la organización en niveles en destinos adicionales</block>
+  <block id="dc7d0bd65a1626d3b5577529e98dab87" category="section-title">Configure AWS PrivateLink cuando organice en niveles en Amazon S3</block>
+  <block id="5b509c72bc50acb8c10c2952b7982420" category="section-title">Arrastre y suelte para habilitar la organización en niveles en Amazon S3</block>
+  <block id="e183a98351b41fa6323d79a2f03c328c" category="section-title">Elegir el comportamiento de organización en niveles al eliminar el almacén de objetos de reflejos</block>
+  <block id="847d8c6cf21c261bf367fb1c3c41bf62" category="section-title">Configure almacenes de objetos adicionales para otros agregados</block>
+  <block id="ed16268923e9fecfd07bdd809ee9d213" category="section-title">Compatibilidad con la licencia de configuraciones de MetroCluster</block>
 </blocks>
