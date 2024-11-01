@@ -39,7 +39,7 @@ image:screenshot_tiering_cluster_info.png["Una captura de pantalla que muestra l
 
 Tenga en cuenta que la pantalla es diferente para los sistemas Cloud Volumes ONTAP. Si bien Cloud Volumes ONTAP Volumes puede tener datos en niveles en el cloud, no utilizan el servicio de organización en niveles de BlueXP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Descubre cómo organizar en niveles los datos inactivos desde sistemas Cloud Volumes ONTAP en un almacenamiento de objetos de bajo coste"^].
 
-También puede hacerlo https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Vea la información de organización en niveles de un clúster desde Digital Advisor"^] Si está familiarizado con este producto de NetApp. Sólo tiene que seleccionar *recomendaciones de la nube* en el panel de navegación izquierdo.
+También puede https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Vea información sobre la organización en niveles de un clúster del asesor digital de Active IQ (también conocido como asesor digital)"^] hacerlo si está familiarizado con este producto NetApp. Sólo tiene que seleccionar *recomendaciones de la nube* en el panel de navegación izquierdo.
 
 image:screenshot_tiering_aiq_fabricpool_info.png["Una captura de pantalla que muestra información de FabricPool para un clúster mediante el asesor FabricPool de Digital Advisor."]
 

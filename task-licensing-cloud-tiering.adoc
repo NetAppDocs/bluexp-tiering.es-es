@@ -54,7 +54,8 @@ Suscríbete a la organización en niveles de BlueXP desde AWS Marketplace y conf
 El siguiente vídeo muestra el proceso:
 
 +
-video::video_subscribing_aws_tiering.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
@@ -72,7 +73,8 @@ Suscríbete a la organización en niveles de BlueXP desde Azure Marketplace y co
 El siguiente vídeo muestra el proceso:
 
 +
-video::video_subscribing_azure_tiering.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -90,7 +92,8 @@ Suscríbete a la organización en niveles de BlueXP desde Google Cloud Marketpla
 El siguiente vídeo muestra el proceso:
 
 +
-video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
+.Suscríbete a BlueXP desde Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 
