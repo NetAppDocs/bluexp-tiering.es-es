@@ -52,7 +52,7 @@ Paga la organización en niveles de BlueXP a través de una suscripción de pago
 
 [role="quick-margin-list"]
 * Para suscribirse a la oferta de BlueXP PAYGO de la https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Mercado AWS"^], https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^], o. https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Mercado para GCP"^], Haga clic en *Suscribirse* y siga las indicaciones.
-* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añádelo a tu cuenta desde la cartera digital de BlueXP"].
+* Para pagar con una licencia BYOL de BlueXP  Tiering, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y luego link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Añádelo a tu cuenta desde la cartera digital de BlueXP"^]. .
 
 
 

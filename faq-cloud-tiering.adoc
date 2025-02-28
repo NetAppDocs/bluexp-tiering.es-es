@@ -130,9 +130,9 @@ Sí. La organización en niveles de BlueXP te permite usar una licencia BYOL, un
 
 
 
-=== ¿Qué sucede si he alcanzado el límite de capacidad de su licencia?
+=== ¿Qué sucede si he alcanzado el límite de capacidad de mi licencia BYOL o si mi licencia BYOL caduca?
 
-Si alcanza el límite de capacidad BYOL, la organización en niveles de los nuevos datos fríos se detiene. Todos los datos previamente organizados en niveles siguen siendo accesibles; lo que significa que se pueden recuperar y utilizar estos datos. Cuando se recuperan, estos datos se mueven de nuevo al nivel de rendimiento del cloud.
+Si alcanza el límite de capacidad de BYOL o si caduca la licencia BYOL, la organización en niveles de los nuevos datos fríos se detiene, la organización en niveles de los nuevos datos fríos se detiene. Todos los datos previamente organizados en niveles siguen siendo accesibles; lo que significa que se pueden recuperar y utilizar estos datos. Cuando se recuperan, estos datos se mueven de nuevo al nivel de rendimiento del cloud.
 
 Sin embargo, si tiene una suscripción al mercado de PAYGO a _BlueXP - Deploy & Manage Cloud Data Services_, los nuevos datos inactivos seguirán estando organizados en niveles en el almacenamiento de objetos y pagará por cada uso.
 

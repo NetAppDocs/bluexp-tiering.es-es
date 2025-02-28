@@ -43,7 +43,7 @@ Cuando finalice la prueba gratuita, paga por la organización en niveles de Blue
 
 [role="quick-margin-list"]
 * Para suscribirse desde el mercado de GCP, https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Vaya a la oferta de BlueXP Marketplace"^], Haga clic en *Suscribirse* y, a continuación, siga las indicaciones.
-* Para pagar con una licencia BYOL de organización en niveles de BlueXP, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y después link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añádelo a tu cuenta desde la cartera digital de BlueXP"].
+* Para pagar con una licencia BYOL de BlueXP  Tiering, mailto:ng-cloud-tiering@netapp.com?subject=Licensing[póngase en contacto con nosotros si necesita comprar una], y luego link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Añádelo a tu cuenta desde la cartera digital de BlueXP"^].
 
 
 

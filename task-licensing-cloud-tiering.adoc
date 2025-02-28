@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering, license 
 summary: Una prueba gratuita de 30 días de la organización en niveles de BlueXP comienza cuando configuras la organización en niveles desde el primer clúster. Cuando finalice la prueba gratuita, tendrás que pagar la organización en niveles de BlueXP mediante una suscripción de pago por uso o anual desde el mercado de tu proveedor de cloud, una licencia BYOL de NetApp o una combinación de ambas opciones. 
 ---
 = Configura las licencias para la organización en niveles de BlueXP
@@ -38,6 +38,8 @@ Si su prueba gratuita finaliza y no se ha suscrito o agregado una licencia, ONTA
 == Utiliza una suscripción PAYGO en la organización en niveles de BlueXP
 
 Las suscripciones de pago por uso desde el mercado de su proveedor de cloud permiten utilizar las licencias para usar los sistemas Cloud Volumes ONTAP y muchos servicios de datos de cloud, como la organización en niveles de BlueXP.
+
+Tras suscribirte a la organización en niveles de BlueXP , puedes gestionar tus suscripciones en la cartera digital. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html#view-your-subscriptions["Aprende a usar la cartera digital."^]
 
 
 
@@ -122,7 +124,7 @@ Si no tienes una licencia de organización en niveles de BlueXP, ponte en contac
 
 Opcionalmente, si tiene una licencia basada en nodos sin asignar para Cloud Volumes ONTAP que no utilizará, puede convertirla en una licencia de organización en niveles de BlueXP que tenga la misma equivalencia de dólar y la misma fecha de caducidad. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Vaya aquí para obtener más información"^].
 
-Utilizarás la página de cartera digital de BlueXP para gestionar las licencias de BYOL en la organización en niveles de BlueXP. Puede añadir licencias nuevas y actualizar las licencias existentes.
+Utilizarás la página de cartera digital de BlueXP para gestionar las licencias de BYOL en la organización en niveles de BlueXP. Puede agregar nuevas licencias y actualizar las existentes. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Aprende a usar la cartera digital."^]
 
 
 
