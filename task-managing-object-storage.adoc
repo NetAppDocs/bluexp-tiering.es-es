@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-object-storage.html 
-keywords: object storage, mirror object storage, create object storage, remove object storage, swap object storage, display object storage 
+keywords: object storage, mirror object storage, create object storage, remove object storage, swap object storage, display object storage, license 
 summary: Después de configurar los clústeres de ONTAP en las instalaciones para organizar los datos en niveles en un almacenamiento de objetos en particular, puede realizar otras tareas de almacenamiento de objetos. Puede añadir un almacenamiento de objetos nuevo, reflejar los datos organizados en niveles en un almacenamiento de objetos secundario, cambiar el almacenamiento de objetos primario y de reflejo, eliminar un almacén de objetos reflejados de un agregado, etc. 
 ---
 = Gestión del almacenamiento de objetos utilizado para la organización en niveles de datos
@@ -91,9 +91,9 @@ Ahora puede adjuntar el almacén de objetos a un agregado del clúster.
 
 Es posible asociar un segundo almacén de objetos a un agregado para crear un reflejo FabricPool y así organizar los datos en niveles de manera síncrona en dos almacenes de objetos. Debe tener un almacén de objetos ya conectado al agregado. https://docs.netapp.com/us-en/ontap/fabricpool/create-mirror-task.html["Más información acerca de los FabricPool Mirrors"^].
 
-Al usar una configuración de MetroCluster, se recomienda utilizar almacenes de objetos en el cloud público que se encuentran en diferentes zonas de disponibilidad. https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["Obtenga más información acerca de los requisitos de MetroCluster en la documentación de ONTAP"^].
+Al utilizar una configuración de MetroCluster, se recomienda utilizar almacenes de objetos en el cloud público que están en diferentes zonas de disponibilidad. https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["Obtenga más información acerca de los requisitos de MetroCluster en la documentación de ONTAP"^]. En una MetroCluster, no se recomienda utilizar agregados no reflejados, si lo hace aparecerá un mensaje de error.
 
-Tenga en cuenta que al usar StorageGRID como almacén de objetos en una configuración de MetroCluster, ambos sistemas ONTAP pueden realizar la clasificación por niveles de FabricPool en un único sistema StorageGRID. Cada sistema ONTAP debe organizar los datos en niveles en bloques diferentes.
+Al utilizar StorageGRID como almacén de objetos en una configuración MetroCluster, ambos sistemas ONTAP pueden realizar la organización en niveles de FabricPool en un único sistema StorageGRID. Cada sistema ONTAP debe organizar los datos en niveles en bloques diferentes.
 
 .Pasos
 . En la página *Clusters*, haga clic en *Configuración avanzada* para el clúster seleccionado.

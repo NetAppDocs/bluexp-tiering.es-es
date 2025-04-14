@@ -208,7 +208,7 @@ Tenga en cuenta que, dado que los datos se organizan en niveles en dos ubicacion
 No configure la organización en niveles en este momento.
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["Compra una licencia de organización en niveles de BlueXP"] para la capacidad que se necesita para el nuevo clúster o los clústeres.
-. En BlueXP, link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["Añade la licencia a la cartera digital de BlueXP"].
+. En BlueXP , <<licenses,Añade la licencia a la cartera digital de BlueXP>>[añada la licencia a la cartera digital de BlueXP ].
 . En la organización en niveles de BlueXP, link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["detectar los clústeres nuevos"].
 . En la página Clusters, haga clic en image:screenshot_horizontal_more_button.gif["Icono más"] Para el clúster y seleccione *desplegar licencia*.
 +

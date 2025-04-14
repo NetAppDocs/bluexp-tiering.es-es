@@ -168,6 +168,12 @@ Para obtener una estimación, solo tienes que añadir tu clúster ONTAP a BlueXP
 
 
 
+=== ¿Cómo se me cobra por la organización en niveles cuando uso un ONTAP MetroCluster?
+
+Cuando se utiliza en entornos MetroCluster, la capacidad bajo licencia de organización en niveles se aplica igualmente a bloques reflejados. Por ejemplo, si tiene una licencia para 100TiB TB de organización en niveles, ambos buckets pueden organizarse en niveles hasta 100 TiB. No se aplica ningún cargo adicional para los cubos duplicados. Al organizar en niveles agregados no reflejados en entornos de MetroCluster, la licencia de organización en niveles de BlueXP  se aplica como normal y se utilizará la capacidad total organizada en niveles en ambos bloques. Por ejemplo, si tiene una licencia para 100TiB TB de organización en niveles, ambos buckets pueden organizarse en niveles hasta 50TB TB.
+
+
+
 == ONTAP
 
 Las siguientes preguntas hacen referencia a ONTAP.
